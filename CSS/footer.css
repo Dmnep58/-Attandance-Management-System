@@ -1,0 +1,64 @@
+
+.dynamic-footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+/* Styles for each section */
+.section {
+    text-align: center;
+    width: 300px; 
+    height: 200px; 
+    padding: 2px; 
+    box-sizing: border-box; /* Include padding in width and height */
+}
+
+.about img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.about .paragraph{
+    text-align: left;
+}
+
+.topics ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.topics li {
+    margin-bottom: 5px;
+}
+
+.contact .social-icons a {
+    margin: 0 10px;
+}
+
+.contact .social-icons img {
+    max-width: 30px;
+}
+
+.contact .social-icons{
+    mix-blend-mode:screen;
+/* filter: contrast(1); */
+   
+}
+
+
+@media (max-width: 768px) {
+    .dynamic-footer {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .section {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Adjust height as needed */
+        margin-bottom: 20px;
+    }
+}

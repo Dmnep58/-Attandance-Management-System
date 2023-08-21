@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+            height: 100vh;
+            background-image: url('D:/kiitsemesters/SEM 7/Minor Project/Front End/Images/BG.png');
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            backface-visibility: unset;
+        }
+
+        .heading h1{
+            justify-content: center;
+            text-align: center;
+            height: 5vh;
+        }
+
+        .log{
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .login-container {  
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+            padding: 18px;
+            width: 50%;
+        }
+
+        .login-container h2{
+            color: green;
+            text-align: center;
+            justify-content: center;
+            font-family: sans-serif;
+            padding-bottom: 10px;
+        }
+
+        .image-container {
+            height: 200px;
+            background-image: url('D:/kiitsemesters/SEM 7/Minor Project/Front End/Images/login.png');
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            mix-blend-mode: multiply;
+            filter:contrast(1);
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 4px;
+            border: 1px solid #ccc;
+            border: 2px solid black;
+            border-radius: 4px;
+            background-color: transparent;
+        }
+
+        .input-group input:hover{
+            background-color: white;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 10px;
+
+        }
+
+        .buttons .but{
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            font-weight: 200;
+            padding: 5px;
+            border: darkblack solid;
+            border-radius: 10%;
+        }
+
+        .buttons .but:hover{
+            background-color: white;
+            color: black;
+            border: darkblue solid;
+            border-radius: 10%;
+            cursor: pointer;
+        }
+
+       .login-container .error-message {
+            color: red;
+            margin-top: 10px;
+            height: 20px;
+            text-align: center;
+            justify-content: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            font: 600;
+
+        }
+
+        .login-container .hidden {
+            display: none;
+        }
