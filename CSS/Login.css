@@ -5,7 +5,7 @@
 
 body {
             height: 100vh;
-            background-image: url('D:/kiitsemesters/SEM 7/Minor Project/Front End/Images/BG.png');
+            background-image: url('../Images/BG.png');
             background-size:cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -45,7 +45,7 @@ body {
 
         .image-container {
             height: 200px;
-            background-image: url('D:/kiitsemesters/SEM 7/Minor Project/Front End/Images/login.png');
+            background-image: url('../Images/login.png');
             background-size:contain;
             background-repeat: no-repeat;
             background-position: center;
