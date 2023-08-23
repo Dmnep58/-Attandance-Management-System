@@ -1,28 +1,37 @@
 package Functionality;
 
-class Login{
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
+import DataBaseConnection.DBConnection;
+
+class Login{
+	
+	DBConnection dbconnect = new DBConnection();
 
 	public boolean isvalid(long Uid, String Password){
-
+		
 		String query = "select * from  Registration where id = ? and password = ?";
 
 		try{
-			Connection connetion = DBConnetion.getConnection();
+			Connection connetion = dbconnect.getConnection();
 
-			PreparedStatement preparedstatement = connection.preparedstatement(query);
+			PreparedStatement preparedstatement = connetion.prepareStatement(query);
 
-			preparedstatement.setLong(1,Long.ValueOf("id"));
+			preparedstatement.setLong(1,Long.valueOf("id"));
 			preparedstatement.setString(2,"password");
 
 			preparedstatement.executeQuery();
+
 		}
 
 		catch(SQLException e){
-
+			return false;
 		}
 
-		connection.close();
+		return true;
 	}
 
 	public String getRole(long Uid){
@@ -31,9 +40,9 @@ class Login{
 		String role = "";
 
 		try{
-			connetion = DBConnetion.getConnection();
+			connetion = dbconnect.getConnection();
 
-			PreparedStatement preparedstatement = connection.preparedstatement(query);
+			PreparedStatement preparedstatement = connetion.prepareStatement(query);
 
 			preparedstatement.setLong(1,Uid);
 
@@ -43,11 +52,10 @@ class Login{
 				role = r.getString("role");
 			}
 		}
-		catch(SQLExcetion e){
+		catch(SQLException e){
 
 		}
 
-		connection.close();
 
 		return role;
 	}
