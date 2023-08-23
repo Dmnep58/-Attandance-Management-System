@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 
-calss DBConnection{
+public class DBConnection{
 	static Connection connection;
 	
     private static final String URL = "jdbc:mysql://localhost:3306/online_bidding_system";
