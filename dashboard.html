@@ -1,22 +1,37 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./CSS/Admin.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/header.css">
-  <title>Side Section Example</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>Admin Dashboard</title>
 </head>
 <body>
-  <div class="main-wrapper">
-    <section class="side-section">
-      <ul>
-        <li><a href="dashboard.html" target="content">Dashboard</a></li>
-      </ul>
+  <header>
+    <h1>Admin Dashboard</h1>
+  </header>
+  
+  <main>
+    <section class="manage-section">
+      <h2>Manage Students and Teachers</h2>
+      <div class="manage-options">
+        <button id="manage-students">Manage Students</button>
+        <button id="manage-teachers">Manage Teachers</button>
+      </div>
+      <div id="manage-content" class="manage-content"></div>
     </section>
-    <section class="content-section">
-      <iframe name="content" id="content-frame" src="dashboard.html" frameborder="0"></iframe>
+    
+    <section class="top-section">
+      <h2>Top Teachers and Students</h2>
+      <div class="top-content">
+        <div class="top-teachers" id="top-teachers"></div>
+        <div class="top-students" id="top-students"></div>
+      </div>
     </section>
-  </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
