@@ -17,7 +17,7 @@
             <h2>Take the first step to </h2>
             <h2><span>Knowledge with us</span></h2>
             <div class="image-container"></div>
-            <form id="login-form">
+            <form action="login" method = "post" >
                 <div class="input-group">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username">
@@ -30,33 +30,10 @@
                     <button type="submit" class="but" id="send-button">Login</button>
                 </div>
             </form>
+            
             <div class="error-message hidden" id="error-message"></div>
             
         </div>
     </div>
 </body>
-
-<script>
-    // Get references to elements
-    const form = document.getElementById("login-form");
-    const sendButton = document.getElementById("send-button");
-    const errorMessage = document.getElementById("error-message");
-
-    sendButton.addEventListener("click", function(event) {
-        event.preventDefault();
-
-        // Get values from input fields
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
-
-        // Sample validation 
-        if (username === "" || password === "") {
-            errorMessage.textContent = "Please fill in all fields.";
-            errorMessage.classList.remove("hidden");
-        } else {
-            errorMessage.classList.add("hidden");
-            
-        }
-    });
-</script>
 </html>
