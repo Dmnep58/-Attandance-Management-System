@@ -1,0 +1,17 @@
+create a log file
+
+
+// SQL updates requirement
+
+
+1. merge all the registration table to one.
+
+2. student id must be in Bigint.
+
+3. add the role column in the registration table (Role)
+
+
+// html update 
+
+1. update the login page replece the name (input field ) to id and password input name to password.
+2. change the name of StudentPanel to Student , TeacherPanel to Teacher and AdminPanel to Admin.
