@@ -10,7 +10,7 @@ body {
 
 .main-wrapper {
   display: flex;
-  height: 92vh;
+  height:95vh;
   overflow: hidden;
 }
 
@@ -20,8 +20,19 @@ body {
   color: #fff;
 }
 
+.side-section .profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
 .side-section ul {
   list-style: none;
+}
+
+.side-section h3{
+  text-align: center;
 }
 
 .side-section ul li a {
@@ -32,6 +43,16 @@ body {
   font-size: large;
   text-align: center;
   padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.side-section ul li a img{
+  height: 27px;
+  width: 30px;
+  margin-right: 3px;
 }
 
 .content-section {
@@ -46,7 +67,3 @@ body {
   border: none;
 }
 
-.profile{
-  width: 80px;
-  height: 80px;
-}
