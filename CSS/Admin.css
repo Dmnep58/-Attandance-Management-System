@@ -10,7 +10,7 @@ body {
 
 .main-wrapper {
   display: flex;
-  height:95vh;
+  height:94.5vh;
   overflow: hidden;
 }
 
@@ -57,8 +57,7 @@ body {
 
 .content-section {
   flex: 1;
-  padding: 1px;
-  overflow: auto;
+  overflow: inherit;
 }
 
 #content-frame {
