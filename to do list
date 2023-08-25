@@ -15,3 +15,13 @@ create a log file
 
 1. update the login page replece the name (input field ) to id and password input name to password.
 2. change the name of StudentPanel to Student , TeacherPanel to Teacher and AdminPanel to Admin.
+
+
+// Admin Dashboard Updates 
+
+1. no. of student
+2. no. of teacher
+3. no. of course
+4. currently offered courses.
+5. Total total working Days
+6. Today Present student ratio.
