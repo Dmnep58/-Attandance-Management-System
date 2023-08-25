@@ -1,0 +1,136 @@
+**DASHBOARD**
+
+--Generate Reports--
+Daily, weekly, or monthly attendance reports.
+Student progress and performance reports.
+
+
+--Notifications:--
+Send notifications to students and teachers.
+Notify about upcoming events or important updates.
+
+--Event Calendar:--
+Display a calendar with important dates such as exams, holidays, and special events.
+
+--Backup and Restore:--
+Perform data backups.
+Restore data in case of issues.
+
+
+**COURSE**
+
+--Add new course--
+
+--View/Edit course--
+This option lets administrators view a list of all courses.
+They can also edit the details of existing courses, such as the course name, code, description, and teacher assigned.
+
+--Assign teacher to course--
+Administrators can use this option to assign a teacher to a specific course.
+This is particularly useful for keeping track of who is responsible for each course.
+
+--View course enrollment--
+This option allows administrators to see a list of students enrolled in each course.
+
+--Delete course--
+
+--Course registeration setting--
+Configure settings related to course registration, such as open/close registration periods and maximum enrollment limits.
+
+**CLASS**
+
+--Create new class--
+
+--Class schedule--
+Administrators can view the schedule for a specific class, including class times, room numbers, and days of the week.
+
+--Class announcement--
+Allow administrators to create and manage class-specific announcements that students can view.
+
+--Class resources--
+Allow administrators to upload and manage class-related resources such as materials, assignments, and syllabi.
+
+
+**FACULTY
+
+--Add new faculty member--
+
+--View/edit faculty profile--
+Administrators can view a list of all faculty members.
+They can also edit the details of existing faculty profiles, such as name, contact information, and subjects they teach.
+
+--Assign course to faculty--
+Administrators can assign courses or classes to specific faculty members.
+
+--Faculty attendance record--
+Provide access to attendance records for individual faculty members.
+
+--Faculty leave management--
+Provide tools for faculty members to request and manage leave, and for administrators to approve or manage those requests.
+
+--Faculty Research & Publications--
+
+--Faculty awards & recognition--
+
+--Faculty mentoring--
+Enable administrators to manage mentorship relationships between faculty members and students.
+
+**STUDENTS
+
+--Add new student--
+
+--View/edit student profile--
+Administrators can view a list of all students.
+They can also edit the details of existing student profiles, such as personal information, contact details, and enrollment status.
+
+--Student progress tracking--
+Allow administrators to track students' academic progress, grades, and overall performance.
+
+--Student Behavior & Discipline--
+Keep track of student behavior incidents and disciplinary actions
+
+--Student advising & counselling--
+Enable administrators to manage student advising and counseling sessions.
+
+--Student health & medical record--
+
+--Student clubs & organization--
+Manage student involvement in clubs, organizations, and extracurricular activities.
+
+--Student awards & recognition--
+
+--Student mentoring & support--
+Enable administrators to facilitate student mentoring relationships and support programs.
+
+**STUDENT ATTENDANCE**
+
+--View attendance record--
+--Student leave application--
+
+**USERS**
+
+-- User List--
+This option allows administrators to view a list of all user accounts in the system.
+It provides a snapshot of the user base and their roles.
+
+--Add new user--
+Administrators can use this option to add new users to the system.
+Typically, this involves filling out a form with details such as username, email, password, and role.
+
+--View/Edit user profile--
+Administrators can view and edit user profiles, including details like name, contact information, and permissions.
+This option is useful for updating user information when needed.
+
+--Assign roles & permissions--
+This option enables administrators to assign different roles and associated permissions to users.
+Roles might include "Administrator," "Teacher," "Student," each with their own access levels.
+
+--Disable/Delete user account--
+Allow administrators to disable or delete user accounts when necessary.
+Disabling an account might temporarily restrict access, while deleting an account permanently removes it from the system.
+
+
+
+
+
+
