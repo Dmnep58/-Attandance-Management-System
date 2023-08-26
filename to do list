@@ -15,6 +15,7 @@ create a log file
 
 1. update the login page replece the name (input field ) to id and password input name to password.
 2. change the name of StudentPanel to Student , TeacherPanel to Teacher and AdminPanel to Admin.
+3. update teacher ----------------> faculty
 
 
 // Admin Dashboard Updates 
