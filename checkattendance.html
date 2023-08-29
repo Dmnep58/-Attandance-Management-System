@@ -1,12 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-  <title>Side Section Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Base styles */
+        
+        body {
+            background: linear-gradient(to right, #81e6dc, white, #800080);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* First section styles */
+        
+        .section1 {
+            padding: 20px;
+        }
+        
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        /* Second section styles */
+        
+        .section2 {
+            padding: 20px;
+            max-height: 75vh;
+            overflow-y: auto;
+        }
+        
+        .section2 h2 {
+            text-align: center;
+        }
+        /*Both section*/
+        
+        .section1,
+        .section2 {
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+        /* Base styles for the table */
+        
+        .users {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+        /* Style for the table header */
+        
+        .users th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        /* Style for the table rows */
+        
+        .users tr {
+            border: 1px solid #ddd;
+        }
+        /* Alternating row background colors */
+        
+        .users tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        /* Style for the table cells */
+        
+        .users td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        /* Responsive styles */
+        
+        @media (max-width: 768px) {
+            .button-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .button {
+                margin-top: 5px;
+                width: 100%;
+            }
+            .users {
+                font-size: 14px;
+            }
+            .users th,
+            .users td {
+                padding: 6px;
+            }
+        }
+    </style>
 </head>
+
 <body>
- 
+    <!-- Header  section -->
+    <div class="section1">
+        <div class="title">Attandance Details</div>
+        <div class="button-container">
+            <button class="button">Choose Class</button>
+            <button class="button">Choose Session</button>
+        </div>
+    </div>
+
+    <!-- Table section -->
+    <div class="section2">
+        <h2>Table Section</h2>
+        <table class="users">
+            <thead>
+                <tr>
+                    <th>S.N</th>
+                    <th>User Name</th>
+                    <th>User Id</th>
+                    <th>User Contact</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>JD123</td>
+                    <td>john@example.com</td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
+
 </html>
