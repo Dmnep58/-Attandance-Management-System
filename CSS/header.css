@@ -1,77 +1,74 @@
    /* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-}
-
-.left-section, .right-section {
-  display: flex;
-  align-items: center;
-}
-
-.left-section img, .right-section img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
-
-.right-section span {
-  margin-left: 5px;
-}
-
-
-/* Navigation menu */
-.nav {
-  display: none;
-  background-color: #444;
-}
-
-.nav ul {
-  list-style: none;
-  padding: 20px;
-}
-
-.nav ul li {
-  margin-bottom: 10px;
-}
-
-.nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Media query for responsive menu */
-@media screen and (max-width: 768px) {
-  .header {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .right-section {
-    margin-top: 10px;
-  }
-
-  .toggle-menu {
-    display: block;
-  }
-
-  .nav {
-    display: none;
-    width: 100%;
-  }
-
-  .nav.active {
-    display: block;
-  }
-
-}
+   
+   * {
+       margin: 0;
+       padding: 0;
+   }
+   
+   .header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       justify-content: center;
+       padding: 10px 20px;
+       background-color: #333;
+       color: #fff;
+   }
+   
+   .left-section,
+   .right-section {
+       display: flex;
+       align-items: center;
+   }
+   
+   .left-section img,
+   .right-section img {
+       width: 30px;
+       height: 30px;
+       margin-right: 10px;
+   }
+   
+   .right-section span {
+       margin-left: 5px;
+   }
+   /* Navigation menu */
+   
+   .nav {
+       display: none;
+       background-color: #444;
+   }
+   
+   .nav ul {
+       list-style: none;
+       padding: 20px;
+   }
+   
+   .nav ul li {
+       margin-bottom: 10px;
+   }
+   
+   .nav ul li a {
+       color: #fff;
+       text-decoration: none;
+   }
+   /* Media query for responsive menu */
+   
+   @media screen and (max-width: 768px) {
+       .header {
+           flex-direction: row;
+           align-items: flex-start;
+       }
+       .right-section {
+           margin-top: 10px;
+       }
+       .toggle-menu {
+           display: block;
+       }
+       .nav {
+           display: none;
+           width: 100%;
+       }
+       .nav.active {
+           display: block;
+       }
+   }
