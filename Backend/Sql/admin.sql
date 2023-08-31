@@ -4,6 +4,9 @@
 SELECT * from admin;
 
 
+-- fetch password 
+SELECT admin_password from admin where admin_id=1234;
+
 -- insert into table
 insert into admin values(12,'p1','prahtamsharma12@gmail.com','ktm Nepal','admin2.png');
 
