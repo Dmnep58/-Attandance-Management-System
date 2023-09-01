@@ -6,7 +6,7 @@ SELECT * FROM course;
 TRUNCATE table course;
 
 -- data insertion in the table
-INSERT into course values(? ,? , ? , ? , ? , ? );
+INSERT into course values(1 ,1 , 21 , 8 , 9 , 'Math' );
 
 
 -- fetch data according to course_name

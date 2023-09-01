@@ -6,7 +6,7 @@ SELECT * FROM class;
 TRUNCATE table class;
 
 -- data insetion in the table
-INSERT into class values(? ,? , ? , ? , ? , ? , ? , ?,?);
+INSERT into class values(? ,? , ? , ? , ? , ? , ? , ?, ?);
 
 
 -- fetch data according to class name
