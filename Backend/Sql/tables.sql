@@ -30,15 +30,15 @@ create table attendance(
 	present Bigint,
 	absent Bigint,
 	teacher_name varchar(100) ,
-	foreign key(uid) references  registration(uid)
+	foreign key(uid) references  registration(uid) ON DELETE CASCADE
 	);
 
 
 	/* course table */
 	create table course(
     course_id bigint primary key,
-		student_id bigint ,foreign key(student_id) references registration(uid),
-		teacher_id bigint, foreign key(teacher_id) references registration(uid),
+		student_id bigint ,foreign key(student_id) references registration(uid) ON DELETE CASCADE,
+		teacher_id bigint, foreign key(teacher_id) references registration(uid) ON DELETE CASCADE,
 		start_date time,
 		end_date time,
 		course_name varchar(20)
@@ -57,8 +57,8 @@ create table attendance(
 		image varchar(50),
 		start_time time,
 		end_time time,
-		foreign key(teacher_id) references registration(uid),
-		foreign key (course_id) references course(course_id)
+		foreign key(teacher_id) references registration(uid) ON DELETE CASCADE,
+		foreign key (course_id) references course(course_id) ON DELETE CASCADE
 		
 	);
 
