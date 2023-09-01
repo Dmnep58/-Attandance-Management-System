@@ -36,3 +36,7 @@ alter table registration rename column roll to role;
 /* update image */
 UPDATE registration
 SET image=? where uid=? ;
+
+
+/* deleting rows from registration id */
+DELETE from registration where uid=? ;
