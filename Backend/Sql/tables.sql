@@ -34,7 +34,38 @@ create table attendance(
 	);
 
 
+	/* course table */
+	create table course(
+    course_id bigint primary key,
+		student_id bigint ,foreign key(student_id) references registration(uid),
+		teacher_id bigint, foreign key(teacher_id) references registration(uid),
+		start_date time,
+		end_date time,
+		course_name varchar(20)
+		
+	);
+
+
+	/* class table */
+
+ 
+	create table class(
+		class_id bigint primary key,
+		class_name varchar(20),
+		teacher_id bigint ,
+		course_id bigint,
+		image varchar(50),
+		start_time time,
+		end_time time,
+		foreign key(teacher_id) references registration(uid),
+		foreign key (course_id) references course(course_id)
+		
+	);
+
 -- to Drop the Tables
 Drop TABLE admin;
 DROP TABLE registration;
 DROP Table attendance;
+DROP Table course;
+DROP Table class;
+
