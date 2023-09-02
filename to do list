@@ -26,3 +26,8 @@ create a log file
 4. currently offered courses.
 5. Total total working Days
 6. Today Present student ratio.
+
+
+//faculty update
+roll no------> id  
+for edit button ---> keep same as student edit button but instead of parents put edit course timing or add more course, then address of faculty, mentee list(add mentee), update email id & phone no
