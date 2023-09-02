@@ -22,7 +22,8 @@ select count(*) from course where course_name=?;
 UPDATE course
 SET course_name = ? WHERE course_id = ?;
 
-
+---count no of course
+SELECT COUNT(course_name) FROM course;
 
 
 
