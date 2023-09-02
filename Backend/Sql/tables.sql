@@ -45,6 +45,11 @@ create table attendance(
 		
 	);
 
+	/* dropping columns  student_id and teacher_id  */
+    alter table course
+	drop column student_id;
+	alter table course
+	drop column teacher_id;
 
 	/* class table */
 
@@ -62,10 +67,23 @@ create table attendance(
 		
 	);
 
+/* enrollment table */
+
+create table enrollment(
+    course_id bigint,
+		teacher_id bigint,
+		foreign key (course_id) references course(course_id),
+		foreign key (teacher_id) references registration(uid)
+	);
+	
+	
+
+
 -- to Drop the Tables
 Drop TABLE admin;
 DROP TABLE registration;
 DROP Table attendance;
 DROP Table course;
 DROP Table class;
+drop table enrollment;
 
