@@ -6,8 +6,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import Functionality.AdminDataFetch;
+import com.google.gson.JsonObject;
+import com.Attandance.Functionality.AdminDataFetch;
 
 /**
  * Servlet implementation class AdminPasswordUpdate
@@ -18,23 +18,49 @@ public class AdminPasswordUpdate extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        // Retrieve form parameters from the request
+        String oldPassword = request.getParameter("oldpassword");
+        String newPassword = request.getParameter("newpassword");
+        String confirmNewPassword = request.getParameter("confirmnewpassword");
+        long adminId = Long.parseLong(request.getParameter("admin_id"));
 
-        String password = request.getParameter("oldpassword");
-        String newpass = request.getParameter("newpass");
-        String confirmpass = request.getParameter("newpass1");
-        String admin_id = request.getParameter("admin_id");
+        // Perform password validation and update logic here
+        boolean success = validateAndUpdatePassword(adminId, oldPassword, newPassword, confirmNewPassword);
+
+        // Prepare a JSON response
+        JsonObject jsonResponse = new JsonObject();
+        if (success) {
+            jsonResponse.addProperty("status", "success");
+            jsonResponse.addProperty("message", "Password updated successfully.");
+        } else {
+            jsonResponse.addProperty("status", "error");
+            jsonResponse.addProperty("message", "Password update failed. Please check your inputs.");
+        }
+
+        // Set the content type of the response to JSON
+
+        response.setContentType("application/json");
+
+        // Write the JSON response to the client
+        response.getWriter().write(jsonResponse.toString());
+    }
+
+    // Implement your password validation and update logic here
+    private boolean validateAndUpdatePassword(Long adminId, String oldPassword, String newPassword,
+            String confirmNewPassword) {
 
         AdminDataFetch adminDataFetch = new AdminDataFetch();
 
-        if (newpass.equals(confirmpass)) {
-            if (password.equals(adminDataFetch.oldpass(Long.parseLong(admin_id)))) {
-                adminDataFetch.update(confirmpass, Long.parseLong(admin_id));
-            } else {
-                request.setAttribute("message", "old password mismatched");
-            }
-        } else {
-            request.setAttribute("message", "new password mismatched");
+        boolean isvalid = (newPassword.equals(confirmNewPassword)) ? true : false;
+
+        if (isvalid) {
+            isvalid = (oldPassword.equals(adminDataFetch.oldpass(adminId))) ? true : false;
         }
+        if (isvalid) {
+            adminDataFetch.update(confirmNewPassword, adminId);
+        }
+
+        return isvalid;
     }
 
 }
