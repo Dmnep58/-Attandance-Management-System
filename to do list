@@ -31,3 +31,8 @@ create a log file
 //faculty update
 roll no------> id  
 for edit button ---> keep same as student edit button but instead of parents put edit course timing or add more course, then address of faculty, mentee list(add mentee), update email id & phone no
+
+--> 3 september
+add course enrollment table where student id is attached with course id and time of course
+so that fetching the data from the teacher end becomes easy.
+

@@ -37,19 +37,13 @@ create table attendance(
 	/* course table */
 	create table course(
     course_id bigint primary key,
-		student_id bigint ,foreign key(student_id) references registration(uid) ON DELETE CASCADE,
-		teacher_id bigint, foreign key(teacher_id) references registration(uid) ON DELETE CASCADE,
-		start_date time,
-		end_date time,
-		course_name varchar(20)
+	start_date time,
+	end_date time,
+	course_name varchar(20)
 		
 	);
 
-	/* dropping columns  student_id and teacher_id  */
-    alter table course
-	drop column student_id;
-	alter table course
-	drop column teacher_id;
+
 
 	/* class table */
 
