@@ -6,7 +6,7 @@ SELECT * FROM course;
 TRUNCATE table course;
 
 -- data insertion in the table
-INSERT into course values(1 ,1 , 21 , 8 , 9 , 'Math' );
+INSERT into course values(?,?,?,?);
 
 
 -- fetch data according to course_name
@@ -20,7 +20,7 @@ select count(*) from course where course_name=?;
 
 /* update course name  */
 UPDATE course
-SET course_name = ? WHERE course_id = ?;
+SET course_name = ?, start_date=? , end_date=? WHERE course_id = ?;
 
 ---count no of course
 SELECT COUNT(*) FROM course;
