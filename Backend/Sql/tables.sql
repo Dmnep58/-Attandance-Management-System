@@ -1,5 +1,3 @@
-/*  admin table*/
-
 /* admin table */
 create table admin(
 admin_id BIGINT,
@@ -15,21 +13,71 @@ admin_password varchar(20) not null,
 create table  registration(
     uid  bigint  ,
     password varchar(20),
-	regno integer unique not null,
-	phnno integer  unique not null,
+	regno BIGINT unique not null,
+	phnno BIGINT  unique not null,
 	name varchar(20) not null,
 	email varchar(50) not null,
 	address varchar(50) not null,
 	image varchar(50),
+	roll varchar(20),
 	primary key(uid)
 );
 
 /* attendance table */
 create table attendance(
 	attendance_date date,
-	uid integer,
-	present integer,
-	absent integer,
+	uid Bigint,
+	present Bigint,
+	absent Bigint,
 	teacher_name varchar(100) ,
-	foreign key (uid) references  registration(uid)
+	foreign key(uid) references  registration(uid) ON DELETE CASCADE
 	);
+
+
+	/* course table */
+	create table course(
+    course_id bigint primary key,
+	start_date time,
+	end_date time,
+	course_name varchar(20)
+		
+	);
+
+
+
+	/* class table */
+
+ 
+	create table class(
+		class_id bigint primary key,
+		class_name varchar(20),
+		teacher_id bigint ,
+		course_id bigint,
+		image varchar(50),
+		start_time time,
+		end_time time,
+		foreign key(teacher_id) references registration(uid) ON DELETE CASCADE,
+		foreign key (course_id) references course(course_id) ON DELETE CASCADE
+		
+	);
+
+/* enrollment table */
+
+create table enrollment(
+    course_id bigint,
+		teacher_id bigint,
+		foreign key (course_id) references course(course_id),
+		foreign key (teacher_id) references registration(uid)
+	);
+	
+	
+
+
+-- to Drop the Tables
+Drop TABLE admin;
+DROP TABLE registration;
+DROP Table attendance;
+DROP Table course;
+DROP Table class;
+drop table enrollment;
+

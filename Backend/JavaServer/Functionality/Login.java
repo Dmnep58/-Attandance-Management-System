@@ -7,56 +7,33 @@ import java.sql.SQLException;
 
 import DataBaseConnection.DBConnection;
 
-class Login{
-	
-	DBConnection dbconnect = new DBConnection();
+public class Login {
 
-	public boolean isvalid(long Uid, String Password){
-		
-		String query = "select * from  Registration where id = ? and password = ?";
+	public boolean isvalid(long Uid, String Password) {
 
-		try{
-			Connection connetion = dbconnect.getConnection();
+		String query = "select * from  admin where admin_id = ? and admin_password = ?";
+		Connection connetion = null;
+		try {
+			connetion = DBConnection.getConnection();
 
 			PreparedStatement preparedstatement = connetion.prepareStatement(query);
 
-			preparedstatement.setLong(1,Long.valueOf("id"));
-			preparedstatement.setString(2,"password");
+			preparedstatement.setLong(1, Uid);
+			preparedstatement.setString(2, Password);
 
-			preparedstatement.executeQuery();
+			ResultSet resultSet = preparedstatement.executeQuery();
 
+			while (resultSet.next()) {
+				return true;
+			}
+			connetion.close();
 		}
 
-		catch(SQLException e){
+		catch (SQLException e) {
 			return false;
 		}
 
-		return true;
+		return false;
 	}
 
-	public String getRole(long Uid){
-		String query = "select role from Registration where id = ?";
-		Connection connetion = null;
-		String role = "";
-
-		try{
-			connetion = dbconnect.getConnection();
-
-			PreparedStatement preparedstatement = connetion.prepareStatement(query);
-
-			preparedstatement.setLong(1,Uid);
-
-			ResultSet r = preparedstatement.executeQuery();
-
-			while(r.next()){
-				role = r.getString("role");
-			}
-		}
-		catch(SQLException e){
-
-		}
-
-
-		return role;
-	}
 }
