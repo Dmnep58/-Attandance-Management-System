@@ -174,4 +174,29 @@ public class TeacherStudentDetails {
         return nLong;
     }
 
+    // Delete the record in registration table.
+
+    public boolean deleteRecord(long uid) {
+        final Logger logger = Logger.getLogger(TeacherStudent.class.getName());
+        String query = "DELETE FROM registration WHERE uid = ?";
+
+        try (Connection connection = DBConnection.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+
+            preparedStatement.setLong(1, uid);
+            int result = preparedStatement.executeUpdate();
+
+            if (result > 0) {
+                return true;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            // You may consider logging the exception here or throwing a custom exception.
+            logger.log(Level.SEVERE, "Error deleting record", e);
+        }
+
+        return false;
+    }
+
 }
