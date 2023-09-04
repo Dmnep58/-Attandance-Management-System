@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            /* Enable wrapping for responsive design */
+            max-width: 800px;
+            /* Set a maximum width for the container */
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-container {
+            flex: 1;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .login-container {
+            flex: 2;
+            padding: 40px;
+        }
+        
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        button {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        button:hover {
+            background: #0056b3;
+        }
+        
+        span {
+            text-align: center;
+            color: red;
+        }
+        /* Media Query for smaller screens */
+        
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                /* Stack elements on smaller screens */
+                max-width: 100%;
+                /* Use full width on smaller screens */
+            }
+            .image-container,
+            .login-container {
+                flex: 1;
+                /* Full width for both containers on smaller screens */
+                padding: 20px;
+                text-align: center;
+            }
+            .image-container img {
+                max-width: 80%;
+                /* Reduce image width on smaller screens */
+            }
+            button {
+                margin-left: 0;
+                /* Center the button on smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-container">
+            <div>
+                <h2>Discipline is the key to success</h2>
+            </div>
+            <img src="../Images/TeacherStudent/pic.png" alt="Image">
+        </div>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="process_login.php" method="POST">
+                <div class="form-group">
+                    <label for="username">Username<span>*</span></label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password<span>*</span></label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
