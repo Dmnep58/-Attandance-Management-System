@@ -70,6 +70,7 @@ create table enrollment(
 		foreign key (teacher_id) references registration(uid)
 	);
 	
+-- student enrollment table
 create table studentenrollment(
 	sn bigint auto_increment primary key,
 	class_id bigint,
