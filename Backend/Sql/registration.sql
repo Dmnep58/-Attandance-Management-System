@@ -3,7 +3,7 @@ SELECT * FROM registration;
 
 
 --truncate the table
-TRUNCATE table registration;
+TRUNCATE table registration;    
 
 -- data insetion in the table
 INSERT into registration values(? ,? , ? , ? , ? , ? , ? , ?);

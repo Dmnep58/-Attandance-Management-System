@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .select-container,
+        .date {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            height: 40px;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        select,
+        h2 {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px;
+        }
+        /* Style for the table */
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="select-container">
+        <label for="date-select"><h2>Select Batch</h2></label>
+        <select id="date-select">
+        <option>Select Batch</option>
+        <!-- Add more date options here -->
+    </select>
+        <div class="date">
+            <h2>Select Date</h2>
+            <input type="date" name="date" id="date">
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Student Roll</th>
+                <th>Mark Attendance</th>
+                <th>Present Days</th>
+                <th>Absent Days</th>
+                <th>Total Days</th>
+                <th>Percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Student 1</td>
+                <td>Roll 1</td>
+                <td>
+                    <input type="checkbox" class="attendance-checkbox" checked>
+                </td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>Student 2</td>
+                <td>Roll 2</td>
+                <td>
+                    <input type="checkbox" class="attendance-checkbox">
+                </td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0%</td>
+            </tr>
+            <!-- Add more student rows as needed -->
+        </tbody>
+    </table>
+
+    <script>
+        // JavaScript to handle date selection
+        const dateSelect = document.getElementById("date-select");
+        dateSelect.addEventListener("change", function() {
+            const selectedDate = dateSelect.value;
+            // You can handle the selected date here, e.g., update the table data
+        });
+    </script>
+
+</body>
+
+</html>
