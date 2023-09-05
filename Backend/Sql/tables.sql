@@ -70,8 +70,14 @@ create table enrollment(
 		foreign key (teacher_id) references registration(uid)
 	);
 	
-	
-
+create table studentenrollment(
+	sn bigint auto_increment primary key,
+	class_id bigint,
+	student_id bigint,
+	batch varchar(20),
+	foreign key(class_id) references (class_id),
+	foreign key(student_id) references registration (uid) on DELETE CASCADE  
+);
 
 -- to Drop the Tables
 Drop TABLE admin;
@@ -80,4 +86,5 @@ DROP Table attendance;
 DROP Table course;
 DROP Table class;
 drop table enrollment;
+
 
