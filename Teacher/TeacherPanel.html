@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../CSS/header.css">
     <style>
         * {
             margin: 0;
@@ -79,6 +78,74 @@
             height: 100%;
             border: none;
         }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        .left-section,
+        .right-section {
+            display: flex;
+            align-items: center;
+        }
+        
+        .left-section img,
+        .right-section img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .right-section span {
+            margin-left: 5px;
+        }
+        /* Navigation menu */
+        
+        .nav {
+            display: none;
+            background-color: #444;
+        }
+        
+        .nav ul {
+            list-style: none;
+            padding: 20px;
+        }
+        
+        .nav ul li {
+            margin-bottom: 10px;
+        }
+        
+        .nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        /* Media query for responsive menu */
+        
+        @media screen and (max-width: 768px) {
+            .header {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .right-section {
+                margin-top: 10px;
+            }
+            .toggle-menu {
+                display: block;
+            }
+            .nav {
+                display: none;
+                width: 100%;
+            }
+            .nav.active {
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -97,7 +164,7 @@
         <section class="side-section">
             <ul>
                 <div class="profile">
-                    <img src="./Images/Devi.jpg" alt="image" width="80px" height="80px">
+                    <img src="../Images/Devi.jpg" alt="image" width="80px" height="80px">
                 </div>
                 <h3><span>Devi Prasad Mishra</span></h3>
 
@@ -127,7 +194,7 @@
 
                 <br>
                 <li>
-                    <a href="UpdatePassword.html" target="content"><img src="../Images/frontIcon/password.png" n>UpdatePassword</a>
+                    <a href="UpdatePassword.html" target="content"><img src="../Images/frontIcon/password.png">UpdatePassword</a>
                 </li>
                 <hr><br>
                 <li>
@@ -135,8 +202,8 @@
                 </li>
             </ul>
         </section>
-        <section class=" content-section ">
-            <iframe name="content " id="content-frame " src="Teacherdashboard.html " frameborder="0 "></iframe>
+        <section class="content-section">
+            <iframe name="content" id="content-frame" src="Teacherdashboard.html" frameborder="0"></iframe>
         </section>
     </div>
 </body>
