@@ -1,9 +1,6 @@
 -- fetch all the data from the attendance
 SELECT * FROM attendance
 
-/* insert in to table attendance  */
-INSERT INTO attendance
-VALUES (?,?,?,?,?,?); 
 
 -- insertion of a record in the attendance table 
 insert into attendance(student_id,teacher_id,date,present_days,total_days,Status) 
