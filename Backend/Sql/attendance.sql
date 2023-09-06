@@ -6,8 +6,9 @@ INSERT INTO attendance
 VALUES (?,?,?,?,?,?); 
 
 -- insertion of a record in the attendance table 
-insert into attendance(student_id,teacher_id,data,present_days,total_days,Status) 
-VALUES();
+insert into attendance(student_id,teacher_id,date,present_days,total_days,Status) 
+VALUES(1908,75823,'2023-09-06 10:00:00',0,0,'Present');
+
 
 
 
