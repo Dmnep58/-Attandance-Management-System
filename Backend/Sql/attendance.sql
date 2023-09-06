@@ -9,7 +9,22 @@ VALUES(1908,75823,'2023-09-06 10:00:00',0,0,'Present');
 -- Fetch Attendance data according date 
 SELECT * from attendance where date=?;
 
--- Fetch Attendance data according to batch
+
+--Fetch Attendence data according batch
+SELECT se.*, b.branch_name
+FROM studentenrollment se
+INNER JOIN branch b ON se.branch_id = b.branch_id
+WHERE b.branch_name = 'YourBranchName';
+
+
+-- Fetch Attendance data according to batch and date
+SELECT a.*, se.batch
+FROM attendance a
+INNER JOIN studentenrollment se ON a.student_id = se.student_id
+WHERE se.branch = 'YourBranchName'
+AND a.Date = 'YYYY-MM-DD'; 
+
+
 
 
 /* reporting present or abscent  */
