@@ -103,6 +103,6 @@ DROP Table attendance;
 DROP Table course;
 DROP Table class;
 drop table enrollment;
-drop TABLE attendance;
+drop table studentenrollment;
 
 
