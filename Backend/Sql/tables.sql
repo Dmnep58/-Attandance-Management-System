@@ -81,9 +81,6 @@ create table studentenrollment(
 );
 
 
-/* DROP TABLE ATTENDANCE */
-
-DROP TABLE attendance;
 
 /* NEW ATTENDANCE TABLE */
 	CREATE TABLE attendance (
@@ -106,5 +103,6 @@ DROP Table attendance;
 DROP Table course;
 DROP Table class;
 drop table enrollment;
+drop TABLE attendance;
 
 
