@@ -76,8 +76,8 @@ create table studentenrollment(
 	class_id bigint,
 	student_id bigint,
 	batch varchar(20),
-	foreign key(class_id) references (class_id) ON DELETE CASCADE,
-	foreign key(student_id) references registration (uid) on DELETE CASCADE  
+	foreign key(class_id) references class(class_id) ON DELETE CASCADE,
+	foreign key(student_id) references registration(uid) on DELETE CASCADE  
 );
 
 
