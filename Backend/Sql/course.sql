@@ -23,3 +23,6 @@ SELECT COUNT(*) FROM course;
 
 /* deleting rows from course id */
 DELETE from course where course_id=? ;
+
+-- Fetech all the batches
+select batch from course;

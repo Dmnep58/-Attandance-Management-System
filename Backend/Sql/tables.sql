@@ -1,9 +1,11 @@
 /* admin table */
 create table admin(
 admin_id BIGINT,
+admin_name varchar(30) not null,
 admin_password varchar(20) not null,
 	admin_email varchar(50)not null,
 	admin_address varchar(50) not null,
+	admin_phoneno BIGINT,
 	admin_image varchar(50) not null,
 	primary key(admin_id)
 );
@@ -61,9 +63,9 @@ create table attendance(
 		
 	);
 
-/* enrollment table */
+/* faculty enrollment table */
 
-create table enrollment(
+create table facultyenrollment(
     course_id bigint,
 		teacher_id bigint,
 		foreign key (course_id) references course(course_id) ON DELETE CASCADE,
