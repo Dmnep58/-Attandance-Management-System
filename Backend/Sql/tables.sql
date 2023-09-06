@@ -80,6 +80,21 @@ create table studentenrollment(
 	foreign key(student_id) references registration (uid) on DELETE CASCADE  
 );
 
+
+/* DROP TABLE ATTENDANCE */
+
+DROP TABLE ATTENDANCE;
+
+/* NEW ATTENDANCE TABLE */
+	CREATE TABLE Attendance (
+    ID  int AUTO_INCREMENT PRIMARY KEY,
+    Student_id bigint,
+    Date timestamp,
+    Status ENUM('Present', 'Absent'),
+	foreign key(student_id) references registration(uid)
+);
+
+
 -- to Drop the Tables
 Drop TABLE admin;
 DROP TABLE registration;
