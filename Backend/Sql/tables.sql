@@ -5,7 +5,6 @@ admin_password varchar(20) not null,
 	admin_email varchar(50)not null,
 	admin_address varchar(50) not null,
 	admin_image varchar(50) not null,
-	
 	primary key(admin_id)
 );
 
@@ -67,8 +66,8 @@ create table attendance(
 create table enrollment(
     course_id bigint,
 		teacher_id bigint,
-		foreign key (course_id) references course(course_id),
-		foreign key (teacher_id) references registration(uid)
+		foreign key (course_id) references course(course_id) ON DELETE CASCADE,
+		foreign key (teacher_id) references registration(uid) ON DELETE CASCADE
 	);
 	
 -- student enrollment table
@@ -77,26 +76,26 @@ create table studentenrollment(
 	class_id bigint,
 	student_id bigint,
 	batch varchar(20),
-	foreign key(class_id) references (class_id),
+	foreign key(class_id) references (class_id) ON DELETE CASCADE,
 	foreign key(student_id) references registration (uid) on DELETE CASCADE  
 );
 
 
 /* DROP TABLE ATTENDANCE */
 
-DROP TABLE ATTENDANCE;
+DROP TABLE attendance;
 
 /* NEW ATTENDANCE TABLE */
-	CREATE TABLE Attendance (
-    ID  int AUTO_INCREMENT PRIMARY KEY,
-    Student_id bigint,
+	CREATE TABLE attendance (
+    SN  int AUTO_INCREMENT PRIMARY KEY,
+    student_id bigint,
 	teacher_id bigint,
     Date timestamp,
 	present_days bigint,
 	total_days bigint,
     Status ENUM('Present', 'Absent'),
-	foreign key(student_id) references registration(uid),
-	foreign key(teacher_id) references registration(uid)
+	foreign key(student_id) references registration(uid) ON DELETE CASCADE ,
+	foreign key(teacher_id) references registration(uid) ON DELETE CASCADE
 );
 
 
