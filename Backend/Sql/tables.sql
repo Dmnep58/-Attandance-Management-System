@@ -38,8 +38,8 @@ create table attendance(
 	/* course table */
 	create table course(
     course_id bigint primary key,
-	start_date time,
-	end_date time,
+	start_date date,
+	end_date date,
 	batch varchar(20),
 	course_name varchar(20)
 		
