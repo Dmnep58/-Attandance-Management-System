@@ -39,6 +39,7 @@ create table attendance(
     course_id bigint primary key,
 	start_date time,
 	end_date time,
+	batch varchar(20),
 	course_name varchar(20)
 		
 	);
@@ -89,9 +90,13 @@ DROP TABLE ATTENDANCE;
 	CREATE TABLE Attendance (
     ID  int AUTO_INCREMENT PRIMARY KEY,
     Student_id bigint,
+	teacher_id bigint,
     Date timestamp,
+	present_days bigint,
+	total_days bigint,
     Status ENUM('Present', 'Absent'),
-	foreign key(student_id) references registration(uid)
+	foreign key(student_id) references registration(uid),
+	foreign key(teacher_id) references registration(uid)
 );
 
 
