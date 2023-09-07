@@ -21,8 +21,8 @@ WHERE se.batch = ?;
 SELECT a.*, se.batch
 FROM attendance a
 INNER JOIN studentenrollment se ON a.student_id = se.student_id
-WHERE se.branch = 'YourBranchName'
-AND a.Date = 'YYYY-MM-DD'; 
+WHERE se.batch = 'java1'
+AND a.Date = '2023-09-22';
 
 
 
