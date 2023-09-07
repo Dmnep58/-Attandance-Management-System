@@ -89,17 +89,18 @@ create table studentenrollment(
 
 
 /* NEW ATTENDANCE TABLE */
-	CREATE TABLE attendance (
-    SN  int AUTO_INCREMENT PRIMARY KEY,
-    student_id bigint,
-	teacher_id bigint,
-    Date timestamp,
-	present_days bigint,
-	total_days bigint,
-    Status ENUM('Present', 'Absent'),
-	foreign key(student_id) references registration(uid) ON DELETE CASCADE ,
-	foreign key(teacher_id) references registration(uid) ON DELETE CASCADE
-);
+CREATE TABLE attendance (
+				    SN  int AUTO_INCREMENT PRIMARY KEY,
+				    student_id bigint,
+					teacher_id bigint,
+				    Date timestamp,
+					present_days bigint,
+					total_days bigint,
+				    Status ENUM('Present', 'Absent'),
+				    Date Date,
+					foreign key(student_id) references registration(uid) ON DELETE CASCADE ,
+					foreign key(teacher_id) references registration(uid) ON DELETE CASCADE
+				);
 
 
 -- to Drop the Tables
