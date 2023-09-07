@@ -50,8 +50,9 @@ create table  registration(
 
 /* faculty enrollment table */
 create table facultyenrollment(
-    course_id bigint,
+        course_id bigint,
 		teacher_id bigint,
+		batch varchar(20),
 		foreign key (course_id) references course(course_id) ON DELETE CASCADE,
 		foreign key (teacher_id) references registration(uid) ON DELETE CASCADE
 	);
