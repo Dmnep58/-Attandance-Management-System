@@ -77,7 +77,6 @@ CREATE TABLE attendance (
 				    SN  int AUTO_INCREMENT PRIMARY KEY,
 				    student_id bigint,
 					teacher_id bigint,
-				    Date timestamp,
 					present_days bigint,
 					total_days bigint,
 				    Status ENUM('Present', 'Absent'),

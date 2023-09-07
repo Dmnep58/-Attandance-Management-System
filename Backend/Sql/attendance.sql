@@ -12,9 +12,9 @@ SELECT * from attendance where date=?;
 
 --Fetch Attendence data according batch
 SELECT a.*, se.batch 
-FROM attendance 
+FROM attendance a
 INNER JOIN studentenrollment se ON a.student_id = se.student_id 
-WHERE se.batch = ?;
+WHERE se.batch = 'java1';
 
 
 -- Fetch Attendance data according to batch and date
