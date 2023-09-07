@@ -11,10 +11,10 @@ SELECT * from attendance where date=?;
 
 
 --Fetch Attendence data according batch
-SELECT se.*, b.branch_name
-FROM studentenrollment se
-INNER JOIN branch b ON se.branch_id = b.branch_id
-WHERE b.branch_name = 'YourBranchName';
+SELECT a.*, se.batch 
+FROM attendance 
+INNER JOIN studentenrollment se ON a.student_id = se.student_id 
+WHERE se.batch = ?;
 
 
 -- Fetch Attendance data according to batch and date
