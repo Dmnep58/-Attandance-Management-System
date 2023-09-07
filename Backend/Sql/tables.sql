@@ -61,11 +61,13 @@ create table facultyenrollment(
 -- student enrollment table
 create table studentenrollment(
 	sn bigint auto_increment primary key,
-	class_id bigint,
+	class_id bigint,e
+	course_id bigint,
 	student_id bigint,
 	batch varchar(20),
 	foreign key(class_id) references class(class_id) ON DELETE CASCADE,
-	foreign key(student_id) references registration(uid) on DELETE CASCADE  
+	foreign key(student_id) references registration(uid) on DELETE CASCADE  ,
+	foreign key(course_id) references course(course_id) on DELETE CASCADE  
 );
 
 
@@ -81,7 +83,7 @@ CREATE TABLE attendance (
 				    Status ENUM('Present', 'Absent'),
 				    Date Date,
 					foreign key(student_id) references registration(uid) ON DELETE CASCADE ,
-					foreign key(teacher_id) references registration(uid) ON DELETE CASCADE
+					foreign key(teacher_id) references registration(uid) ON DELETE CASCADE);
 
 
 -- to Drop the Tables
