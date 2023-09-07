@@ -24,21 +24,6 @@ create table  registration(
 	primary key(uid)
 );
 
-/* attendance table */
-CREATE TABLE attendance (
-				    SN  int AUTO_INCREMENT PRIMARY KEY,
-				    student_id bigint,
-					teacher_id bigint,
-				    Date timestamp,
-					present_days bigint,
-					total_days bigint,
-				    Status ENUM('Present', 'Absent'),
-				    Date Date,
-					foreign key(student_id) references registration(uid) ON DELETE CASCADE ,
-					foreign key(teacher_id) references registration(uid) ON DELETE CASCADE
-				);
-
-
 	/* course table */
 	create table course(
     course_id bigint primary key,
@@ -52,8 +37,6 @@ CREATE TABLE attendance (
 
 
 	/* class table */
-
- 
 	create table class(
 		class_id bigint primary key,
 		class_name varchar(20),
@@ -68,7 +51,6 @@ CREATE TABLE attendance (
 	);
 
 /* faculty enrollment table */
-
 create table facultyenrollment(
     course_id bigint,
 		teacher_id bigint,
