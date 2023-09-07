@@ -81,8 +81,7 @@ CREATE TABLE attendance (
 				    Status ENUM('Present', 'Absent'),
 				    Date Date,
 					foreign key(student_id) references registration(uid) ON DELETE CASCADE ,
-					foreign key(teacher_id) references registration(uid) ON DELETE CASCADE
-				);
+					foreign key(teacher_id) references registration(uid) ON DELETE CASCADE
 
 
 -- to Drop the Tables
