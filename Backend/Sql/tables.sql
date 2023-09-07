@@ -20,7 +20,7 @@ create table  registration(
 	email varchar(50) not null,
 	address varchar(50) not null,
 	image varchar(50),
-	roll varchar(20),
+	role varchar(20),
 	primary key(uid)
 );
 
@@ -29,9 +29,7 @@ create table  registration(
     course_id bigint primary key,
 	start_date date,
 	end_date date,
-	batch varchar(20),
 	course_name varchar(20)
-		
 	);
 
 
@@ -46,7 +44,7 @@ create table  registration(
 		start_time time,
 		end_time time,
 		foreign key(teacher_id) references registration(uid) ON DELETE CASCADE,
-		foreign key (course_id) references course(course_id) ON DELETE CASCADE
+		foreign key(course_id) references course(course_id) ON DELETE CASCADE
 		
 	);
 
@@ -61,12 +59,12 @@ create table facultyenrollment(
 -- student enrollment table
 create table studentenrollment(
 	sn bigint auto_increment primary key,
-	class_id bigint,e
+	class_id bigint,
 	course_id bigint,
 	student_id bigint,
 	batch varchar(20),
 	foreign key(class_id) references class(class_id) ON DELETE CASCADE,
-	foreign key(student_id) references registration(uid) on DELETE CASCADE  ,
+	foreign key(student_id) references registration(uid) on DELETE CASCADE,
 	foreign key(course_id) references course(course_id) on DELETE CASCADE  
 );
 
@@ -82,7 +80,8 @@ CREATE TABLE attendance (
 				    Status ENUM('Present', 'Absent'),
 				    Date Date,
 					foreign key(student_id) references registration(uid) ON DELETE CASCADE ,
-					foreign key(teacher_id) references registration(uid) ON DELETE CASCADE);
+					foreign key(teacher_id) references registration(uid) ON DELETE CASCADE
+					);
 
 
 -- to Drop the Tables
@@ -91,7 +90,7 @@ DROP TABLE registration;
 DROP Table attendance;
 DROP Table course;
 DROP Table class;
-drop table enrollment;
+drop table facultyenrollment;
 drop table studentenrollment;
 
 
