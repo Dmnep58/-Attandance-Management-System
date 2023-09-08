@@ -60,13 +60,11 @@ create table facultyenrollment(
 -- student enrollment table
 create table studentenrollment(
 	sn bigint auto_increment primary key,
-	class_id bigint,
 	course_id bigint,
 	student_id bigint,
 	batch varchar(20),
-	foreign key(class_id) references class(class_id) ON DELETE CASCADE,
 	foreign key(student_id) references registration(uid) on DELETE CASCADE,
-	foreign key(course_id) references course(course_id) on DELETE CASCADE  
+	foreign key(course_id) references course(course_id) on DELETE CASCADE  
 );
 
 
