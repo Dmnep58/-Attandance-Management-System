@@ -9,7 +9,7 @@ DESCRIBE studentenrollment;
 
 -- Insert into student and faculty enrollment table
 Insert into studentenrollment VALUES(? , ? , ?);
-Insert into studentenrollment(class_id,student_id,batch) values (1,1908,'Java1');
+Insert into studentenrollment(course_id,student_id,batch) values (1002,4,'1-1002');
 
 Insert into facultyerollment VALUES(? , ? , ?);
 Insert into facultyenrollment(class_id,student_id,batch) values (1,1908,'Java1');
