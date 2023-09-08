@@ -10,11 +10,13 @@ VALUES(1908,75823,1,2,'Present','2023-09-06');
 SELECT * from attendance where date=?;
 
 
---Fetch Attendence data according batch
-SELECT a.*, se.batch 
+--Fetch Attendence data according faculty and batch 
+SELECT a.*
 FROM attendance a
-INNER JOIN studentenrollment se ON a.student_id = se.student_id 
-WHERE se.batch = 'java1';
+INNER JOIN studentenrollment se ON a.student_id = se.student_id
+INNER JOIN facultyenrollment fe ON se.course_id = fe.course_id
+WHERE fe.teacher_id = ?
+  AND fe.batch = ?;
 
 
 -- Fetch Attendance data according to batch and date
