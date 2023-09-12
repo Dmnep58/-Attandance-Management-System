@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body {
+            background: linear-gradient(to right, #81e6dc, white, #800080);
+            font-family: Arial, sans-serif;
+        }
+        
         .select-container,
         .date {
             display: flex;
@@ -32,13 +37,19 @@
         
         th,
         td {
-            border: 1px solid #dddddd;
+            border: 1px solid black;
             text-align: left;
             padding: 8px;
         }
         
-        th {
-            background-color: #f2f2f2;
+        .button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-right: 5px;
+            border-radius: 15%;
         }
     </style>
 </head>
@@ -54,6 +65,9 @@
         <div class="date">
             <h2>Select Date</h2>
             <input type="date" name="date" id="date">
+        </div>
+        <div class="submit">
+            <button class="button">submit</button>
         </div>
     </div>
 
