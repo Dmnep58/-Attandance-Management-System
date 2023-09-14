@@ -1,7 +1,7 @@
 -- Insertion of 5 teachers in registration table
 INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role)
 VALUES
-    (2023, 'password1', 10001, 1234567890, 'John Teacher', 'john.teacher@example.com', '123 Main St', 'john.jpg', 'Teacher'),
+    (2023, 'password1', 10001, 8347573458, 'John Teacher', 'john.teacher@example.com', '123 Main St', 'john.jpg', 'Teacher'),
     (2024, 'password2', 10002, 9876543210, 'Jane Teacher', 'jane.teacher@example.com', '456 Elm St', 'jane.jpg', 'Teacher'),
     (2025, 'password3', 10003, 5555555555, 'Tom Teacher', 'tom.teacher@example.com', '789 Oak St', 'tom.jpg', 'Teacher'),
     (2026, 'password4', 10004, 7777777777, 'Alice Teacher', 'alice.teacher@example.com', '101 Pine St', 'alice.jpg', 'Teacher'),
@@ -106,49 +106,49 @@ SELECT course_id, 2027, 'CS105' FROM course WHERE course_id IN (3, 4, 5);
 
 -- student enrollment in course
 -- Distribute courses among students
-SET @courseCounter = 1; -- Initialize a course counter
+-- Create a stored procedure to assign courses to students
+DELIMITER //
 
--- Loop through each student and assign courses
+CREATE PROCEDURE AssignCoursesToStudents()
 BEGIN
+  DECLARE done INT DEFAULT FALSE;
   DECLARE student_uid INT;
+  DECLARE cur CURSOR FOR SELECT uid FROM registration WHERE role = 'student';
   
-  -- Cursor to select all student UIDs
-  DECLARE student_cursor CURSOR FOR
-  SELECT uid FROM registration WHERE role = 'student';
-
-  OPEN student_cursor;
+  DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
   
-  -- Start the loop
-  student_loop: LOOP
-    FETCH student_cursor INTO student_uid;
-
-    -- Exit the loop if no more students
-    IF student_uid IS NULL THEN
-      LEAVE student_loop;
+  OPEN cur;
+  
+  course_loop: LOOP
+    FETCH cur INTO student_uid;
+    IF done THEN
+      LEAVE course_loop;
     END IF;
-
-    -- Insert courses for the current student
+    
+    SET @courseCounter = 1;
+    
     INSERT INTO studentenrollment (course_id, student_id, batch)
-    SELECT course_id, student_uid, CONCAT('Batch', student_uid) 
-    FROM course 
-    WHERE course_id BETWEEN @courseCounter AND (@courseCounter + 4);
-    
-    -- Increment the course counter
+    SELECT course_id, student_uid, batch
+    FROM course
+    WHERE course_id BETWEEN @courseCounter AND (@courseCounter + 4); 
     SET @courseCounter = @courseCounter + 5;
-    
   END LOOP;
-
-  CLOSE student_cursor;
   
-END;
+  CLOSE cur;
+  
+  -- Insert data into the attendance table as you originally intended
+  INSERT INTO attendance (student_id, teacher_id, present_days, total_days, Status, Date)
+  SELECT se.student_id, fe.teacher_id, 0, 0, NULL, NULL
+  FROM studentenrollment se
+  JOIN facultyenrollment fe ON se.batch = fe.batch
+  JOIN course c ON se.course_id = c.course_id
+  WHERE c.end_date < CURDATE();
+  
+END //
 
+DELIMITER ;
 
--- attendance table 
-INSERT INTO attendance (student_id, teacher_id, present_days, total_days, Status, Date)
-SELECT se.student_id, fe.teacher_id, 0, 0, NULL, NULL
-FROM studentenrollment se
-JOIN facultyenrollment fe ON se.batch = fe.batch
-JOIN course c ON se.course_id = c.course_id
-WHERE c.end_date < CURDATE();
+-- Execute the stored procedure
+CALL AssignCoursesToStudents();
 
 

@@ -29,7 +29,7 @@ create table  registration(
     course_id bigint primary key,
 	start_date date,
 	end_date date,
-	course_name varchar(20)
+	course_name varchar(100)
 	);
 
 
@@ -37,7 +37,7 @@ create table  registration(
 	/* class table */
 	create table class(
 		class_id bigint primary key,
-		class_name varchar(20),
+		class_name varchar(100),
 		teacher_id bigint ,
 		course_id bigint,
 		image varchar(50),
@@ -52,7 +52,7 @@ create table  registration(
 create table facultyenrollment(
         course_id bigint,
 		teacher_id bigint,
-		batch varchar(20),
+		batch varchar(50),
 		foreign key (course_id) references course(course_id) ON DELETE CASCADE,
 		foreign key (teacher_id) references registration(uid) ON DELETE CASCADE
 	);
@@ -62,7 +62,7 @@ create table studentenrollment(
 	sn bigint auto_increment primary key,
 	course_id bigint,
 	student_id bigint,
-	batch varchar(20),
+	batch varchar(50),
 	foreign key(student_id) references registration(uid) on DELETE CASCADE,
 	foreign key(course_id) references course(course_id) on DELETE CASCADE
 );
