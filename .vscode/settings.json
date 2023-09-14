@@ -10,7 +10,7 @@
             "port": 3306,
             "driver": "MySQL",
             "name": "root",
-            "database": "attendance",
+            "database": "attandance",
             "username": "root"
         }
     ]
