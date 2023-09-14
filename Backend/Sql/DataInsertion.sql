@@ -105,50 +105,7 @@ SELECT course_id, 2027, 'CS105' FROM course WHERE course_id IN (3, 4, 5);
 
 
 -- student enrollment in course
--- Distribute courses among students
--- Create a stored procedure to assign courses to students
-DELIMITER //
 
-CREATE PROCEDURE AssignCoursesToStudents()
-BEGIN
-  DECLARE done INT DEFAULT FALSE;
-  DECLARE student_uid INT;
-  DECLARE cur CURSOR FOR SELECT uid FROM registration WHERE role = 'student';
-  
-  DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
-  
-  OPEN cur;
-  
-  course_loop: LOOP
-    FETCH cur INTO student_uid;
-    IF done THEN
-      LEAVE course_loop;
-    END IF;
-    
-    SET @courseCounter = 1;
-    
-    INSERT INTO studentenrollment (course_id, student_id, batch)
-    SELECT course_id, student_uid, batch
-    FROM course
-    WHERE course_id BETWEEN @courseCounter AND (@courseCounter + 4); 
-    SET @courseCounter = @courseCounter + 5;
-  END LOOP;
-  
-  CLOSE cur;
-  
-  -- Insert data into the attendance table as you originally intended
-  INSERT INTO attendance (student_id, teacher_id, present_days, total_days, Status, Date)
-  SELECT se.student_id, fe.teacher_id, 0, 0, NULL, NULL
-  FROM studentenrollment se
-  JOIN facultyenrollment fe ON se.batch = fe.batch
-  JOIN course c ON se.course_id = c.course_id
-  WHERE c.end_date < CURDATE();
-  
-END //
 
-DELIMITER ;
-
--- Execute the stored procedure
-CALL AssignCoursesToStudents();
 
 
