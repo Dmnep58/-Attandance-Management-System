@@ -16,8 +16,8 @@ INSERT into class values(1,'Java',51124,2,'1.png','09:00:00','10:00:00');
 SELECT * FROM class where class_name = ?;
 
 
--- fetch no of people on the basis of the class_name
-select count(*) from class where class_name= ? ;
+-- fetch no of people from class 
+select count(*) from class;
 
 
 
