@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link rel="stylesheet" type="text/css" href="./CSS/Login.css">
+    </head>
+
+    <body>
+        <div class="heading">
+            <h1>Welcome To Attandance Portal </h1>
+        </div>
+
+        <div class="log">
+            <div class="login-container">
+                <!-- D R P A S S -->
+                <h2>Take the first step to </h2>
+                <h2><span>Knowledge with us</span></h2>
+                <div class="image-container"></div>
+                <form action="login" method="post">
+                    <div class="input-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="userid" name="userid">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <input type="hidden" value="admin" name="action">
+                    <div class="buttons">
+                        <button type="submit" class="but" id="send-button">Login</button>
+                    </div>
+                </form>
+
+                <div class="error-message hidden" id="error-message"></div>
+
+            </div>
+        </div>
+    </body>
+
+    </html>
