@@ -1,7 +1,6 @@
 package Functionality;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,6 +13,7 @@ import model.Course;
 public class CourseDataFetch {
 
     Connection connection = null;
+    PreparedStatement preparedStatement = null;
 
     // insertion of the data in DataBase
     public boolean AddCourse(Course course) {
@@ -22,7 +22,7 @@ public class CourseDataFetch {
         boolean inserted = false;
         try {
             connection = DBConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement = connection.prepareStatement(query);
 
             preparedStatement.setLong(1, course.getCourseId());
             preparedStatement.setDate(2, course.getStartDate());
@@ -34,10 +34,17 @@ public class CourseDataFetch {
             if (row > 0) {
                 inserted = true;
                 connection.close();
-
             }
         } catch (SQLException e) {
+            e.printStackTrace();
             inserted = false;
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+            } catch (SQLException e2) {
+                // TODO: handle exception
+            }
         }
 
         return inserted;
@@ -50,26 +57,28 @@ public class CourseDataFetch {
 
         try {
             connection = DBConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement = connection.prepareStatement(query);
 
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 courses = resultSet.getLong(1);
             }
 
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
+        } catch (SQLException e) 
             e.printStackTrace();
-        } finally {
-            try {
-                connection.close();
-            } catch (SQLException e) {
+        }finally
 
-                e.printStackTrace();
-            }
+    {
+        try {
+            connection.close();
+            preparedStatement.close();
+        } catch (SQLException e) {
+
+            e.printStackTrace();
         }
+    }
 
-        return courses;
+    return courses;
     }
 
     // fetch all course data
@@ -80,7 +89,7 @@ public class CourseDataFetch {
 
         try {
             connection = DBConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement = connection.prepareStatement(query);
 
             ResultSet resultSet = preparedStatement.executeQuery();
 
@@ -93,10 +102,16 @@ public class CourseDataFetch {
                 courses.add(course);
             }
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+            } catch (SQLException e) {
+
+                e.printStackTrace();
+            }
         }
-        ;
 
         return courses;
     }
@@ -109,7 +124,7 @@ public class CourseDataFetch {
 
         try {
             connection = DBConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement = connection.prepareStatement(query);
 
             preparedStatement.setString(1, course.getCourseName());
             preparedStatement.setDate(2, course.getStartDate());
@@ -124,8 +139,16 @@ public class CourseDataFetch {
             }
 
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+            } catch (SQLException e) {
+
+                e.printStackTrace();
+            }
         }
         return edited;
     }
@@ -139,7 +162,7 @@ public class CourseDataFetch {
 
         try {
             connection = DBConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement = connection.prepareStatement(query);
 
             preparedStatement.setLong(1, courseid);
 
@@ -150,11 +173,48 @@ public class CourseDataFetch {
             }
 
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+            } catch (SQLException e) {
+
+                e.printStackTrace();
+            }
         }
 
         return isexists;
+    }
+
+    // fetch courseif from course name
+    public long FetchCourseId(String course) {
+        long id = 0;
+        try {
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement("select course_id from course where course_name=?");
+            preparedStatement.setString(1, course);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                id = resultSet.getLong(1);
+            }
+        } catch (SQLException e) {
+
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+            } catch (SQLException e) {
+
+                e.printStackTrace();
+            }
+        }
+
+        return id;
     }
 
 }

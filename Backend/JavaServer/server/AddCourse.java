@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.Attandance.Functionality.CourseDataFetch;
-import com.Attandance.model.Course;
+import Functionality.CourseDataFetch;
+import model.Course;
 import com.google.gson.JsonObject;
 
 /**

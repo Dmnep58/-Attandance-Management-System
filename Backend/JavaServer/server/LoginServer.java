@@ -9,7 +9,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.apache.catalina.ha.backend.MultiCastSender;
+
 import Functionality.Login;
+import Functionality.TeacherStudentDetails;
+import model.TeacherStudent;
 
 /**
  * Servlet implementation class LoginServer
@@ -29,20 +33,43 @@ public class LoginServer extends HttpServlet {
 
         String id = request.getParameter("userid");
         String password = request.getParameter("password");
+        String action = request.getParameter("action");
 
         HttpSession session = null;
+        // check for the valid user.
 
-        if (l.isvalid(Integer.valueOf(id), password) == true) // check for the valid user.
-        {
-            session = request.getSession();
-            session.setAttribute("aid", id);
-            response.sendRedirect("admin.jsp");
-        }
+        switch (action) {
+            case "admin":
+                if (l.isvalid(Integer.valueOf(id), password) == true) {
+                    session = request.getSession();
+                    session.setAttribute("aid", id);
+                    response.sendRedirect("admin.jsp");
+                }
 
-        else {
-            id = "";
-            password = "";
-            response.sendRedirect("Login.jsp");
+                else {
+                    id = "";
+                    password = "";
+                    response.sendRedirect("Login.jsp");
+                }
+
+                break;
+
+            case "Teacher":
+                TeacherStudentDetails teacherStudentDetails = new TeacherStudentDetails();
+
+                if (l.isvalidUser(Integer.valueOf(id), password) == true) {
+                    session = request.getSession();
+                    session.setAttribute("aid", id);
+                    if (teacherStudentDetails.Userrole(Long.valueOf(id)).equals(action)) {
+                        response.sendRedirect("TeacherPanel.jsp");
+                    } else {
+                        response.sendRedirect("StudentPanel.jsp");
+                    }
+                }
+                break;
+
+            default:
+
         }
 
     }

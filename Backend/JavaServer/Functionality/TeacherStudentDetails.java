@@ -6,19 +6,24 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import DataBaseConnection.DBConnection;
 import model.TeacherStudent;
 
 public class TeacherStudentDetails {
 
+    Connection connection = null;
+    PreparedStatement preparedStatement = null;
+
     // add the student
     public boolean AddTeacherStudent(TeacherStudent s) {
         String query = "INSERT into registration values(? ,? , ? , ? , ? , ? , ? , ? , ?)";
 
         try {
-            Connection connection = DBConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(query);
 
             preparedStatement.setLong(1, s.getUid());
             preparedStatement.setString(2, s.getPasword());
@@ -38,21 +43,30 @@ public class TeacherStudentDetails {
 
         } catch (SQLException e) {
 
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         }
 
         return false;
 
     }
 
-    // fetch data from Registration for student
+    // fetch data from Registration for user having role student
     public List<TeacherStudent> FetchStudentData() {
         String query = "SELECT * FROM registration where role = 'student'";
 
         List<TeacherStudent> ts = new ArrayList<>();
 
         try {
-            Connection connection = DBConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(query);
 
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -66,23 +80,33 @@ public class TeacherStudentDetails {
 
                 ts.add(teacherStudent);
             }
+
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         }
 
         return ts;
     }
 
-    // fetch data from Registration for student
+    // fetch data from Registration for user having role Teacher
     public List<TeacherStudent> FetchTeacherData() {
         String query = "SELECT * FROM registration where role = 'Teacher'";
 
         List<TeacherStudent> ts = new ArrayList<>();
 
         try {
-            Connection connection = DBConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(query);
 
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -96,11 +120,20 @@ public class TeacherStudentDetails {
 
                 ts.add(teacherStudent);
             }
+
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-        }
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
 
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
         return ts;
     }
 
@@ -111,8 +144,8 @@ public class TeacherStudentDetails {
         List<TeacherStudent> ts = new ArrayList<>();
 
         try {
-            Connection connection = DBConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(query);
 
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -126,9 +159,19 @@ public class TeacherStudentDetails {
 
                 ts.add(teacherStudent);
             }
+
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         }
 
         return ts;
@@ -139,8 +182,8 @@ public class TeacherStudentDetails {
         String number = "select count(*) from registration where role='student'";
         long nLong = 0;
         try {
-            Connection connection = DBConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(number);
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(number);
 
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -149,8 +192,16 @@ public class TeacherStudentDetails {
 
         } catch (SQLException e) {
             // TODO: handle exception
-        }
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
 
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
         return nLong;
     }
 
@@ -159,8 +210,8 @@ public class TeacherStudentDetails {
         String number = "select count(*) from registration where role='Teacher'";
         long nLong = 0;
         try {
-            Connection connection = DBConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(number);
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(number);
 
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -169,19 +220,27 @@ public class TeacherStudentDetails {
 
         } catch (SQLException e) {
             // TODO: handle exception
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         }
 
         return nLong;
     }
 
     // Delete the record in registration table.
-
     public boolean deleteRecord(long uid) {
         final Logger logger = Logger.getLogger(TeacherStudent.class.getName());
         String query = "DELETE FROM registration WHERE uid = ?";
-
-        try (Connection connection = DBConnection.getConnection();
-                PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+        try {
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(query);
 
             preparedStatement.setLong(1, uid);
             int result = preparedStatement.executeUpdate();
@@ -194,9 +253,145 @@ public class TeacherStudentDetails {
             e.printStackTrace();
             // You may consider logging the exception here or throwing a custom exception.
             logger.log(Level.SEVERE, "Error deleting record", e);
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         }
 
         return false;
+    }
+
+    // check for the teacher or student presence
+    public boolean ispresent(long uid) {
+        boolean ispresent = false;
+        String query = "Select * from registration where uid = ? ";
+        try {
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(query);
+
+            preparedStatement.setLong(1, uid);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                ispresent = true;
+            }
+
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+        return ispresent;
+    }
+
+    // fetch the role of the user
+    public String Userrole(long id) {
+        String query = "select role from registration where uid = ?";
+        String role = "";
+        try {
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(query);
+
+            preparedStatement.setLong(1, id);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                role = resultSet.getString(1);
+            }
+
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+
+        return role;
+
+    }
+
+    // Fetch number of courses enrolled by the teacher
+    public int TeacherCourseEnroll(int teacherid) {
+        int courses = 0;
+        String sql = "select count(distinct(course_id)) from facultyenrollment  where teacher_id=?";
+
+        try {
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(sql);
+
+            preparedStatement.setLong(1, teacherid);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                courses = (int) resultSet.getLong(1);
+            }
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+        return courses;
+    }
+
+    // total number of students enrolled till now
+    public long NumberOfStudents() {
+        long students = 0;
+        String sql = "select count(*) from registration where role='student'";
+
+        try {
+            connection = DBConnection.getConnection();
+            preparedStatement = connection.prepareStatement(sql);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                students = (int) resultSet.getLong(1);
+            }
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+
+        return students;
     }
 
 }
