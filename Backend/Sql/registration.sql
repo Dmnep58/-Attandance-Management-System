@@ -40,3 +40,11 @@ SET image=? where uid=? ;
 
 /* deleting rows from registration id */
 DELETE from registration where uid=? ;
+
+---updating teacher password
+
+update registration
+set password=?
+where role='teacher';
+
+
