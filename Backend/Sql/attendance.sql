@@ -13,22 +13,11 @@ SELECT * from attendance where date=?;
 select * from attendance where teacher_id = ?
 
 --Fetch Attendence data according faculty and batch 
-SELECT a.* FROM attendance a 
-INNER JOIN studentenrollment se 
-ON a.student_id = se.student_id 
-INNER JOIN facultyenrollment fe 
-ON se.course_id = fe.course_id 
-WHERE fe.teacher_id = ? 
-AND fe.batch = ? AND se.batch = ?
-
--- Fetch Attendance data according to batch and date
-SELECT a.*, se.batch
+SELECT DISTINCT a.*
 FROM attendance a
 INNER JOIN studentenrollment se ON a.student_id = se.student_id
-WHERE se.batch = 'java1'
-AND a.Date = 2023-09-22;
-
-
+INNER JOIN facultyenrollment fe ON se.batch = fe.batch
+WHERE a.teacher_id = 2023 AND fe.batch = 'DBMS1';
 
 
 /* reporting present or abscent  */
