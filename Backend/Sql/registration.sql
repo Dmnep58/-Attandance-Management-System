@@ -54,8 +54,8 @@ where uid=?;
 ---fetch all data of student
 SELECT *
 FROM registration AS r
-INNER JOIN studentenrollment AS se ON r.uid = se.studentid
-WHERE se.studentid = ? AND se.batch = ?;
+INNER JOIN studentenrollment AS se ON r.uid = se.student_id
+WHERE se.student_id = ? AND se.batch = ?;
 
 
 
