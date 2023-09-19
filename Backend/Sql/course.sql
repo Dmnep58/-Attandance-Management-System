@@ -30,11 +30,6 @@ select batch from course;
 
 
 ----teacher id with course
-SELECT fe.teacher_id, c.course_name
-FROM facultyenrollment AS fe
-JOIN course AS c ON fe.course_id = c.course_id;
-
-
 
 select course_name from course 
 inner join facultyenrollment on facultyenrollment.course_id = course.course_id
