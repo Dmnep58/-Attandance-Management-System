@@ -38,4 +38,4 @@ JOIN course AS c ON fe.course_id = c.course_id;
 
 select course_name from course 
 inner join facultyenrollment on facultyenrollment.course_id = course.course_id
-where facultyenrollment.faculty_id=2023;
+where facultyenrollment.teacher_id=2023;
