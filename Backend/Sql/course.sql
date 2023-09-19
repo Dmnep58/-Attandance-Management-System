@@ -26,3 +26,11 @@ DELETE from course where course_id=? ;
 
 -- Fetech all the batches
 select batch from course;
+
+
+
+----teacher id with course
+SELECT fe.teacher_id, c.course_name
+FROM facultyenrollment AS fe
+JOIN course AS c ON fe.course_id = c.course_id;
+
