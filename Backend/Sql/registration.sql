@@ -45,6 +45,10 @@ DELETE from registration where uid=? ;
 
 update registration
 set password=?
-where role='teacher';
+where uid=?;
+
+-- fetching teacher password
+select password from registration
+where uid=?;
 
 
