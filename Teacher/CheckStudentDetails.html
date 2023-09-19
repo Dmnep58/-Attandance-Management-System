@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Style for the container div */
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Style for the divs */
+        
+        .div-container {
+            width: 100%;
+        }
+        /* Style for the top div */
+        
+        .top-div {
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .input-field {
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+        }
+        
+        .input-field input[type="number"] {
+            height: 80%;
+        }
+        /* Style for the select element */
+        
+        .input-field select {
+            height: 90%;
+        }
+        /* Style for the table div */
+        
+        .table-div {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 100%;
+        }
+        /* Style for the table */
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        
+        th,
+        td {
+            padding: 8px;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Style for the submit button */
+        
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 100%;
+        }
+        
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div-container">
+            <div class="top-div">
+                <div class="input-field">
+                    <input type="number" id="roll-number" name="roll-number" placeholder="Roll number">
+                </div>
+                <div class="input-field">
+                    <select id="batch-dropdown" name="batch-dropdown">
+                        <option value="batch1">Batch 1</option>
+                        <option value="batch2">Batch 2</option>
+                        <option value="batch3">Batch 3</option>
+                    </select>
+                </div>
+                <button class="submit-button" id="submit-button">Submit</button>
+            </div>
+        </div>
+        <div class="div-container">
+            <div class="table-div">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Roll Number</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Batch</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>John Doe</td>
+                            <td>20</td>
+                            <td>Batch 1</td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Jane Smith</td>
+                            <td>22</td>
+                            <td>Batch 2</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
