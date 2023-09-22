@@ -34,3 +34,10 @@ select batch from course;
 select course_name from course 
 inner join facultyenrollment on facultyenrollment.course_id = course.course_id
 where facultyenrollment.teacher_id=2023;
+
+--total active and inactive course
+SELECT
+    SUM(CASE WHEN CURRENT_DATE BETWEEN start_date AND end_date THEN 1 ELSE 0 END) AS active_courses,
+    SUM(CASE WHEN CURRENT_DATE NOT BETWEEN start_date AND end_date THEN 1 ELSE 0 END) AS inactive_courses
+FROM
+    course;

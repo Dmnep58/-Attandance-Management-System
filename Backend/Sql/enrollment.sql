@@ -27,3 +27,6 @@ select count(*) from registration where role='student'
 --Fetch number of courses enrolled by the teacher
 select count(distinct(course_id)) from facultyenrollment  where teacher_id=?
 select count(distinct(course_id)) from facultyenrollment  where teacher_id=20051958;
+
+-- count distinct batches
+select count(distinct(batch)) from facultyenrollment  where teacher_id=?;
