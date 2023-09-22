@@ -41,3 +41,45 @@ SELECT
     SUM(CASE WHEN CURRENT_DATE NOT BETWEEN start_date AND end_date THEN 1 ELSE 0 END) AS inactive_courses
 FROM
     course;
+
+
+    --total  active inactive and upcoming course
+    WITH ActiveCourses AS (
+    SELECT
+        course_id,
+        course_name,
+        start_date,
+        end_date
+    FROM
+        course
+    WHERE
+        start_date <= CURRENT_DATE
+        AND end_date >= CURRENT_DATE
+),
+InactiveCourses AS (
+    SELECT
+        course_id,
+        course_name,
+        start_date,
+        end_date
+    FROM
+        course
+    WHERE
+        end_date < CURRENT_DATE
+),
+UpcomingCourses AS (
+    SELECT
+        course_id,
+        course_name,
+        start_date,
+        end_date
+    FROM
+        course
+    WHERE
+        start_date > CURRENT_DATE
+)
+SELECT
+    (SELECT COUNT(*) FROM ActiveCourses) AS active_course_count,
+    (SELECT COUNT(*) FROM InactiveCourses) AS inactive_course_count,
+    (SELECT COUNT(*) FROM UpcomingCourses) AS upcoming_course_count;
+
