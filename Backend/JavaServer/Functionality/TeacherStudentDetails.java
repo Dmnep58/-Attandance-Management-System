@@ -49,7 +49,7 @@ public class TeacherStudentDetails {
                 preparedStatement.close();
 
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
         }
@@ -82,7 +82,7 @@ public class TeacherStudentDetails {
             }
 
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         } finally {
             try {
@@ -90,7 +90,7 @@ public class TeacherStudentDetails {
                 preparedStatement.close();
 
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
         }
@@ -122,7 +122,7 @@ public class TeacherStudentDetails {
             }
 
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         } finally {
             try {
@@ -130,7 +130,7 @@ public class TeacherStudentDetails {
                 preparedStatement.close();
 
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
         }
@@ -161,7 +161,7 @@ public class TeacherStudentDetails {
             }
 
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         } finally {
             try {
@@ -169,7 +169,7 @@ public class TeacherStudentDetails {
                 preparedStatement.close();
 
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
         }
@@ -191,14 +191,14 @@ public class TeacherStudentDetails {
             }
 
         } catch (SQLException e) {
-            // TODO: handle exception
+
         } finally {
             try {
                 connection.close();
                 preparedStatement.close();
 
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
         }
@@ -219,14 +219,14 @@ public class TeacherStudentDetails {
             }
 
         } catch (SQLException e) {
-            // TODO: handle exception
+
         } finally {
             try {
                 connection.close();
                 preparedStatement.close();
 
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
         }
@@ -259,7 +259,7 @@ public class TeacherStudentDetails {
                 preparedStatement.close();
 
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
         }
@@ -284,7 +284,7 @@ public class TeacherStudentDetails {
             }
 
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         } finally {
             try {
@@ -292,7 +292,7 @@ public class TeacherStudentDetails {
                 preparedStatement.close();
 
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
         }
@@ -316,7 +316,7 @@ public class TeacherStudentDetails {
             }
 
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         } finally {
             try {
@@ -324,7 +324,7 @@ public class TeacherStudentDetails {
                 preparedStatement.close();
 
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
         }
@@ -350,14 +350,14 @@ public class TeacherStudentDetails {
                 courses = (int) resultSet.getLong(1);
             }
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         } finally {
             try {
                 connection.close();
                 preparedStatement.close();
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
         }
@@ -379,14 +379,14 @@ public class TeacherStudentDetails {
                 students = (int) resultSet.getLong(1);
             }
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         } finally {
             try {
                 connection.close();
                 preparedStatement.close();
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
         }

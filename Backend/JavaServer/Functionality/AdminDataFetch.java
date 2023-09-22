@@ -36,7 +36,7 @@ public class AdminDataFetch {
             }
 
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         }
         return l;
@@ -56,7 +56,6 @@ public class AdminDataFetch {
             }
 
         } catch (SQLException e) {
-            // TODO: handle exception
         }
 
         return nLong;
@@ -79,7 +78,7 @@ public class AdminDataFetch {
                 return true;
             }
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         }
 

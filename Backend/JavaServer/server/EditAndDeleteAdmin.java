@@ -18,7 +18,6 @@ public class EditAndDeleteAdmin extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     public EditAndDeleteAdmin() {
-        // TODO Auto-generated constructor stub
         super();
     }
 

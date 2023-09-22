@@ -43,7 +43,6 @@ public class CourseDataFetch {
                 connection.close();
                 preparedStatement.close();
             } catch (SQLException e2) {
-                // TODO: handle exception
             }
         }
 
@@ -64,21 +63,21 @@ public class CourseDataFetch {
                 courses = resultSet.getLong(1);
             }
 
-        } catch (SQLException e) 
-            e.printStackTrace();
-        }finally
-
-    {
-        try {
-            connection.close();
-            preparedStatement.close();
         } catch (SQLException e) {
-
             e.printStackTrace();
-        }
-    }
+        } finally
 
-    return courses;
+        {
+            try {
+                connection.close();
+                preparedStatement.close();
+            } catch (SQLException e) {
+
+                e.printStackTrace();
+            }
+        }
+
+        return courses;
     }
 
     // fetch all course data

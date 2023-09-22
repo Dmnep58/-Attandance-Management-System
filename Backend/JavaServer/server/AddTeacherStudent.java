@@ -28,7 +28,6 @@ public class AddTeacherStudent extends HttpServlet {
 
     public AddTeacherStudent() {
         super();
-        // TODO Auto-generated constructor stub
         teacherStudentDetails = new TeacherStudentDetails();
     }
 

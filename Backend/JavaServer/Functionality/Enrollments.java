@@ -32,7 +32,7 @@ public class Enrollments {
 				list.add(resultSet.getString(1));
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} finally {
 			try {
@@ -40,7 +40,7 @@ public class Enrollments {
 				preparedStatement.close();
 
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 		}
@@ -68,7 +68,7 @@ public class Enrollments {
 			}
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} finally {
 			try {
@@ -76,7 +76,7 @@ public class Enrollments {
 				preparedStatement.close();
 
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				
 				System.out.println("bhakk bey");
 				e.printStackTrace();
 			}
@@ -103,7 +103,7 @@ public class Enrollments {
 			// enrolled = true;
 			// }
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} finally {
 			try {
@@ -111,7 +111,7 @@ public class Enrollments {
 				preparedStatement.close();
 
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				
 				System.out.println("bhakk bey");
 				e.printStackTrace();
 			}
@@ -136,14 +136,14 @@ public class Enrollments {
 				batch = resultSet.getLong(1);
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} finally {
 			try {
 				connection.close();
 				preparedStatement.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 		}
