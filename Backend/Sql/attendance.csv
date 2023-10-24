@@ -1,4 +1,4 @@
-student_id,teacher_id,present_days,total_days,status
+student_id,teacher_id,present_days,total_days,Status
 21,2023,0,0,Absent
 32,2023,0,0,Absent
 43,2023,0,0,Absent

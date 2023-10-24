@@ -2,13 +2,13 @@
 
 -- fetch all data from admin
 SELECT * from admin;
-
+desc admin;
 
 -- fetch password 
 SELECT admin_password from admin where admin_id=1234;
 
 -- insert into table
-insert into admin values(12,'p1','prahtamsharma12@gmail.com','ktm Nepal','admin2.png');
+insert into admin values(12,'pratham','p1','prahtamsharma12@gmail.com','ktm Nepal',9823543,'admin2.png');
 
 -- update table to insert column name
 alter table admin add column phnno BIGINT;

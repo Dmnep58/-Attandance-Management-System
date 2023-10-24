@@ -1,3 +1,9 @@
+-- create a database called AMS
+		create database attandance;
+
+		use attandance;
+		
+
 /* admin table */
 create table admin(
 admin_id BIGINT,
