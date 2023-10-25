@@ -98,4 +98,11 @@ DROP Table class;
 drop table facultyenrollment;
 drop table studentenrollment;
 
+-- truncate tables;
+truncate table registration;
+truncate table course;
+truncate table attendance;
+truncate table class;
+truncate table studentenrollment;
+truncate table facultyenrollment;
 
