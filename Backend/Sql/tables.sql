@@ -1,3 +1,9 @@
+-- create a database called AMS
+		create database attandance;
+
+		use attandance;
+		
+
 /* admin table */
 create table admin(
 admin_id BIGINT,
@@ -92,4 +98,11 @@ DROP Table class;
 drop table facultyenrollment;
 drop table studentenrollment;
 
+-- truncate tables;
+truncate table registration;
+truncate table course;
+truncate table attendance;
+truncate table class;
+truncate table studentenrollment;
+truncate table facultyenrollment;
 
