@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .panel {
+        display: flex;
+        height: 300px;
+        text-align: center;
+    }
+    
+    .top-div {
+        flex: 1;
+        width: 100%;
+        min-height: 100px;
+        background-color: #3498db;
+        padding: 5px;
+        justify-content: center;
+    }
+    
+    .top-div h3 {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .top-div p {
+        margin-left: 20px;
+    }
+    
+    .side-div {
+        flex: 0.5;
+        width: 50%;
+        height: 100px;
+        background-color: #2ecc71;
+        padding: 5px;
+        justify-content: center;
+    }
+    
+    .panel>div {
+        margin: 5px;
+    }
+</style>
+
+<body>
+    <div class="top-div">
+        <h3>Student Details</h3>
+        <div class="details">
+            <p>Name:</p>
+            <p>Roll No:</p>
+            <p>Address:</p>
+            <p>RegNo:</p>
+        </div>
+
+    </div>
+    <div class="panel">
+        <div class="side-div">
+            <p>No.course Enrolled:</p>
+            <a href="">Course Enrolled Details</a>
+        </div>
+        <div class="side-div">
+            <p>Time Table as per class</p>
+            <a href="http://">See all time tables</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
