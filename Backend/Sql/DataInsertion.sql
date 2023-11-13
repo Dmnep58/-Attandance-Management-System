@@ -1,1015 +1,1047 @@
 -- insertion of 10 course 
-INSERT INTO course (course_id, start_date, end_date, course_name)
+INSERT INTO course (course_id,  start_date,  end_date,  course_name)
 VALUES
-    (1, '2023-09-14', '2023-09-30', 'Introduction to Computer Science'),
-    (2, '2023-09-15', '2023-09-28', 'Data Structures and Algorithms'),
-    (3, '2023-09-16', '2023-09-29', 'Database Management Systems'),
-    (4, '2023-09-17', '2023-09-25', 'Computer Networks'),
-    (5, '2023-09-18', '2023-09-26', 'Operating Systems'),
-    (6, '2023-09-19', '2023-09-27', 'Web Development Fundamentals'),
-    (7, '2023-09-20', '2023-09-24', 'Artificial Intelligence and Machine Learning'),
-    (8, '2023-09-21', '2023-09-23', 'Software Engineering Principles'),
-    (9, '2023-09-22', '2023-09-22', 'Cybersecurity Fundamentals'),
-    (10, '2023-09-23', '2023-09-30', 'Computer Graphics and Visualization');
+    (1,  '2023-09-14',  '2023-09-30',  'Introduction to Computer Science'), 
+    (2,  '2023-09-15',  '2023-09-28',  'Data Structures and Algorithms'), 
+    (3,  '2023-09-16',  '2023-09-29',  'Database Management Systems'), 
+    (4,  '2023-09-17',  '2023-09-25',  'Computer Networks'), 
+    (5,  '2023-09-18',  '2023-09-26',  'Operating Systems'), 
+    (6,  '2023-09-19',  '2023-09-27',  'Web Development Fundamentals'), 
+    (7,  '2023-09-20',  '2023-09-24',  'Artificial Intelligence and Machine Learning'), 
+    (8,  '2023-09-21',  '2023-09-23',  'Software Engineering Principles'), 
+    (9,  '2023-09-22',  '2023-09-22',  'Cybersecurity Fundamentals'), 
+    (10,  '2023-09-23',  '2023-09-30',  'Computer Graphics and Visualization');
 
--- data insertion in registration
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('1', 'h9nSwybj', '52737', '15179', 'cwtYedA2JU', 'cwtYedA2JU@example.com', 'Joy7LuFjE5KsrJXzifKu', 'image_1.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('2', 'rF1rgEx3', '98432', '12385', 'iwUtUXuiZF', 'iwUtUXuiZF@example.com', 'AjZGWsM8IXAETWwPXrUW', 'image_2.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('3', 'fPLGeX5j', '97324', '57856', 'X1SDJIhfut', 'X1SDJIhfut@example.com', 'jkQW4MrtgPt1Of4xU7Th', 'image_3.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('4', 'evxXaOyh', '13488', '95626', 'ln4VQQVTE1', 'ln4VQQVTE1@example.com', 'pKaYhxbzIvDC1kOLUDSw', 'image_4.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('5', 'UlqUsnBS', '70436', '42385', 'WkdVxiw6SA', 'WkdVxiw6SA@example.com', 'U3PFO3uzgPqPTs2Pj8QP', 'image_5.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('6', 'IYGCkpBi', '82714', '21338', 'hJFk2qNx7n', 'hJFk2qNx7n@example.com', 'jqauwUX3cV1LutMVCpVN', 'image_6.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('7', 'el9ghton', '42148', '41458', 'P3Z9rXMiXE', 'P3Z9rXMiXE@example.com', 'KkBgKgfWDibwAPkgsldW', 'image_7.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('8', 'rlqRQbyg', '40754', '42682', '6HpcBnnXOj', '6HpcBnnXOj@example.com', '8KH5wRjXLBjYAzaTd41o', 'image_8.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('9', 'a4uUUAYJ', '11772', '47865', 'Bfj8H9g189', 'Bfj8H9g189@example.com', '8iQcxHItasgaFbaKz5pC', 'image_9.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('10', 'ob8tDooU', '42730', '25434', 'WKBUjxmjr0', 'WKBUjxmjr0@example.com', 'g6Y9LCiUZRdSlDVW93l8', 'image_10.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('11', 'qo1nzEpP', '95277', '37764', 'LJ8sxim5Qm', 'LJ8sxim5Qm@example.com', 'Nwd2rqkMPV72TeFcFZJF', 'image_11.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('12', 'BEmKWSmi', '36275', '37809', 'hzJ5YTZejB', 'hzJ5YTZejB@example.com', 'UubgucRPteWDF8FBQRtv', 'image_12.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('13', 'FeoFmLER', '21326', '74770', 'oVqAEtW9tn', 'oVqAEtW9tn@example.com', 'qwPsYzXpdmTDzS5wkSAc', 'image_13.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('14', 'mZlU5f4m', '93177', '33020', 'zWsQJrIa5u', 'zWsQJrIa5u@example.com', 'CtlKeO1XZ2OGOBklSEHk', 'image_14.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('15', 'CvOBR4F7', '35722', '57615', 'r2dSBwiI7y', 'r2dSBwiI7y@example.com', 'iq0w7TpOu7XUjaMeYjGX', 'image_15.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('16', '78nteTii', '77213', '72066', 'CEjUqIcIGn', 'CEjUqIcIGn@example.com', 'RJmuZfZSj7magy7F1z9J', 'image_16.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('17', 'wW9GpBXO', '74125', '78089', 'XybnO8le6l', 'XybnO8le6l@example.com', 'gWQl38ry8UmizTNQzK3C', 'image_17.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('18', '0xzEeIDy', '62983', '27535', 'tLu9S919gH', 'tLu9S919gH@example.com', 'r64zPFGU8OS6bHO2Q7bI', 'image_18.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('19', 'r3ujBDxo', '84044', '38472', 'g63f6bs9AM', 'g63f6bs9AM@example.com', 'VH9bzEX0ImOjakytmltZ', 'image_19.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('20', 'mcZgdSfY', '31626', '62818', 'uBmKYB4duZ', 'uBmKYB4duZ@example.com', 'VzJ6bXThe4I7LVjTKU7n', 'image_20.jpg', 'teacher');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('21', '7W4hXbnd', '52570', '79292', '584XILwYzC', '584XILwYzC@example.com', 'gOvUZskWsO02W79TSiC5', 'image_21.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('22', 'GgswIFsO', '34080', '51051', 'rR69Z9lfVZ', 'rR69Z9lfVZ@example.com', 'dW4HTcIj6Hnn8QKEcp2A', 'image_22.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('23', 'eL9bGfvq', '94109', '49623', 'oqX95iaWsS', 'oqX95iaWsS@example.com', 's1WeTOdyjjR4f2aL7vfr', 'image_23.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('24', 'wD1ScktZ', '33505', '22266', 'N5FEwbnHV7', 'N5FEwbnHV7@example.com', 'x28KXVeBlUV2eg1PQoKJ', 'image_24.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('25', 'UNqYziOx', '49460', '53180', '8sJpKFy5E1', '8sJpKFy5E1@example.com', '9Af0dWWLEzo5BV8p2vH6', 'image_25.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('26', 'Li2cV9eh', '29990', '47120', 'SegTrVIilK', 'SegTrVIilK@example.com', 'qSpIpVwBilARAzmTBeBq', 'image_26.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('27', 'NAka3hQg', '41364', '35006', 'I1RgcDGWWH', 'I1RgcDGWWH@example.com', 'ubLdpaqFuvABdpJH5Sna', 'image_27.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('28', 'JLVTyR3G', '61764', '35300', 'ZYF2dN7vIR', 'ZYF2dN7vIR@example.com', 'mhpNkNjZxiJ8nIsIFlwE', 'image_28.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('29', 'HNSYS3Mw', '32370', '17019', '4BEG8NjT5i', '4BEG8NjT5i@example.com', 'URmTBJC7vj4anbRYVUwc', 'image_29.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('30', 'SanltjG9', '62834', '50723', 'hLISabdiGm', 'hLISabdiGm@example.com', '8NDTia4ka1YXySKgsM0Q', 'image_30.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('31', 'JATmf7GC', '20759', '62554', '63Zm8Wcxtm', '63Zm8Wcxtm@example.com', 'kCwg4JSTcLSe9wVd4vbp', 'image_31.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('32', 'bni2nB5q', '50157', '41284', '2KqTkAfwKH', '2KqTkAfwKH@example.com', 'mrecxKJq5r6D6Le7k53z', 'image_32.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('33', 'zKj5Fmvq', '58371', '78631', 'jELArZChAZ', 'jELArZChAZ@example.com', 'kFil1A3lO9LKmGYAlAjn', 'image_33.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('34', '09zzxFR8', '24697', '79165', 'RIzbEPXK4r', 'RIzbEPXK4r@example.com', '1gK5cXpL4CAIwoELQKQe', 'image_34.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('35', 'Fi5GRyFX', '83672', '19635', 'EBLGaQvRRf', 'EBLGaQvRRf@example.com', 'greRvFGy58WLg4nccP2G', 'image_35.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('36', 'jVPTGgjb', '47288', '19630', 'CtQqTiIgRX', 'CtQqTiIgRX@example.com', 'ngloMqpXoIkGvwPfTMoh', 'image_36.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('37', '11vhXDCY', '25441', '50935', 'qcntfEfHxG', 'qcntfEfHxG@example.com', 'Bajq4aGiAXijKzln1ZvV', 'image_37.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('38', 'n64dDZKz', '49933', '22331', 'ATlJ1aGdMt', 'ATlJ1aGdMt@example.com', 'MdwprRVSVjIsj8eMPj3N', 'image_38.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('39', 'F7hIKylN', '34452', '60415', '9JPWYomobJ', '9JPWYomobJ@example.com', 'F8orxyICYORtNBccdmlh', 'image_39.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('40', 'P7KcMFfB', '67855', '46174', 'TdgQeRtGWv', 'TdgQeRtGWv@example.com', 'KWq5NdLs18jJIgOrVy89', 'image_40.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('41', 'qHJW5IW9', '75444', '76330', 'YGOgJznPDA', 'YGOgJznPDA@example.com', 'egpMIQvurFjnD27gSYcx', 'image_41.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('42', 'XQdTZlCM', '35658', '82920', '4qw7z5N8FO', '4qw7z5N8FO@example.com', 'lBlNZMb4HqMzbgyU0cJS', 'image_42.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('43', 'pYujtpZA', '57899', '45000', 'YGgBML4MKa', 'YGgBML4MKa@example.com', '3HAx3FqUA0jmLSAqOexO', 'image_43.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('44', 'MfONvSS7', '25318', '68055', 'jPGjIlMaT8', 'jPGjIlMaT8@example.com', 'vF3XmjdiuuDIenTROby6', 'image_44.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('45', 'FTOzkpAq', '70969', '30793', 'yGO3ZVwFSk', 'yGO3ZVwFSk@example.com', 'DDA2DpWR3PCinLtSmYYO', 'image_45.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('46', '6EmK72T6', '21757', '68488', 'iBpcrwbGBy', 'iBpcrwbGBy@example.com', 'ohMP15X5Sp1s6PviHMGE', 'image_46.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('47', 'XfNLmpzi', '23658', '24977', 'PSuR34nLvX', 'PSuR34nLvX@example.com', 'XnRk2WEXVvlLnlmrQLqh', 'image_47.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('48', '65nrpZOB', '99713', '79771', 'FjGgEhXGnE', 'FjGgEhXGnE@example.com', 'hSyGgZGPGRQY7idv1WaN', 'image_48.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('49', 'T6KRwwLT', '75863', '64441', 'xvomdYcMRL', 'xvomdYcMRL@example.com', 'CCOmv92B8MtK2xbD2Fmp', 'image_49.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('50', 'NdfbFpHQ', '54859', '44411', 'IZhl4anO7Z', 'IZhl4anO7Z@example.com', 'WLoYahOj0XM4owI3QqoK', 'image_50.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('51', 'DIpDw1Si', '58258', '11962', 'FSO1WuuSCD', 'FSO1WuuSCD@example.com', 'njOFpE2u9CB2TLoHcXZo', 'image_51.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('52', 'GZtFch0N', '22395', '71763', 'yhvSQB4OnY', 'yhvSQB4OnY@example.com', 'C0qlvGJFyDpPistVOxKP', 'image_52.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('53', 'nlFse78x', '98376', '32530', '8YTvmqOULd', '8YTvmqOULd@example.com', 'e5NAwNZOpWZGPDDqGiYL', 'image_53.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('54', '1YKe8KpB', '91769', '37215', 'TBvfF0XkMY', 'TBvfF0XkMY@example.com', '9nAA5XpGZTaDreVJ42MR', 'image_54.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('55', 'z34uFG0E', '14058', '24826', 'TT674QjCnW', 'TT674QjCnW@example.com', '6JGg2w06edCQvtLSv9wo', 'image_55.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('56', 'mEF1n4Eo', '27527', '76997', 'BwuTn9YPGM', 'BwuTn9YPGM@example.com', 'qVv047HvKXg3aZsPhYQa', 'image_56.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('57', 'nznHsjxX', '71458', '25185', 'N3clheTkZX', 'N3clheTkZX@example.com', 'hVpeff1r33WJn3ujD3SL', 'image_57.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('58', 'rFCBAhIf', '14186', '39756', 'LiGAbMGTlx', 'LiGAbMGTlx@example.com', 'FaQwlCl0BC9ofEoQeX7s', 'image_58.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('59', '16O8xDBo', '40617', '76850', 'Jj67px0ZWN', 'Jj67px0ZWN@example.com', 'yS10eYfemm0xa5yb0ovd', 'image_59.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('60', '0aeqYNbI', '36288', '70749', 'ZJy3j5Snm1', 'ZJy3j5Snm1@example.com', 'pmd7kDasrq9XgrgmF9vy', 'image_60.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('61', 'XC1ye1FZ', '95434', '55710', 'ipqI5L4ZOw', 'ipqI5L4ZOw@example.com', 'qQdyLIveMBxWgsY9w2FV', 'image_61.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('62', 'gta7ltm6', '98911', '69469', 'xmSOJsmnO9', 'xmSOJsmnO9@example.com', 'XoGw1cbpxh9J1yEkAS09', 'image_62.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('63', 'DBw8nUmh', '80573', '59282', 'u0T59J7hMo', 'u0T59J7hMo@example.com', 'z0f9jStZD06QC6WewkPO', 'image_63.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('64', 'gkY9ziW8', '40201', '46581', 'jZ2gEYiO09', 'jZ2gEYiO09@example.com', '9uWmTnzrpRYDIqHkgL0Q', 'image_64.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('65', 'treby03W', '27731', '87446', 'DvUjkqvNLP', 'DvUjkqvNLP@example.com', 'ieeEiaEMaw7Hpks1xukB', 'image_65.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('66', 'aDylRPA3', '79641', '23551', 'XLt41WrEG4', 'XLt41WrEG4@example.com', 'lrCbBpLBzxCzvaWEXZOF', 'image_66.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('67', 'KI3ohAXk', '93438', '25449', 'dpq4dxOjyz', 'dpq4dxOjyz@example.com', 'jYx7w1OpCQWJz0qIqmeh', 'image_67.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('68', 'ttufrr6V', '34535', '45906', 'bmL8e3BkLV', 'bmL8e3BkLV@example.com', '1p8M6LW4lEEAS8wd1Oyh', 'image_68.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('69', 'to9NIMSS', '34375', '66470', 'SE4lWc25tp', 'SE4lWc25tp@example.com', 'iVgvbXvqI1NR6zVZB7ZM', 'image_69.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('70', 'N3GAyrze', '66151', '44784', 'XC0hNCl2Vv', 'XC0hNCl2Vv@example.com', '9DNbTXcSDejPFZAY5toT', 'image_70.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('71', 'SAiGuqjE', '34811', '74468', 'gwP91VzYqy', 'gwP91VzYqy@example.com', 'cwOFrOAt1h93a1IQAXRg', 'image_71.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('72', 'dHGbl1CY', '24026', '80866', '1RT34K73Re', '1RT34K73Re@example.com', 'RFAC0iJp7RvmzJHGzdsG', 'image_72.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('73', 'GFzBEbhc', '17351', '48674', 'rECocET9Nj', 'rECocET9Nj@example.com', 'JbBeN9jXATofafXPaTXI', 'image_73.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('74', 'mm4xzW1y', '27041', '65558', 'Ar8hL92UMW', 'Ar8hL92UMW@example.com', 'WswMMumACQ2KEBXSCXnu', 'image_74.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('75', 'BNKLXlwz', '32624', '33685', 'wEFjAGTxxG', 'wEFjAGTxxG@example.com', 'plUoAdoYZfkgzEN0htVl', 'image_75.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('76', 'nTUmdIgX', '63927', '74019', '9yIOconswB', '9yIOconswB@example.com', 'IdEhBAoORKMTTrDxnRoi', 'image_76.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('77', 'HC1xVdxU', '58067', '30781', 'Qhihrw9cRS', 'Qhihrw9cRS@example.com', '25cinaM32v97ypEsLSbM', 'image_77.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('78', 'DxQ66Dum', '35124', '14378', 'QrRD16KIA2', 'QrRD16KIA2@example.com', 'm1BBQ7gZ7OB2J80yiidy', 'image_78.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('79', 'ne2vRhti', '63168', '41189', 'AXyx7vFoZD', 'AXyx7vFoZD@example.com', 'noUqoUCoJFW4SVZNhKgz', 'image_79.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('80', 'w6OBSl6t', '88570', '56200', 'W2pkGLI98Y', 'W2pkGLI98Y@example.com', 'QEpoVz4RtfYVSS74QHqn', 'image_80.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('81', '1g200jup', '77515', '95907', 'hFEWCfGGtt', 'hFEWCfGGtt@example.com', 'HAKLu4j1H1IVnfwWsCS4', 'image_81.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('82', '6wvNnGOG', '95919', '27059', 'sZPTmhET4y', 'sZPTmhET4y@example.com', 'cVyJ9COqO3ninzB4iu4l', 'image_82.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('83', 'PGZ8gup5', '27964', '44732', 'Cu1u5kow61', 'Cu1u5kow61@example.com', 'h9yKdS00KPg4RmX2aFpZ', 'image_83.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('84', 'OzbwP8wB', '28879', '40829', 'AGR7w3cdTV', 'AGR7w3cdTV@example.com', 'bZmSPaQxoWUyyxsOQuGR', 'image_84.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('85', 'jJMlqsZu', '18250', '11000', 'pHziFGbB97', 'pHziFGbB97@example.com', 'lAMpm8Ri3OJT2iQjP0m8', 'image_85.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('86', 'eKGCQu2C', '97404', '34930', 'v9d8sxcZNd', 'v9d8sxcZNd@example.com', 'Cwku56WXUsHUvFiEw7ln', 'image_86.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('87', 'RZhGjkVw', '55821', '82173', 'RXuhA6Lz95', 'RXuhA6Lz95@example.com', 'LUnVLdOhmGA0PG7fK5YL', 'image_87.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('88', 'slrud4Y9', '87944', '25315', '8P2tulnfXo', '8P2tulnfXo@example.com', 'I67U8aENiY68PwrobVXP', 'image_88.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('89', 'R9NC82sD', '53681', '37329', 'DGZIBGOpeT', 'DGZIBGOpeT@example.com', 'OR8ugjsPunOENnZVeRpS', 'image_89.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('90', 't0zPZrlB', '61506', '45600', 'ecDyBY03vC', 'ecDyBY03vC@example.com', 'VEwn4rVoZXgBz8LCd9Ib', 'image_90.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('91', 'YjOWbbC2', '90026', '80237', 'PmlYwDklti', 'PmlYwDklti@example.com', 'AkI6MnCSzCOLflbFMoZl', 'image_91.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('92', 'DmBVWH5x', '75370', '59474', 'kiYxX31VTP', 'kiYxX31VTP@example.com', 'mThRHbf3FiaUw9cPIqls', 'image_92.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('93', '3bLkY6Iy', '19258', '38513', '9tFumivpj2', '9tFumivpj2@example.com', 'AzVlTcNonf1cxBlshKam', 'image_93.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('94', 'p19ScAlG', '44345', '25275', '6qB2FZLAOU', '6qB2FZLAOU@example.com', 'h81WtDP0ncOBhuvh7gLl', 'image_94.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('95', 'vhw40dZI', '20543', '65377', 'YEzVOW8mr0', 'YEzVOW8mr0@example.com', 'N8tCfj23ItG9vT7TC2dt', 'image_95.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('96', 'Vyq2g82U', '93094', '45121', 'NrOBEnGDNx', 'NrOBEnGDNx@example.com', 'cNwfZyGckyubZfh8EU0M', 'image_96.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('97', 'KQ4EaErB', '80541', '38407', 'isP8yN09tZ', 'isP8yN09tZ@example.com', 'Oj37SHBEiYVeLET7szzZ', 'image_97.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('98', 'YTIiur1n', '63981', '56336', 'Wuwmz0oJms', 'Wuwmz0oJms@example.com', 'XnJO0Ggo6VTtAJZxAQdc', 'image_98.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('99', 'Tyu6kxTU', '88957', '30498', 'ARGihKwYHw', 'ARGihKwYHw@example.com', 'RbjlVbrnnfNx3QgHQCb9', 'image_99.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('100', 'dZY0R7yr', '42411', '42585', 'U921cEI7IO', 'U921cEI7IO@example.com', 'zEj3q7G4Bggp94y52Fcf', 'image_100.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('101', 'rYGKKG6Y', '80252', '36947', '5ETv0XDAzI', '5ETv0XDAzI@example.com', 'GFMnBrVt32PKhKjZVpZM', 'image_101.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('102', '217c7mVm', '19601', '92133', 'ciFB6C38FB', 'ciFB6C38FB@example.com', 'KD6pQJz9j56tbIRZ91XJ', 'image_102.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('103', 'Hf6ENfSA', '81875', '53547', '7V911Vb8hv', '7V911Vb8hv@example.com', 'Ngc6vmHNcorzf4PZ28eA', 'image_103.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('104', 'us6OA7Ns', '43307', '53553', '4a0JmP8on1', '4a0JmP8on1@example.com', 'iV3hKmauFYH9Hc7XUd73', 'image_104.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('105', 'iR7iYzES', '52833', '81544', 'N3MvhPQdI1', 'N3MvhPQdI1@example.com', 'JzUOdcbNkEnKnd6ePxrT', 'image_105.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('106', '1Yw6YMI6', '37024', '39830', 'GlfmEboTm5', 'GlfmEboTm5@example.com', 'eJTAXyMxaBgtpxt0fEmr', 'image_106.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('107', '8jlBHupv', '13701', '90400', '42697Jo3aT', '42697Jo3aT@example.com', 'DRpweh0sSmEhSz2sS7Cc', 'image_107.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('108', 'vYi2RTrV', '90006', '45587', 'HGlcqSyrBj', 'HGlcqSyrBj@example.com', 'qTtkwWAuhPGO7MXwVbbf', 'image_108.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('109', 'r2ujuKgz', '22166', '86038', 'jdIgzGq9YA', 'jdIgzGq9YA@example.com', 'yxJsNVSN0hcwsG2hX6ED', 'image_109.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('110', 'AWmbUBDK', '15835', '52309', 'Y6jDxdD9Gg', 'Y6jDxdD9Gg@example.com', 'FQRykW7QiWOlPeLsxG4m', 'image_110.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('111', 'fXLxWEYO', '17843', '20209', 'wXpQPx6VNx', 'wXpQPx6VNx@example.com', 'R12z6IedEkv85yGIyL0r', 'image_111.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('112', 'OnyitKYV', '23971', '80357', 'F6LhEhwz0u', 'F6LhEhwz0u@example.com', 'W7fuKWtFagwZ4DFpQgUg', 'image_112.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('113', 'XiajFqZG', '25023', '50924', 'iruqspx63d', 'iruqspx63d@example.com', 'pDgHXHhQcO9JSjSm5Rw8', 'image_113.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('114', '4LN5nAUF', '58002', '60855', 'C15WLruwFY', 'C15WLruwFY@example.com', 'EVqldRZocYOpU9xPUlB7', 'image_114.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('115', 'IQTzjPDX', '16830', '98395', '9bzn48Ubi4', '9bzn48Ubi4@example.com', '7nlBhVcJ4gfPM10XIY5s', 'image_115.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('116', '37dYRPh7', '10440', '60292', 'HCn78e4KEr', 'HCn78e4KEr@example.com', 'jJLSJGFyEEcKvVCIY7wv', 'image_116.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('117', 'b136hINR', '56435', '54347', 'eXX1VU7rH4', 'eXX1VU7rH4@example.com', 'NgQAcKaG7hpuGxnvq724', 'image_117.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('118', 'S8EmE5Ky', '54290', '79210', 'uu1X1nA4Fm', 'uu1X1nA4Fm@example.com', '6SphHvEnEx2mtUDUXQj5', 'image_118.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('119', 'xznfRJ6c', '90043', '60378', 'HFy2Q1LLhq', 'HFy2Q1LLhq@example.com', 'f8yY1d9s1LcJ2xdgNJMw', 'image_119.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('120', 'TmZPpHUI', '23932', '37941', 'W2jJqHRKM1', 'W2jJqHRKM1@example.com', 'EQyqFQNx0AOjev50p49h', 'image_120.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('121', 'iHM5bRF0', '36500', '67822', 'QufLkLoxa0', 'QufLkLoxa0@example.com', 'LnD0BJzCY2YESjyh0hCT', 'image_121.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('122', 'd4eLtwSo', '56072', '61767', 'pknWvBL9Yk', 'pknWvBL9Yk@example.com', 'dQnUlYfFk0Cn3bRPKex1', 'image_122.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('123', 'DEgpIkmh', '79008', '93091', 'OfpP3KoWMB', 'OfpP3KoWMB@example.com', 'C6vFRhL9jxG2OpQQPakw', 'image_123.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('124', 'ULs0witu', '71948', '39783', 'xsRe3hNUfc', 'xsRe3hNUfc@example.com', '6R1Yf3GvvSP9rwAMxHWM', 'image_124.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('125', 'mRexYetW', '87658', '84029', 'uYyM0ntasF', 'uYyM0ntasF@example.com', '0OCfF9ZqsoKOTCgEZi3W', 'image_125.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('126', 'THQpvCkw', '52241', '15083', 'NHDgVbcncU', 'NHDgVbcncU@example.com', '4rEY5ylNlYMT2RRywCZ3', 'image_126.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('127', '6qZiN2GW', '76234', '81636', 'vbGVIQy61m', 'vbGVIQy61m@example.com', 'l7bW7a2FGcaiSralJDmV', 'image_127.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('128', 'oFLo7ua7', '26023', '45761', 'muHwAUElkV', 'muHwAUElkV@example.com', 'gNMOpayFNHzXdMlpIbVo', 'image_128.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('129', 'xwVYTqph', '65086', '46579', '7yIlE740NG', '7yIlE740NG@example.com', 'Fl1Rn3qkeYhFCvE5DSQz', 'image_129.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('130', 'XP33oEw8', '67374', '88241', 'KtmCDzMESX', 'KtmCDzMESX@example.com', 'Jju712YZumSbpx8D2UfT', 'image_130.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('131', 'Hl3PeC5e', '79139', '52505', 'WrbQZu8Nik', 'WrbQZu8Nik@example.com', 'FYUBFzAkIPbnHqhGPZax', 'image_131.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('132', 'jWnAJjLD', '77488', '27557', 'g20OfU5wFZ', 'g20OfU5wFZ@example.com', 'i6WOiIPAHUPXuDeaf3Ev', 'image_132.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('133', 'wlsYccXB', '63266', '22820', 'lVkXaKJzFv', 'lVkXaKJzFv@example.com', 'vDxi9dy6ya29i5ockPPG', 'image_133.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('134', 'BLC3tKbl', '92119', '18824', 'icTD5LOqpL', 'icTD5LOqpL@example.com', 'QRaASFEF3Z2XGX5LUgPt', 'image_134.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('135', 'OjB9A7PX', '69587', '10976', 'quPieMNkwS', 'quPieMNkwS@example.com', 'AbpaBBwPnPRl56D96ae2', 'image_135.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('136', 'odov67Vx', '95424', '18105', '4h4g9tvePQ', '4h4g9tvePQ@example.com', 'NLGsqhuD7cR4miZKZkov', 'image_136.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('137', 'IMxLT0qK', '13941', '69631', 'u2NGT0pKtI', 'u2NGT0pKtI@example.com', 'StGLuT52VNZwy4hYcq91', 'image_137.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('138', 'Y7TaEiPE', '81930', '75399', 'ytixesDAvi', 'ytixesDAvi@example.com', 'mxoFfqAh8X5lUE5d3QH3', 'image_138.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('139', '4HAngao4', '55384', '28166', 'axfuTQaI1V', 'axfuTQaI1V@example.com', '1oH9YtUbDnxdeXKniVlo', 'image_139.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('140', 'ogoMZcEu', '23522', '71199', 'ZSml6a13jb', 'ZSml6a13jb@example.com', 'sA3mGZWRzctu7hVevRuk', 'image_140.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('141', 'C1ocod6T', '19356', '38432', 'EI1QvMM8R0', 'EI1QvMM8R0@example.com', 'WiwvWADKRMGQeGl6rZHC', 'image_141.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('142', 'y86wrQIp', '68014', '12724', '4oiDbluFFv', '4oiDbluFFv@example.com', 'nKZOhQZtewMp9yRRCs5q', 'image_142.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('143', 'OjP5yiWR', '59541', '37343', 'aXcqcc8dRM', 'aXcqcc8dRM@example.com', '9tbqtOV5wEPEO9229rOO', 'image_143.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('144', 'FAE4zWTc', '58804', '54012', 'p96Psz2PS8', 'p96Psz2PS8@example.com', 'toISpZXUWbz6vguD3Bsu', 'image_144.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('145', 'gs3Ir6zx', '16750', '37501', 'cQHNf1djGU', 'cQHNf1djGU@example.com', 'Ax72sm008Ltiu8BG7r2N', 'image_145.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('146', 'T5prMTCn', '96284', '24902', 'EDvU5h9kY7', 'EDvU5h9kY7@example.com', 'c5uIqlVAGlK77HwnRHAi', 'image_146.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('147', '3auSj0es', '32254', '21222', '16I4jwSfrG', '16I4jwSfrG@example.com', 'xBveqIVle7KlgbNjcmLP', 'image_147.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('148', 'anJKbAPL', '44035', '88815', 'KaPsMtAnB8', 'KaPsMtAnB8@example.com', '9S1Y24bU7bzg1t4jByeR', 'image_148.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('149', '9E3Wrna5', '67513', '28911', '7Poxdltw0B', '7Poxdltw0B@example.com', 'LPVPg5kEfFRXij9bpC5g', 'image_149.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('150', 'QEkToMmv', '59987', '65560', 'GxMxlR5TZh', 'GxMxlR5TZh@example.com', 'ZmTYqo3H34qLkgF8Notl', 'image_150.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('151', 'kEaSFAKH', '16393', '20624', 'tm16CTdamu', 'tm16CTdamu@example.com', '3gHva9tfg9dCDtbzj7w8', 'image_151.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('152', 'OsDnRuIZ', '30740', '59325', 'zSUnvGhTrF', 'zSUnvGhTrF@example.com', 'XMJPez5hbtxEha0xr6Kd', 'image_152.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('153', 'XBhn2E8Y', '69359', '50717', 'LWapylVmRs', 'LWapylVmRs@example.com', '5lCnjGPB2azWffxRofnX', 'image_153.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('154', 'U4iSCF1o', '15665', '61310', 'RLQQcsIaAm', 'RLQQcsIaAm@example.com', 'oAw0QlfK88c7Cmrue8TM', 'image_154.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('155', 'VXp0qsJ6', '54121', '46341', 'pSjaC3TBoY', 'pSjaC3TBoY@example.com', 'J0TcJlClzqCpyudqBazP', 'image_155.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('156', 'qqA1maha', '35033', '75834', '7WLDPkVrpt', '7WLDPkVrpt@example.com', 'GWWARqXeZAqQwRIKDYoJ', 'image_156.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('157', 'B8xWsYPn', '18822', '92162', 'KfTzgIo3LB', 'KfTzgIo3LB@example.com', 'If3ZiAOiezirIePLzvRG', 'image_157.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('158', 'a5ZBgKZg', '94046', '57242', 'q60urjpnSq', 'q60urjpnSq@example.com', 'KTGeWBlBXvgRkbkyMJwF', 'image_158.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('159', 'uFIpZnuJ', '76802', '88344', 'mpNGK6TcNY', 'mpNGK6TcNY@example.com', 'wzKq41ApU8NmBaKXlN7N', 'image_159.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('160', 'iO6Rn1Ku', '57019', '48703', 'YD1yhNDjj4', 'YD1yhNDjj4@example.com', 'sPnrvSGsZhsR7lLb37W9', 'image_160.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('161', 'rdYmpoPw', '97467', '58979', 'wnLI1x8emz', 'wnLI1x8emz@example.com', 'pDRLR5wepMq3I7duXkf7', 'image_161.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('162', 'eRaCpylk', '92668', '40645', 'DB8pFeK3e8', 'DB8pFeK3e8@example.com', 'hfd1UoVsI885E8AlNROz', 'image_162.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('163', 'UHojwTEa', '34585', '68091', 'PC1MgrOoLA', 'PC1MgrOoLA@example.com', 'HMt8UDCxM8s90JfjwtYE', 'image_163.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('164', 't6Qf4uxN', '92392', '95625', 'U92L6R7EPo', 'U92L6R7EPo@example.com', 'HMqV4aAnGb4zFHR35gst', 'image_164.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('165', 'gx9IIxp2', '34817', '36819', 'rUjj71aUpT', 'rUjj71aUpT@example.com', 'JaLkeOAU2yG1LoyHHmlc', 'image_165.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('166', 'tz21iytK', '55533', '21621', 'JxQqUDcsQb', 'JxQqUDcsQb@example.com', 'B5VSLgvxx4WSCJyAkIgv', 'image_166.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('167', 's5h41omK', '55979', '82532', 'EyQq6gVFr1', 'EyQq6gVFr1@example.com', '4impNle7kSliWqdEGOpg', 'image_167.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('168', 'tL67Omzv', '54568', '73826', 'homoukSb04', 'homoukSb04@example.com', 'cYeQZLPuxQClKMz7Lk8y', 'image_168.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('169', 'L8nHzcvW', '28281', '43851', 'duhTivmOx2', 'duhTivmOx2@example.com', 'Jkm4J2W2CU7Oir2njeI1', 'image_169.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('170', 'fpDuAvAp', '18493', '94447', 'rWiyq4r2d9', 'rWiyq4r2d9@example.com', 'i1m9f8eEBYTyWKyWzg2q', 'image_170.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('171', 'yVqUm6Gg', '77884', '89331', 'g6iJfSPIsd', 'g6iJfSPIsd@example.com', 'cq5VPiWdmwTUy0y23hFa', 'image_171.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('172', 'VTAPUkhC', '61106', '87245', 'wkCFaPwLQi', 'wkCFaPwLQi@example.com', 'wIZtGNqP84Eaq8h0Mkyu', 'image_172.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('173', 'FZ3umsWD', '45926', '97812', 'PuOZDleg8F', 'PuOZDleg8F@example.com', 'xwuWS7vpuVEXpTjkU3wd', 'image_173.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('174', 'txZ0eBTg', '59908', '27674', '4KcbgNNMwY', '4KcbgNNMwY@example.com', 'MQtN5gJe6E99fhVY3YnH', 'image_174.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('175', 'QixEl6vB', '23641', '97302', 'mye9oOwzXr', 'mye9oOwzXr@example.com', 'KG9eBGKRkoeVTshh6Ea1', 'image_175.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('176', 'i7Vzi7r3', '97022', '72042', 'Gokuaw3mq7', 'Gokuaw3mq7@example.com', 'VRVN6TwDilkMJUYDiFWB', 'image_176.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('177', 'HzZ7GRO6', '41441', '53851', 'AMKhrlkuEi', 'AMKhrlkuEi@example.com', 'QOHtARA6xybxAjkwVoD2', 'image_177.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('178', 'jS9UU7pq', '24320', '11499', 'WBn9HVGrYA', 'WBn9HVGrYA@example.com', 'KzdtFRqUyaQvvObOCRDR', 'image_178.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('179', 'RhlSrQJK', '16732', '98334', 'lHahwIifgs', 'lHahwIifgs@example.com', 'DUHHFYGvABbN7hHQoPCj', 'image_179.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('180', 'z65aqEO7', '87585', '53645', 'WVHwiOCxOV', 'WVHwiOCxOV@example.com', 'eAyvCQs3PgLpzlXuMQRy', 'image_180.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('181', 'anRVOxrl', '16052', '24065', 'QtPWbWvFRk', 'QtPWbWvFRk@example.com', '4uZlot9hZTUOHqJmqRIh', 'image_181.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('182', '8RFYX7UD', '68683', '78781', 'YWpVmhfLIh', 'YWpVmhfLIh@example.com', 'JRMqwF7Bln8OpvYiWHKJ', 'image_182.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('183', 'Q9PUqBIp', '13655', '90714', 'CKDFIAKZxU', 'CKDFIAKZxU@example.com', 'CZqkIuyuHvq6gwSHUCh0', 'image_183.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('184', 'LS22Vjr7', '96354', '80401', 'RBXvTpaFwC', 'RBXvTpaFwC@example.com', '3FFE8vwJL28JWgRuHNya', 'image_184.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('185', '6NyylSPJ', '84009', '35809', 'i8mErNj3g5', 'i8mErNj3g5@example.com', 'h4ecjVERzMHegh1CZK6N', 'image_185.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('186', 'ov0tXp4D', '51393', '19180', 'R3BQV9s0cp', 'R3BQV9s0cp@example.com', 'PBl3LXKcTZvxNJjaviza', 'image_186.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('187', 'pjIpEzg7', '83294', '11247', 'fYn8mBpQtp', 'fYn8mBpQtp@example.com', 'i7jQLGI7s0LSuVmMHDFE', 'image_187.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('188', 'MNdQgQtV', '56476', '24214', 'ObZuWQJkSl', 'ObZuWQJkSl@example.com', '0PgJEoo1eN7uOuA4DK6C', 'image_188.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('189', 'bVN5VQqr', '92146', '45643', 'D9EjQSt8YR', 'D9EjQSt8YR@example.com', '1fkMFeyx75iUtNQxgyjV', 'image_189.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('190', 'QnvNPzad', '23519', '79452', 'b3POmefVYD', 'b3POmefVYD@example.com', 'lxwb4NkuR3XbmRU8ulUc', 'image_190.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('191', 'ZB5aCSFW', '82045', '85761', 'ZssrKAUFaG', 'ZssrKAUFaG@example.com', 'W6EFXcr55Wbxwe0OlpCc', 'image_191.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('192', '6y2pPYyU', '33865', '55112', 'K4EKSnGjny', 'K4EKSnGjny@example.com', '67oyZwL7iKMXcjHEDVJx', 'image_192.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('193', '0LW8pLub', '10074', '68529', '1S1z3JAJ5p', '1S1z3JAJ5p@example.com', 'fhGnkOayyyVddp27yDwW', 'image_193.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('194', 'QgSDLXI3', '14354', '11358', 'iOO1mrLNNl', 'iOO1mrLNNl@example.com', 'AWluEMMYujzB3iK7r1hf', 'image_194.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('195', 'ePz1OIHo', '71894', '59467', 'OIjILtQUa1', 'OIjILtQUa1@example.com', 'mOUmKwHyepg9BvwXNjUR', 'image_195.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('196', '6SpkZFG4', '65344', '67207', 'jSoukvadkV', 'jSoukvadkV@example.com', '0MCU74AoJYkZqQb5sZmi', 'image_196.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('197', 'KXzPa2VE', '24434', '58574', '8KvZgozEqH', '8KvZgozEqH@example.com', 'jSvv24d0V6tbGRgNnykb', 'image_197.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('198', 'zUW16si2', '42729', '94833', '8EDXxyptsN', '8EDXxyptsN@example.com', 'e7NaS84QhIHg3cYBzEwN', 'image_198.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('199', 'eC9wD84g', '12290', '27309', '4uMQyxCtJ8', '4uMQyxCtJ8@example.com', 'hQ8LIIJf1ncOfBvPls7j', 'image_199.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('200', 'gNhuxdMn', '93824', '34562', 'kxNoFVYKsE', 'kxNoFVYKsE@example.com', 'wmsmMaUawA9sH5X0IYYV', 'image_200.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('201', 'umtu3vXU', '27968', '68647', 'TfGIeEUI7L', 'TfGIeEUI7L@example.com', 'uojLKEScA7b7licDNw5p', 'image_201.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('202', 'htSny3Yh', '88079', '29101', '6v2eopH5Hn', '6v2eopH5Hn@example.com', 'bIr5W9AeqcqCQhPSxWMx', 'image_202.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('203', 'tBSDVf1i', '80957', '85616', 'Zjbj1b2PCm', 'Zjbj1b2PCm@example.com', 'gAWyfwF2awPcaPy8z0fP', 'image_203.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('204', 'kTq7C6Dx', '86734', '36727', 'yUmkCoLQtJ', 'yUmkCoLQtJ@example.com', 'y4dGgQcmT3wtsS4B0C9S', 'image_204.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('205', 'BSqmHHr7', '19919', '13546', 'MopnhUNwGH', 'MopnhUNwGH@example.com', 'p407BKq6BCi8WyB8r5OV', 'image_205.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('206', 'egDCVo3H', '37722', '85294', 'fs2myLLZAA', 'fs2myLLZAA@example.com', 'yEjkltvQ7GZEWVhggVvr', 'image_206.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('207', 'G3px6mQp', '28172', '21011', 'K8W1IIpLIV', 'K8W1IIpLIV@example.com', 'QPzWt7NAVI7n4AwPzYsh', 'image_207.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('208', 'opBJdNpb', '64406', '35759', 'mZG2HYGhVR', 'mZG2HYGhVR@example.com', 'EKLUgulJZkHhUrXaPCUG', 'image_208.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('209', '1M6bdhlW', '97421', '41187', 'Eb9IFTOEn0', 'Eb9IFTOEn0@example.com', '0nK9fk0XsoxHK65wGrqE', 'image_209.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('210', 'I9uRggww', '27496', '26934', 'MFfx1XYJcO', 'MFfx1XYJcO@example.com', 'aHnJ2EG8MwGjkqq43HOh', 'image_210.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('211', 'v4UUXHzf', '65019', '71412', 'alwXTm1stm', 'alwXTm1stm@example.com', 'bl1j8CRTQsQr8hggByQt', 'image_211.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('212', 'xu5k9avm', '16243', '12237', 'T45gG8FfSA', 'T45gG8FfSA@example.com', 'LQf3Wy8YrBFn7nUwHYUo', 'image_212.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('213', 'QUWMTE6Z', '67749', '65297', 'ZlIn2s7TFK', 'ZlIn2s7TFK@example.com', 'zCOrkSIJHa6oWVBfmbi3', 'image_213.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('214', 'WUeVCKgK', '37635', '23708', 'qPn8i25Wai', 'qPn8i25Wai@example.com', 'GBd3tbJ7UBREM5dgolN3', 'image_214.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('215', 'pnQt2Spk', '33985', '67001', '3RwZ2flvVB', '3RwZ2flvVB@example.com', '3LqazpmrKSt0Np2GVL9O', 'image_215.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('216', 'QjXsNegq', '30944', '44625', '5Xfk3EC8X7', '5Xfk3EC8X7@example.com', 'Dg3uwpP0hgepzrul1slG', 'image_216.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('217', 'FlcjefW9', '17087', '50934', 'klIHFVVBeS', 'klIHFVVBeS@example.com', 'CEdtPlp59t4EOFyt8tvv', 'image_217.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('218', 'vDio9eGb', '93200', '68664', 'cdpk2Scbns', 'cdpk2Scbns@example.com', '3gY7ctJtFc3xDIRFxH9T', 'image_218.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('219', 'zr1CLEaS', '12199', '57667', 'vdl0mczkq3', 'vdl0mczkq3@example.com', '9BCpR5JqS9i1vl0kesgc', 'image_219.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('220', 'DWX0ukgK', '62435', '94077', 'AeZFx97zvO', 'AeZFx97zvO@example.com', '6mTJaLRabU5Fo69a13xC', 'image_220.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('221', 'mFh2xf0v', '36666', '67877', 'qWmYDwyvBb', 'qWmYDwyvBb@example.com', 'Lxt8fJgmvGcljTZMe4dV', 'image_221.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('222', '0EYe1Yrl', '73994', '43029', '91J1BceRnb', '91J1BceRnb@example.com', 'XvaiYM2n0alDEiwflJW2', 'image_222.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('223', 'o9yU2xSP', '98123', '28732', 'LYQ9HdGznI', 'LYQ9HdGznI@example.com', 'vag9wBGP4DB7L0MMsfc7', 'image_223.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('224', 'OWlrK8BC', '60643', '60238', 'yHth2ueDkM', 'yHth2ueDkM@example.com', 'CaqKHDPMtuSLfVTJtua2', 'image_224.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('225', 'wg2EVgEL', '83284', '54597', 'kktdnuHTxT', 'kktdnuHTxT@example.com', 'GTnAT4tjSXud5SIcTCPr', 'image_225.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('226', 'ArgQPnd6', '74566', '66300', 'LbFp7GAUG8', 'LbFp7GAUG8@example.com', 'rlX7JF517ISssGNEw3uu', 'image_226.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('227', 'Ic1qipRP', '83642', '42269', '0Wcm1sR8U1', '0Wcm1sR8U1@example.com', 'MUlMnhFVzbx6iKnnhRTD', 'image_227.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('228', 'gtQuxEqZ', '79406', '43331', 'Z9v74q13xM', 'Z9v74q13xM@example.com', 'scWeH2uChBtE2V87uEka', 'image_228.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('229', 'JRnKhLQQ', '48084', '60429', 'hV2E4oFWJX', 'hV2E4oFWJX@example.com', 'JuA5nz6ElwfqETkexWvk', 'image_229.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('230', 'YQ9oqGDF', '57215', '68880', 'pu9zOGOfW8', 'pu9zOGOfW8@example.com', 'mtQ5kJubB8QhZOQ7Qk8F', 'image_230.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('231', 'EBc3Qnx7', '49006', '94237', '8DVGG6IPM5', '8DVGG6IPM5@example.com', '8o3pAJvgp3fTKYtHYDQz', 'image_231.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('232', 'APManHkP', '18200', '46712', 'ZgVWbo5XiE', 'ZgVWbo5XiE@example.com', 'NfOdIWK1VHkkx9dTChnQ', 'image_232.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('233', 'LyexTHub', '62574', '28080', 'mc5ALEFh1C', 'mc5ALEFh1C@example.com', 'bpznLGqYIfiyoox4Z3Do', 'image_233.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('234', 'MD7tc8On', '99151', '59329', '48ffctWXid', '48ffctWXid@example.com', 'EfZGnJ9F44nmZ1SsCu5E', 'image_234.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('235', '5PM6VTYX', '66991', '92046', 'meZi7DSOZO', 'meZi7DSOZO@example.com', 'zWCA21odB3nQgrzXEYi8', 'image_235.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('236', 'HCnJ9kHI', '74752', '13538', 'XpgtpLj16c', 'XpgtpLj16c@example.com', 'QqjZtB7GDg0Qg9LzTOPa', 'image_236.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('237', 'vjDd1KJS', '22561', '79523', 'YnzGqkfCqY', 'YnzGqkfCqY@example.com', 'oP66auUgBRXADwjQH3na', 'image_237.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('238', 'n0dBo9Lr', '42054', '32688', 'LEyw0NoGP8', 'LEyw0NoGP8@example.com', 'kZ5DKWlpBpTIleLqat1p', 'image_238.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('239', '5fpkWSsy', '56991', '48506', 'aRkcd94wWl', 'aRkcd94wWl@example.com', 'arLzmkMqTbKPO8iH48E2', 'image_239.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('240', '3nv945lO', '45509', '93902', 'MZ3SRBCYvt', 'MZ3SRBCYvt@example.com', '4FUps2MmE2u3QfCpDqFh', 'image_240.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('241', 'x3JiWrQF', '60392', '15865', '9Il5BuB8jo', '9Il5BuB8jo@example.com', 'p1wvgXU6twVdTtrRRKqG', 'image_241.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('242', '2tIZAVOc', '21084', '78954', 'kWylv3NR5I', 'kWylv3NR5I@example.com', 'ZOIYwrEQWQTIWe6rtL4L', 'image_242.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('243', 'zMLf5TKh', '95344', '39080', 'a9p25dXeGH', 'a9p25dXeGH@example.com', 'AhuZrLAJKMLbyfeFlxiZ', 'image_243.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('244', 'BJ7aGqmA', '49201', '21173', 'AKJFfOXPPu', 'AKJFfOXPPu@example.com', 'at4PEOfDcy7KWSqDktbg', 'image_244.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('245', 'xhcOXidI', '16310', '29722', '1wG5xlhnnl', '1wG5xlhnnl@example.com', 'Yw78EhwJT7MtikCF28pO', 'image_245.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('246', 'EBMCHo9O', '12510', '28389', '8eaNidHDKA', '8eaNidHDKA@example.com', '52iasfc9pPphYXt6MTeD', 'image_246.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('247', 'EOnjcebS', '65720', '33188', 'cID5d94v0r', 'cID5d94v0r@example.com', 'aWfX0rvaQg6K9n4awV5U', 'image_247.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('248', '6q5q32K6', '29535', '10240', 'yz9e1ugaHs', 'yz9e1ugaHs@example.com', 'sDeGopPZBNmjIIzRWsLl', 'image_248.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('249', 'f6k85muD', '20888', '72840', 'tcuQkP7IWU', 'tcuQkP7IWU@example.com', 'WLEy7N51o4kzmy1cfJaZ', 'image_249.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('250', '4p6Y7Wiu', '80381', '59421', 'WSXaZ3dJ46', 'WSXaZ3dJ46@example.com', '5QHRfKjaj3pgqiaCG4SW', 'image_250.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('251', 'eQT3NPD9', '46912', '35752', 'VBb6NY0Uwq', 'VBb6NY0Uwq@example.com', 'YUmW50AbVrdkva5LOv5N', 'image_251.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('252', '48XyJ8iM', '84756', '88656', '4be1UCAkmu', '4be1UCAkmu@example.com', '6bhNkO8SQSAZvH3lz1L4', 'image_252.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('253', 'Gw7cgYbd', '80317', '32891', 'qfUcpXQ5Qp', 'qfUcpXQ5Qp@example.com', 'HqGhYFNGq5WggmD8PbwG', 'image_253.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('254', 'gRcWKNio', '31032', '81119', 'S0vnuMFgo5', 'S0vnuMFgo5@example.com', 'hTCHsdLo5NzWiKlFXxhN', 'image_254.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('255', 'bhRpdOvn', '60580', '45388', 'lGD1zwjyUb', 'lGD1zwjyUb@example.com', 'FDzn1NvBta7bkjIoEsGC', 'image_255.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('256', 'g6PUNw8V', '28917', '81195', 'qSAzisCFWH', 'qSAzisCFWH@example.com', 'dImW2cF3FRcrZEgZKjwb', 'image_256.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('257', 'dUYCYh3o', '72037', '13558', 'HGuWQzZkG1', 'HGuWQzZkG1@example.com', 'hyxkM57Rwn6LRBbvS7nT', 'image_257.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('258', 'xzPOrZol', '52591', '20156', 'R61GuHdGs0', 'R61GuHdGs0@example.com', 'rHgnS6lOXL4XpsN6UcBI', 'image_258.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('259', 'rYumN4aD', '89321', '92727', 'A1rOxLeYva', 'A1rOxLeYva@example.com', '7GRlwP8wROaWd8G0RFGm', 'image_259.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('260', 'tjC0ifMl', '65071', '87514', 'nLmCEKHWph', 'nLmCEKHWph@example.com', 'hKrpZPBjmPzMCPlCYR6S', 'image_260.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('261', 'fLTXPHO0', '74339', '50808', '3zYS8zFlTV', '3zYS8zFlTV@example.com', 'GbuERBUvnIylxBCNLbtr', 'image_261.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('262', 'LmxVitms', '96365', '41033', 'CZEH7QdLsL', 'CZEH7QdLsL@example.com', 'b4F8Gx6YFfzUbSYiV50W', 'image_262.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('263', 'PldYzSYH', '73182', '66814', 'QHReIvgEje', 'QHReIvgEje@example.com', 'cP31rL3sxZQZO5vZlpIu', 'image_263.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('264', 'Jm90H7sP', '95238', '13614', 'PFiGS8upaL', 'PFiGS8upaL@example.com', 'JAm9DQKV6UA6oRd9vs2f', 'image_264.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('265', 'Ca34BuFb', '63876', '77148', 'GdoLzCgLBX', 'GdoLzCgLBX@example.com', '93SJIGUDpR4nJfKGAGEr', 'image_265.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('266', '9BvdiB41', '98200', '93316', 'GzeVQtBw9k', 'GzeVQtBw9k@example.com', 'pLb7oqu7Yi4Z4pNN3YCo', 'image_266.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('267', 'xUIdbBz5', '94745', '24476', 'TelEuqmwlk', 'TelEuqmwlk@example.com', 'Sz7f4CmULlcRQa8pxTLU', 'image_267.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('268', 'maWufiic', '70800', '81362', 'm5YC2X3pLr', 'm5YC2X3pLr@example.com', 'Jt5VEie7ECMivyJftVFS', 'image_268.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('269', 'WLqCqLkX', '30985', '46379', '41Idqrctt7', '41Idqrctt7@example.com', 'CtHuGX6wraNzAY2mf0PN', 'image_269.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('270', 'VSuh6ORq', '20351', '53720', 'LKkVJjiLFj', 'LKkVJjiLFj@example.com', 'Xpvlqmn9pOiLf4DtZeXZ', 'image_270.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('271', '8KJJUvVy', '97350', '76940', 'oKbSewNbrC', 'oKbSewNbrC@example.com', 'UOVxQM7Nyqb4y09ESPGS', 'image_271.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('272', 'yoktWU0l', '84185', '47189', 'ipPalYtxzO', 'ipPalYtxzO@example.com', 'ffDoGTqPX3kEvpH7ubc0', 'image_272.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('273', 'iTy5C5bJ', '67755', '21324', 'zgLBxY1Fa7', 'zgLBxY1Fa7@example.com', 'mxK1vfmfCWQhOzSzliNo', 'image_273.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('274', 'G2wMyqcF', '75857', '41332', '2wOq2AIiJa', '2wOq2AIiJa@example.com', 'WaH45MXtCNQEcv8EP82q', 'image_274.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('275', '2OeX9ZgY', '37593', '47323', 'wyOF2EVqoa', 'wyOF2EVqoa@example.com', '35dSkVAEtZpKpKwqnHxk', 'image_275.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('276', 'uQFHnzI7', '48412', '89913', '1tEdSTQwzI', '1tEdSTQwzI@example.com', 'tzcWE5ECn3OWnlt3F3rB', 'image_276.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('277', 'm5n9jhCv', '77141', '81352', 'dwaI8ItTOH', 'dwaI8ItTOH@example.com', '3Am842QUa13nRC4JAvd7', 'image_277.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('278', 'jCx8pfKI', '29908', '98654', 'dan0bqWNaw', 'dan0bqWNaw@example.com', '4CxYCxdQJ2jCob9v77sP', 'image_278.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('279', 'feisDhQn', '91872', '64634', 'O1I5NYi2qL', 'O1I5NYi2qL@example.com', 'SoPIXLQtWqPXMoS2oQHT', 'image_279.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('280', 'y8OONBI4', '83003', '14481', 'fW17qQ5gWE', 'fW17qQ5gWE@example.com', 'BZAQF3OJ038wLKDynk2a', 'image_280.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('281', 'Z7C6pKmw', '52815', '69582', '9IAtiy4agS', '9IAtiy4agS@example.com', 'P7hRH6JdRrk0RMAew4l9', 'image_281.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('282', 'M7EBsy0V', '52010', '47633', 'IcqSbxyehw', 'IcqSbxyehw@example.com', 'yCENj4wnhTXvGN4rkXhT', 'image_282.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('283', 'zC9ivUUM', '68178', '90724', 'Bvnp8D54Ob', 'Bvnp8D54Ob@example.com', 'XPkmzJaZiF6q7evwt2SE', 'image_283.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('284', 'DidiPsdt', '58068', '98710', '7hU1fkc9SH', '7hU1fkc9SH@example.com', 'gqw0H79HrSWEhoI5vHUo', 'image_284.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('285', 'AfVjtmVX', '57791', '84031', 'JVeoishrkv', 'JVeoishrkv@example.com', 'DYMT0s73J7EYJtdXLyBj', 'image_285.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('286', 'WJagFsCZ', '61961', '82622', '7H5oY1pLt0', '7H5oY1pLt0@example.com', 'Q1rxSTr8YyUPbUcE2cJE', 'image_286.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('287', '1Lu25if7', '87570', '60688', '4wJNqyC2Pj', '4wJNqyC2Pj@example.com', 'VeQoVKKEHaBkjglktJNc', 'image_287.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('288', 'My9TKmNi', '88927', '55088', 'mYDuefzYeN', 'mYDuefzYeN@example.com', 'zKJWtThFyxWdDRDBSv4P', 'image_288.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('289', 'AiSUUYKw', '74167', '16922', 'kZygJkGBJl', 'kZygJkGBJl@example.com', '2f9SogMumckMp4xrgOT1', 'image_289.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('290', 'X0Pqy4ik', '41457', '78393', 'IXpq8BnGKb', 'IXpq8BnGKb@example.com', 'RnAUprocBifCGHHIvgMK', 'image_290.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('291', '5sANd8YQ', '29732', '87891', 'CGjsco3xyY', 'CGjsco3xyY@example.com', 'iE3jGvzbtwuZUngx3kNw', 'image_291.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('292', 'j1qw8JxF', '10714', '91173', 'Ob30kDmDxU', 'Ob30kDmDxU@example.com', 'Kdnu4s5qTPGwfeDxerMi', 'image_292.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('293', 'jy1kcUif', '53490', '39713', '7hssAYna68', '7hssAYna68@example.com', 'DK9wG9WRCtoJmhTCwc9m', 'image_293.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('294', 'NyoW8mRD', '48097', '67743', 'qQiasOe7a3', 'qQiasOe7a3@example.com', 'rrSRg7qXFzwLt5t8e3mz', 'image_294.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('295', 'X8TYDsn1', '95237', '41730', 'g9rdFrojTz', 'g9rdFrojTz@example.com', 'd0QcvGUztT287g9vqrt2', 'image_295.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('296', 'ZAPciW2U', '18629', '50655', 'rgXYWjV8If', 'rgXYWjV8If@example.com', 'bsX4vDlhuqiAoQ4qH6OF', 'image_296.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('297', '6ZqE4Rcv', '89585', '10426', '6xMUGU5z2w', '6xMUGU5z2w@example.com', '4mwRGR1swXwW8HOAhfTJ', 'image_297.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('298', 'gqvsATIr', '77611', '81581', 'Nzd2UX5VPQ', 'Nzd2UX5VPQ@example.com', '1GaVyoNImx28rWQxfuMN', 'image_298.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('299', 'afQNklRL', '30907', '32060', '4IJJzhv6E3', '4IJJzhv6E3@example.com', 'gAS83RGpNKj4YFcVJ6So', 'image_299.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('300', 'x5VJmHUJ', '13157', '20968', 'zzJbZLBvgU', 'zzJbZLBvgU@example.com', 'tL8eEdGw2X8zzFL4DdTA', 'image_300.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('301', 'g7m8hbCU', '76842', '21638', 'jzzg7bIBkX', 'jzzg7bIBkX@example.com', 'xWyp23pU4XP30h0gpeki', 'image_301.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('302', 'G9798nqv', '68787', '74727', 'X2wP1O59K6', 'X2wP1O59K6@example.com', 'kCOv7KdlHs8Gc0UdGXFo', 'image_302.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('303', 'juLqQHCM', '32172', '10598', 'BujOYfuH2I', 'BujOYfuH2I@example.com', '7MXgT0qiSbxeM5ak7WJ0', 'image_303.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('304', '6NhHdg12', '62666', '71497', '1OMKWVhoYr', '1OMKWVhoYr@example.com', 'Ik5wHUcTatG5VWIognFy', 'image_304.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('305', 'l394Epw9', '21463', '75147', 'pFk8zWTJnE', 'pFk8zWTJnE@example.com', 'GlNAOnZkAfh2sMtTeyVW', 'image_305.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('306', 'TUxRVVTg', '76568', '85469', 'u9H0ufPrtG', 'u9H0ufPrtG@example.com', 'CXbgirBI8zkdAqrMNAu7', 'image_306.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('307', 'ouxJbgWG', '45809', '63516', 'Ze9HUoE36G', 'Ze9HUoE36G@example.com', '5DgJNy8xlnDIjPYGHtfW', 'image_307.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('308', 'n5j3PqZF', '44515', '26514', '4YjYGzAkxA', '4YjYGzAkxA@example.com', 'iEQzgxuZbaaMRWkzskTy', 'image_308.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('309', 'bSXAtgLP', '53412', '52171', 'oJnFPt2Fui', 'oJnFPt2Fui@example.com', 'e7nCeYBEJIZBWpmxFuwD', 'image_309.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('310', 'cXVnzOYT', '73754', '84627', '10a4ii9DOl', '10a4ii9DOl@example.com', 'H7lUyM3DGTMRa3uCk9w6', 'image_310.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('311', '6e7OtpxM', '27636', '94202', 'BncqE0pXPx', 'BncqE0pXPx@example.com', '0YasyVppTOxoerfmCf1f', 'image_311.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('312', '0tQHqXqi', '41330', '69666', 'TmA7z4fX7t', 'TmA7z4fX7t@example.com', 'tyxKK5aLx1HA8Orm6fFb', 'image_312.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('313', 'PeMKPpb5', '14563', '97839', 'CDOhLmVoU6', 'CDOhLmVoU6@example.com', 'd96xLwiw2ZsfRa83n36n', 'image_313.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('314', 'vN15eHyQ', '45292', '69265', 'GvwYpIZpXa', 'GvwYpIZpXa@example.com', 'm5ORVclkgxDgxyg7t2bZ', 'image_314.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('315', 'wOMiFkUV', '78681', '65502', 'B19ANswSK5', 'B19ANswSK5@example.com', 'wFYpC2csUVnCKuUOS2TN', 'image_315.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('316', 'XH93Mqma', '18040', '42801', '8UzXGrBooc', '8UzXGrBooc@example.com', 'Km9kKfWTBbaKdn9luqXx', 'image_316.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('317', 'qdO4BvZY', '45775', '22400', 'NGdNia0UBx', 'NGdNia0UBx@example.com', 'mX110H5VEDNkNC2FmVii', 'image_317.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('318', 'pHDHN5NH', '23802', '71740', 'g0RM2Ner5k', 'g0RM2Ner5k@example.com', 'Fx4JIUvTKmOnBSDIV7R7', 'image_318.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('319', 'Yi3wh9XT', '11715', '50958', 'TDLgThhYqm', 'TDLgThhYqm@example.com', 'vklCZglQ6AXvnHplUsSz', 'image_319.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('320', 'xmbZNw2l', '37337', '23191', 'hBtAEGZ7TP', 'hBtAEGZ7TP@example.com', 'iXtP7qpVUjmwwShj5X3V', 'image_320.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('321', 'A5iAKFRJ', '90530', '78177', '2dYXpixKWM', '2dYXpixKWM@example.com', 'UzeQ2G0xPDN80iw2EFv6', 'image_321.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('322', '0zCmc8bB', '94987', '33074', 'e5YacUawX3', 'e5YacUawX3@example.com', '7ZtvuBKBtqhIf0d3q8oz', 'image_322.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('323', 'CC1F1rWa', '65396', '74970', 'dMDVvGLT3y', 'dMDVvGLT3y@example.com', 'HaXKPIcOvekthGUFOxAa', 'image_323.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('324', 'm2RC493l', '82512', '28467', 'jJwXoGD1mG', 'jJwXoGD1mG@example.com', 'Fero5UT6RCABNT04aH5s', 'image_324.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('325', 'm5rEDpfp', '90295', '49178', 'wfojYdJMwi', 'wfojYdJMwi@example.com', 'vlGYlYSUwxRDyHi9DPXV', 'image_325.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('326', 'YAWliGI1', '97272', '58822', 'x8a46P52sU', 'x8a46P52sU@example.com', 'SZUoKlag9YeeVNpVkmg7', 'image_326.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('327', 'AUEqudpN', '59794', '81363', 'Jmodi6Fain', 'Jmodi6Fain@example.com', 'GtiyZdnofag3KE0wqOFi', 'image_327.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('328', 'aOcWpKQk', '54595', '11739', '8QyPmEROU3', '8QyPmEROU3@example.com', 'C4zE7h4Adg1gcma9bOcV', 'image_328.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('329', 'qrLyLCai', '62150', '93230', '0tLsreaxxD', '0tLsreaxxD@example.com', 'mv9BwnP9fasSsBElWfbf', 'image_329.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('330', 'SRgbmIUU', '64040', '28182', '0kpeG3uknC', '0kpeG3uknC@example.com', 'JiWV8fDDSZUOQPhiRMEe', 'image_330.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('331', 'qlKVTbsa', '36028', '31738', 'Xj43mxkEp6', 'Xj43mxkEp6@example.com', 'QH7jhqPVCqXF4FA7nAnV', 'image_331.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('332', 'x7nu1TUx', '95259', '96705', 'lZLeFbxnUc', 'lZLeFbxnUc@example.com', 'LMaqEtiESgjxFvZumZI7', 'image_332.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('333', 'FoJ57zX8', '90873', '27358', 'qbsMM3I3sR', 'qbsMM3I3sR@example.com', 'okjeumR11bIFMZ9fdtUN', 'image_333.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('334', 'ziS9HeXu', '90993', '72427', '9MptcMDZjk', '9MptcMDZjk@example.com', 'uAndlUt6kYOUHfPhbasy', 'image_334.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('335', 'p98qEEYI', '50234', '81473', '2qweXfzrht', '2qweXfzrht@example.com', 'rNteVP4PjjfEdZu9STz7', 'image_335.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('336', 'pFsokiSk', '58505', '85999', 'HTVN1RrvYj', 'HTVN1RrvYj@example.com', 'ba6ZOrHeR5GiY92thgzL', 'image_336.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('337', 'kT45Pn6c', '14306', '49786', 'kA4U6nyjJp', 'kA4U6nyjJp@example.com', '1UB5WWh1sPrTrDc30jOz', 'image_337.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('338', 'GLjV04tB', '71156', '47012', 'zQ4gqCmJH6', 'zQ4gqCmJH6@example.com', 'VrHpqQpwajGbZLQdWXI8', 'image_338.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('339', 'Yy4J7C0O', '51607', '57019', 'DV6BqftK8F', 'DV6BqftK8F@example.com', 'rO5FWJgqZ4TxGdKtiCAJ', 'image_339.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('340', 'IiM44vU1', '43110', '66211', 'Y4oE0LPjTL', 'Y4oE0LPjTL@example.com', 'nlyeyE33yTKiL3o86Mwv', 'image_340.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('341', 'gU06odnK', '30174', '21419', '3VYd0LRTzZ', '3VYd0LRTzZ@example.com', 'gup89Ev0IGrAif3YSz06', 'image_341.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('342', 'WpDXeZ6R', '94937', '23028', 'kyC1taVJCJ', 'kyC1taVJCJ@example.com', 'ufVsk2BcWkreP0Jvlcly', 'image_342.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('343', 'FvkPLc7D', '22890', '99295', 'EByceOrYHf', 'EByceOrYHf@example.com', 'umP9jh4CP4NiBaLZATHi', 'image_343.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('344', 'Z6zkgPh1', '85705', '71304', 'QKPpUWcYoF', 'QKPpUWcYoF@example.com', 'esYKNm7yMIvWnigB21jV', 'image_344.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('345', 'xYQpLjH8', '10223', '32492', 'yz6LEq9oc3', 'yz6LEq9oc3@example.com', 'lo1hBYSBr4PJ8uObdr5q', 'image_345.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('346', 'XnOwuvzs', '38525', '27340', 'ONaYTLUkCW', 'ONaYTLUkCW@example.com', 'LHLybgn2kqh2CsKpQRxG', 'image_346.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('347', 'erGTCDee', '59767', '81950', 'UvRdWqMWXK', 'UvRdWqMWXK@example.com', 'ciRr2dS8QbmMJ6CQ0CqW', 'image_347.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('348', 'RVmRo6SO', '14766', '42375', 'M1aIw5t62p', 'M1aIw5t62p@example.com', 'vQS77Thwf7FfFAq1M51w', 'image_348.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('349', 'xKaFvWSK', '34981', '53084', 'IfqjPPf7zl', 'IfqjPPf7zl@example.com', 'JSvec4XOOX4TR7VeFZ5x', 'image_349.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('350', 'nFsd2btQ', '20493', '89183', 'p1p4bSF38F', 'p1p4bSF38F@example.com', 'H2nMNCEFfG9kVtloBzSL', 'image_350.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('351', '7V0bNIrQ', '93825', '21932', 'xy5R4MVsQX', 'xy5R4MVsQX@example.com', 'fFsbsjg2kPGMPZQXVblN', 'image_351.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('352', 'HL8SvrCG', '66720', '65829', 'KBx0mkdMlk', 'KBx0mkdMlk@example.com', 'TV1c8mcERtau1pJ83jgc', 'image_352.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('353', 'riYNfbSN', '76826', '70383', 'ZP8KGIZLWe', 'ZP8KGIZLWe@example.com', 'CXGAKTHXDDy55j6TLo1Y', 'image_353.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('354', 'Msdh5L0e', '11321', '27277', 'TY81abLiSJ', 'TY81abLiSJ@example.com', 'lQziofDrYFeXg7IXKRfi', 'image_354.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('355', 'CPptJxQl', '56934', '92081', 'j3AguvbDZq', 'j3AguvbDZq@example.com', 'aQGbjEb8ZXv72e8dHv9K', 'image_355.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('356', 'Q5nORCDK', '83018', '70635', 'VM8ghqaJyw', 'VM8ghqaJyw@example.com', 'zPQQ8Be0lKqCEuWIgkMt', 'image_356.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('357', 'uImSTnxq', '42385', '64033', 'T0fuNY1879', 'T0fuNY1879@example.com', 'ZIwvy23fkZfFoaHtfs9Z', 'image_357.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('358', 'LOzEFlRN', '69024', '28605', '0IjyiobG9r', '0IjyiobG9r@example.com', 'AMXLzpfMeZeCL2k9IW75', 'image_358.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('359', 'N5g59aUb', '55767', '18263', 'cUcyoLIdzx', 'cUcyoLIdzx@example.com', 'i74c2d19OYKI0ejoycSr', 'image_359.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('360', 'vqjjbkqe', '69545', '69301', 'oggrWL3ijG', 'oggrWL3ijG@example.com', '3W1D9Mv17dFYg5shyi92', 'image_360.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('361', 'iqTKZ6zL', '89237', '26406', 'I1T7pPpZbz', 'I1T7pPpZbz@example.com', 'u6e3XVUkA5X8R9QDXniT', 'image_361.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('362', 'MVbhSj79', '51991', '80312', '0tanm3defq', '0tanm3defq@example.com', 'pqKDY3yvmbucyAUUYgyF', 'image_362.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('363', 'BViRVs8c', '69498', '59803', 'kOKFfnj3kq', 'kOKFfnj3kq@example.com', '8Yf1B3JTqOk0zwoQtuMn', 'image_363.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('364', 'ha4vYwAv', '16280', '79082', '8WiATbeJ0y', '8WiATbeJ0y@example.com', 'QUqAE3x0tPRzkTcQQbDw', 'image_364.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('365', '4y4pXJ00', '27883', '15894', 'Vc9FCdLuBC', 'Vc9FCdLuBC@example.com', 'DobpYNGJp5xURg5haZ7V', 'image_365.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('366', '7yzuJfCo', '58815', '61520', 'tWv5AzYmsR', 'tWv5AzYmsR@example.com', '3ttcFevEVHzvnvuigf8z', 'image_366.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('367', 'Km8nBXhU', '82985', '12343', 'N8RRXhrI3Z', 'N8RRXhrI3Z@example.com', 'E2aDiTUPDewvM3JKeU6G', 'image_367.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('368', 'Qvqv4MgE', '25200', '87019', 'vx7lfasFSV', 'vx7lfasFSV@example.com', 'IaMyJdBclnAN10PrcmRE', 'image_368.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('369', 'LxUJeMLZ', '34285', '16067', 'wriSP2KJar', 'wriSP2KJar@example.com', '64tnRdmnH3OWOexwj6Q2', 'image_369.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('370', 'oNjw9N9o', '74001', '14796', 'd7H7VKcPBh', 'd7H7VKcPBh@example.com', 'WnUdw4SaR5vi7KM1Tnlc', 'image_370.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('371', 'qSoJDLF9', '68263', '75762', 'v6JMKQTEqS', 'v6JMKQTEqS@example.com', 'skHU6FMdNmlWuRrbNGRW', 'image_371.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('372', 'JLBm4iL4', '66687', '48634', 'pGSatlMlwy', 'pGSatlMlwy@example.com', 'cpRmfsRY6Iui8zxk43p0', 'image_372.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('373', 'Jy0KzLF4', '62790', '92386', 'VBPmXBy5YD', 'VBPmXBy5YD@example.com', 'giqxMpJf4H2rp85LSVt7', 'image_373.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('374', 'aPjZwV4d', '13741', '80958', 'UXekXx9WRf', 'UXekXx9WRf@example.com', 'nnzI0jDLqUk25BlfNIC1', 'image_374.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('375', 'sY1k5DnQ', '23517', '94540', 'vIwvVXq6S6', 'vIwvVXq6S6@example.com', '4wBxTsbkCsWMuq7k7yPK', 'image_375.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('376', 'pqW19Mnd', '70018', '40109', '3CPhWyx9OK', '3CPhWyx9OK@example.com', 'xO2Pt6gqnndoYA10KIBE', 'image_376.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('377', '25Wa50nu', '97802', '39060', 'XD4WuIsts6', 'XD4WuIsts6@example.com', 'b7ZuTbCuYZfJGr39J90D', 'image_377.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('378', 'evtFrqmh', '28095', '32620', 'sy3WFwmbOJ', 'sy3WFwmbOJ@example.com', '9oWwoZjpGYZ6uiJQlyqf', 'image_378.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('379', 'NfYr9PN7', '76592', '54793', 'b0CdPX7R3W', 'b0CdPX7R3W@example.com', 'PegsB5qWiUv2BjcAHncU', 'image_379.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('380', 'jEVjANZD', '32167', '16586', 'OAkFsrjggO', 'OAkFsrjggO@example.com', 'QWYnzpQNe9HEva7lTPYV', 'image_380.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('381', '3EwZjVfA', '48351', '92361', 'jmBw8Siurw', 'jmBw8Siurw@example.com', 'T2Jjbjb2avnFLyl3ebyZ', 'image_381.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('382', 'lwioPvGO', '86841', '81763', 'QMYHiSTFxu', 'QMYHiSTFxu@example.com', 'fTpuP9cof7FLZx6BW7S5', 'image_382.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('383', 'FJcd55tv', '85482', '38239', '2WWfH8rQS9', '2WWfH8rQS9@example.com', 'SOJ307ZhOiW4fN2qtnLW', 'image_383.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('384', 'K5rxj7ir', '18874', '39276', 'iMatidXUvN', 'iMatidXUvN@example.com', 'xQCcqvw7JCAF7rDyoM52', 'image_384.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('385', 'mY55Lid1', '45879', '38749', 'ZmDdNYjVMJ', 'ZmDdNYjVMJ@example.com', 'Jmuenn7CoNYpOOsYPEkd', 'image_385.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('386', 'YFOgK1KN', '82317', '14965', 'XO3OsT9r3M', 'XO3OsT9r3M@example.com', 'e90I4rtqRJSUUMf7VXAM', 'image_386.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('387', 'uFCVF8Tr', '90786', '12256', 'VfMfoqT3hF', 'VfMfoqT3hF@example.com', 'Br29Vw7Luyiz6ieQdTdb', 'image_387.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('388', 't7yBHutk', '45946', '88201', 'RvuoBxp0Of', 'RvuoBxp0Of@example.com', 'wmQzJHyQjOgGmnTVLC5H', 'image_388.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('389', '32WsmTMd', '16761', '96835', 'BNiUExNSfx', 'BNiUExNSfx@example.com', 'Fb6e5xEhg4FDR0fau0Xi', 'image_389.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('390', 'DKQ8ffu2', '18449', '88281', 'ZQqUtD7XqZ', 'ZQqUtD7XqZ@example.com', 'Hpr6OGziXo1VacHOGY4q', 'image_390.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('391', 'BG1el7bN', '16348', '41552', '0D0RhoqZiv', '0D0RhoqZiv@example.com', '7EvY4rwYkU2BYAM6MvAK', 'image_391.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('392', '63DhR72s', '80709', '72626', 'kApLgMxSKH', 'kApLgMxSKH@example.com', 'DfvFnJisZXkTwKj9M8xh', 'image_392.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('393', 'qgYPqiwJ', '28255', '76051', 'aDMbTXPoWd', 'aDMbTXPoWd@example.com', 'wMIbIyLLnhNltBgLuSx6', 'image_393.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('394', '58DTGjKJ', '82802', '76694', 'CssFAOyUnz', 'CssFAOyUnz@example.com', 'h6lKXNSU8rhU6PdvROm4', 'image_394.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('395', 'uaLoKqbq', '97434', '88474', 'TvXm6IZ4AE', 'TvXm6IZ4AE@example.com', 'HHDfyjxe9draZhKkZFnO', 'image_395.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('396', '5jj26SpR', '38877', '40502', 'l51bwEkUi7', 'l51bwEkUi7@example.com', 'fErNI4PUeI9tciVANYOp', 'image_396.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('397', 'oIUNMZcs', '51480', '64270', 'VaBrOH07xK', 'VaBrOH07xK@example.com', 'fLCI2o8lQnlFdPOuW3Ij', 'image_397.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('398', 'uKnwf5aQ', '11913', '69671', 'w78Lxm2TcP', 'w78Lxm2TcP@example.com', 'aq20IHpiZkcPE238ShYq', 'image_398.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('399', '3XIk9k9N', '27457', '77724', 'ov9QEteSnP', 'ov9QEteSnP@example.com', 'C7oniKIWToNdkiG3v9t5', 'image_399.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('400', 'nbJF8MaX', '49615', '16433', 'jdNKX1uH6j', 'jdNKX1uH6j@example.com', '6w37DexERnk0wd6WRVAh', 'image_400.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('401', 'xOQricJz', '34403', '27465', 'xJmeOd4O7B', 'xJmeOd4O7B@example.com', 'b5ez65hp2AABwp60w8Oy', 'image_401.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('402', 'RlAfjHm2', '88859', '12924', 'YXSBz3c7Ts', 'YXSBz3c7Ts@example.com', 'Sdecd3ScgcD1XZLkzBXe', 'image_402.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('403', 'ytjr8tqZ', '10982', '87993', 'PWJwlP6Xp0', 'PWJwlP6Xp0@example.com', 'vPlfgXd65uedOOdi1ktR', 'image_403.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('404', 'KgfcrPX7', '52797', '80361', 'z83cbZ7k8E', 'z83cbZ7k8E@example.com', 'CvDkEKNBsKTPPaerSjAC', 'image_404.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('405', 'ijZUhKo6', '35285', '52610', 'cmqgqDOpUE', 'cmqgqDOpUE@example.com', 'xh5nhNOFo0MgHS5W6uej', 'image_405.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('406', 'kjHwCcLd', '80899', '12645', 'M6SaoOuXRv', 'M6SaoOuXRv@example.com', 'L748jG88vgdlVWCI6o9x', 'image_406.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('407', 'XOPUr9v6', '19085', '93735', 'FCIGgWqzFV', 'FCIGgWqzFV@example.com', 'O8cLiESlNZe2QeE7r5L6', 'image_407.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('408', 'FDBmnwLZ', '91490', '66027', 'cfA1yAhD4P', 'cfA1yAhD4P@example.com', 'rcmDneB2Jb6sZA0GROUQ', 'image_408.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('409', 'mSdOQChg', '35158', '11534', 'yD26RctpNc', 'yD26RctpNc@example.com', 'rssUjjQQcmzpFHxIFBfS', 'image_409.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('410', 'EsPH2IKw', '95537', '73993', 'ObXTmcXs2Y', 'ObXTmcXs2Y@example.com', 'Utqr283WtFQj5yj0STwz', 'image_410.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('411', 'uDnFLMEG', '26739', '96487', 'x4ACwoqlVl', 'x4ACwoqlVl@example.com', '1xFBp41vGqIO22gIh1Ai', 'image_411.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('412', 't5Xdkw1J', '84270', '89310', '56oJmsQGyS', '56oJmsQGyS@example.com', 'f0XI8LlGpEM6matl1OmT', 'image_412.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('413', 'wWkMfMVo', '33851', '73562', 'lX4y9jJSsr', 'lX4y9jJSsr@example.com', 'qDzAfaqRpWtpvrSqIknN', 'image_413.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('414', 'JrqDKFjL', '92356', '58986', 'AP15oMIWUz', 'AP15oMIWUz@example.com', 'U82gW2TT6p1qdiXdseiD', 'image_414.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('415', '90ym9ACg', '62558', '55703', 'uZbSglJztk', 'uZbSglJztk@example.com', 'A7CsV6sOOnR7xJ7as6AD', 'image_415.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('416', '2vdX5TUH', '99424', '78022', 'n6KaH6FIGT', 'n6KaH6FIGT@example.com', 'r9xQ4r6qagc5uOooQKUC', 'image_416.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('417', '0kaFmwKx', '23998', '60334', 'X5CL1jw5bN', 'X5CL1jw5bN@example.com', '6jsUkkdcVmpgYuKzNIA1', 'image_417.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('418', 'byJEC5oF', '23759', '66800', '7IjgTy0tvT', '7IjgTy0tvT@example.com', 'csw2EQ3irIqsAFANjBwX', 'image_418.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('419', '8sxUwhBf', '28655', '54762', 'vY8BGSdlL3', 'vY8BGSdlL3@example.com', 'b9hVxJEXHHstLUp3Cg18', 'image_419.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('420', '7TdQmmUd', '99096', '71701', 'OBWJvhVE95', 'OBWJvhVE95@example.com', 'mvX7iG5WtveRkAVLmak2', 'image_420.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('421', '1nATISzC', '71474', '25116', 'yGeRrPkT9f', 'yGeRrPkT9f@example.com', 'EEjHn5OjwCSiAttswUFs', 'image_421.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('422', 'FX36a1D1', '47601', '91508', 'aCD7fW9IgG', 'aCD7fW9IgG@example.com', 'QQnDoT1RLW1zHZZD4rV9', 'image_422.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('423', 'C1w0WSFq', '31031', '68737', 'juSAspKr8v', 'juSAspKr8v@example.com', 'Zx6ics1ti1lyu4kv1RiG', 'image_423.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('424', 'xIJg0oYz', '12744', '49953', 'ovTqZuza7c', 'ovTqZuza7c@example.com', 'DnDgZhFffqkSOBtakfwp', 'image_424.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('425', 'UWbqeDni', '95117', '82875', 'WFWkG9OC8m', 'WFWkG9OC8m@example.com', 'ghpTmG7VrElTPWhF7fNu', 'image_425.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('426', 'k4U4Duld', '66585', '52903', 'qptAXECRfG', 'qptAXECRfG@example.com', 'jKWoYsmB5uwTd2jEpnCu', 'image_426.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('427', 'jbgJ86gi', '25467', '29645', 'nRRxFQt0BS', 'nRRxFQt0BS@example.com', 'G5twVMlnbbcy2ASCQf2T', 'image_427.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('428', 'B6aqNJj5', '96520', '10081', '6g58QdeRUv', '6g58QdeRUv@example.com', 'me3gg74aBHUw3XYmfZJx', 'image_428.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('429', 'Iv7BRmPK', '94220', '75285', 'MVvAaZPfLH', 'MVvAaZPfLH@example.com', 'PNkcQw2o5wOjm9T0rN0z', 'image_429.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('430', 'SCm4H42g', '10309', '78274', 'Ms73MehjsO', 'Ms73MehjsO@example.com', 'Nk24JVkNbpBoUqr2L6oO', 'image_430.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('431', 'pO84MJDf', '39925', '73332', 'xcKZLQFMTM', 'xcKZLQFMTM@example.com', 'XYPjdGB3tEFzFjLZMCJe', 'image_431.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('432', '9i6LzKTv', '83134', '50481', 'euaTnn78wP', 'euaTnn78wP@example.com', 'azY3eirKjiQnn9qaNxNg', 'image_432.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('433', 'IyVVYbLS', '44514', '42655', 'nfME4SPaci', 'nfME4SPaci@example.com', 'Azb0L829kOKu1JSUHdDS', 'image_433.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('434', 'UyY6GDIM', '21976', '61069', 'o0q5CHR7Zd', 'o0q5CHR7Zd@example.com', 'lkKelufIhFczmpHCPpQ0', 'image_434.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('435', 'c5EluzcI', '14730', '33529', 'ncDPg5WBZC', 'ncDPg5WBZC@example.com', 'xxCviN2PMPwvmVnYUt1A', 'image_435.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('436', 'mpy64A72', '94260', '54713', 'l8yXTozXLh', 'l8yXTozXLh@example.com', 'oCRKoGFDYbEXMFMY2auH', 'image_436.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('437', 's5DiVDeh', '24152', '74098', 'ZZETLj8uzQ', 'ZZETLj8uzQ@example.com', 'hbv697pmYMiOYj7vR2xm', 'image_437.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('438', 'LgcB1x6e', '91474', '47342', 'pQCZSBNrtb', 'pQCZSBNrtb@example.com', '2TBHh7fj056Hk3uzzuws', 'image_438.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('439', 'GJGTUNr1', '20367', '55280', '2cZ1lfZzlQ', '2cZ1lfZzlQ@example.com', 'bsDPxHsUZyOxZKhZNIbN', 'image_439.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('440', 'Ql68MiEv', '19052', '95637', 'hQWNsqI4qb', 'hQWNsqI4qb@example.com', 'UJFVcKhZheziFsHwWVfc', 'image_440.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('441', 'uXLnDAAP', '14146', '37185', 'KArHOjmmKK', 'KArHOjmmKK@example.com', '8U27XL60GCw4SU1TzF1L', 'image_441.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('442', 'vuGEs9ru', '91329', '28642', 'UE9vSn4YVD', 'UE9vSn4YVD@example.com', 'GPUlkcRHVEynRzLYFoqD', 'image_442.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('443', 'kZW8XMJ2', '78388', '24762', '8U4IFvk6dD', '8U4IFvk6dD@example.com', '12at0sEE6WCcXiUEzBeL', 'image_443.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('444', 'CedVCW0N', '31300', '77337', '0MMaJAIwsk', '0MMaJAIwsk@example.com', 'rFD8HQh3ah7HmvhkZRbJ', 'image_444.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('445', 'fQkv6asp', '90562', '23527', 'wNIrK9MIJ3', 'wNIrK9MIJ3@example.com', 'ydHoOil919R4gL5h22ps', 'image_445.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('446', 'fFqhjKc9', '50571', '44394', 'vIYj9s0WHb', 'vIYj9s0WHb@example.com', 'TyTaasmDahznUxITBcRD', 'image_446.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('447', 'rnQ3s7IO', '77591', '55384', 'jjMAV6xYoP', 'jjMAV6xYoP@example.com', 'KkRtN0sE6lbfDDXsX5YJ', 'image_447.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('448', '6PU3Ymks', '83688', '29905', 'GDPIrOt6RL', 'GDPIrOt6RL@example.com', 'yuLfbmwshEhpi44Boku2', 'image_448.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('449', 'M1b0A7fL', '48530', '64531', 'NMHeknIuAV', 'NMHeknIuAV@example.com', 'tyf9IKwcN0fgZfhGGpxF', 'image_449.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('450', 'Ba7mPezy', '53671', '89671', 'cwIlNosn8w', 'cwIlNosn8w@example.com', 'ufTwIMKkjUvzSga1wbVR', 'image_450.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('451', 'hPWDGDOO', '73443', '20053', 'eGnA81PiGm', 'eGnA81PiGm@example.com', 'QjKkvBVRldHpNHKXjs3Y', 'image_451.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('452', '80PSz2cI', '93699', '28213', 'ShLxSQVshl', 'ShLxSQVshl@example.com', 'txqT9b7X133a8jvUCYma', 'image_452.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('453', 'qW6RIufr', '17587', '61255', 'BRv94NI81d', 'BRv94NI81d@example.com', '1xuuyo6qb6pbsRifp01b', 'image_453.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('454', 'kqZUFqmX', '78378', '42157', 'PLzmBJc81J', 'PLzmBJc81J@example.com', 'rzVLyxNuYzfrEVvWP3ZI', 'image_454.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('455', 'kUbV6Etk', '21654', '16708', 'lTHXyKvfCF', 'lTHXyKvfCF@example.com', 'SE0FUKqDThiIK2Ko9MNG', 'image_455.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('456', '8Usu0iwg', '16428', '78265', 'ePYyN0Oynu', 'ePYyN0Oynu@example.com', '1CMR1dtmpnCTNNvx71Ik', 'image_456.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('457', 'yThMS5UD', '88532', '73900', 'Aq3ClCwAPF', 'Aq3ClCwAPF@example.com', 'hRid68VJ7L2Nwu480H3v', 'image_457.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('458', 'E18A7SQr', '46939', '10657', 'XSeA3TL9bw', 'XSeA3TL9bw@example.com', 'LvXBaLT35KO1Oeznk0Wa', 'image_458.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('459', '1mIxNdtw', '41586', '83074', 'pkcb7pT380', 'pkcb7pT380@example.com', 'rWFnymPrMMUj0etjePFa', 'image_459.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('460', 'M7VdsulL', '38312', '62581', '5shxqOl7Y9', '5shxqOl7Y9@example.com', 'eA1r5ZvnGUUNG6igbFbg', 'image_460.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('461', '7NQgDzik', '16824', '49031', 'XwIZBRh8sM', 'XwIZBRh8sM@example.com', '0BESOAUkOhrHJdvg31fR', 'image_461.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('462', 'NmiULk5e', '12950', '27736', 'YBNxkC0EUu', 'YBNxkC0EUu@example.com', '0TdyYc1LDySGrY83zrRs', 'image_462.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('463', 'NtvJvvWG', '78465', '94916', 'wNQ9UiJFAl', 'wNQ9UiJFAl@example.com', 'nwkbrd5S0hPeTOUKHPON', 'image_463.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('464', 'YOqBzbYD', '38364', '36927', 'JTvMSo9Yze', 'JTvMSo9Yze@example.com', 'XtXhbCfpDyF4OAI8seal', 'image_464.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('465', 'pKu1ciDB', '85041', '83324', 'mcdJGQPIJA', 'mcdJGQPIJA@example.com', 'VibIuxocXjpJ23hQNZ0i', 'image_465.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('466', 'F4x4t9hG', '52777', '82075', '0Yt1YTKegr', '0Yt1YTKegr@example.com', '8pcMeWBxmnFdU38mXCpE', 'image_466.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('467', 'Mbe1VcDn', '23039', '83293', 'fs2TRazgJH', 'fs2TRazgJH@example.com', 'MWdk6YzMub4SXqBYP360', 'image_467.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('468', 'qfo28xeR', '41109', '35305', 'l4v7z6fkum', 'l4v7z6fkum@example.com', 'bz0H82HPfJTjvvlVepml', 'image_468.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('469', '2Qc2vsAF', '50412', '89086', 'VQ442vYa5F', 'VQ442vYa5F@example.com', '58cZxI3i4KZkB0hhYPWv', 'image_469.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('470', 'soOnkLWg', '54934', '70708', 'YfL4YZ8Agc', 'YfL4YZ8Agc@example.com', 'wlaJr2f3KQSg5iw2O5jO', 'image_470.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('471', '6ibuINIE', '36710', '44730', 'lNjuLmTZmO', 'lNjuLmTZmO@example.com', 'obNZ88WNpjQZv3gQaPKP', 'image_471.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('472', 'rnrkyL3U', '66276', '27829', 'qTYrIts4Sw', 'qTYrIts4Sw@example.com', 'kFW9RIcIStVU1lq4SvEY', 'image_472.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('473', 'ZRBzqnEs', '71431', '59760', '3FU2Af8uRT', '3FU2Af8uRT@example.com', 'nFBwYce10ypp6jyeUyrb', 'image_473.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('474', 'MvUglt5L', '90319', '66433', '9YWzi9uetg', '9YWzi9uetg@example.com', 'xG1B1tsZEuMY87fI5faV', 'image_474.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('475', '3V7a5ZcX', '98474', '73148', 'cHUHlnFVc6', 'cHUHlnFVc6@example.com', 'gYlLexCHESgNL15qXhKB', 'image_475.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('476', 'yQHiyD6T', '66056', '60653', '4dQlnhttMP', '4dQlnhttMP@example.com', 'LhZndQvrGFrenRzjniOP', 'image_476.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('477', 'QNNsl3Tk', '85843', '66965', 'O6w5veXuGl', 'O6w5veXuGl@example.com', 'fgB3QIKRroN6dppVnnXV', 'image_477.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('478', 'HmHVWyYP', '92164', '47919', 'Dga46g4vrH', 'Dga46g4vrH@example.com', 'Q6MvrvtVx0eC7nPXrxCv', 'image_478.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('479', 'UJyhoIi4', '52618', '34136', '2MWGpsRgwe', '2MWGpsRgwe@example.com', 'koEKyMX1XFLDRiFrNgsP', 'image_479.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('480', 'fvKgi6NA', '70612', '73392', 'HNM7a6fC6Y', 'HNM7a6fC6Y@example.com', 'Ie6QaPqAfblY0Jbr6rqn', 'image_480.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('481', 'QL808ZvX', '78175', '14483', 'CMl1kEujHa', 'CMl1kEujHa@example.com', 'VZX3GhqcCma6nIOIuPYu', 'image_481.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('482', 'xY5ExPss', '25504', '89648', 'Hz1smWju4H', 'Hz1smWju4H@example.com', 'cWzx8K2K2gWlEAOnNqYI', 'image_482.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('483', 'fznnCddH', '39510', '47407', 'rV5XYWJri3', 'rV5XYWJri3@example.com', 'TBr5JYa3fbXhffFdO0PE', 'image_483.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('484', 'MR6obcfT', '88965', '70573', 'dDWHXCgAeg', 'dDWHXCgAeg@example.com', '9WkTjvzAWrQ0lBoDNj9L', 'image_484.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('485', '82Ndn0oZ', '18573', '52467', 'h0ROWkM6TM', 'h0ROWkM6TM@example.com', 'LthdDdTRMLzicJjmDOps', 'image_485.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('486', 'sOjkxaxO', '97233', '79107', 'lLixQQFumb', 'lLixQQFumb@example.com', 'HGWytIsSdgPCmPeXVE6D', 'image_486.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('487', 'VbYxSbyk', '70815', '28780', '7uKrzraAb4', '7uKrzraAb4@example.com', 'ePz1QFrl8U3BsxcMkF0w', 'image_487.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('488', 'gx1rAnlN', '93159', '32108', '77UO11TPyT', '77UO11TPyT@example.com', 'wgqJXdKW4vb6HZvg0ILi', 'image_488.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('489', '9D3AyYQu', '33739', '65965', 'NPACssKn9P', 'NPACssKn9P@example.com', 'BnSB1BEjDeXNGZhkcoYW', 'image_489.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('490', 'cXwhpvki', '96973', '79102', 'zaxeXRC65a', 'zaxeXRC65a@example.com', 'U1i2O2nR7U6K6YjVSto8', 'image_490.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('491', 'jEbp4BG9', '26172', '75562', 'LMgAp25G3J', 'LMgAp25G3J@example.com', 'CirxW2qaudGy3VxcSyFh', 'image_491.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('492', 'zn875gJF', '94039', '37589', 'kZkCfzbnYg', 'kZkCfzbnYg@example.com', 'c9oXGdxrTFbyZSnsenH7', 'image_492.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('493', 'CAkHsPwl', '91447', '64170', 'xDqA2Bq5cR', 'xDqA2Bq5cR@example.com', '4NOpYaX9DSLqAy9Po2qn', 'image_493.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('494', '7B8eYrvI', '22944', '76151', '7vEXPfcjmE', '7vEXPfcjmE@example.com', 'yfS8Bc79EnP1MmEcALFr', 'image_494.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('495', 'jSAMjcW0', '73687', '33803', 'wX1DiBS9Yl', 'wX1DiBS9Yl@example.com', '3FPDrklEMPBYsAk2pla8', 'image_495.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('496', '3WzQElfC', '95572', '40647', 'aEtNFZ4eNm', 'aEtNFZ4eNm@example.com', 'jEWN9UspsCZEBhYc6Gp8', 'image_496.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('497', 'fKbcHq0Y', '27938', '57511', 'egESkUM25g', 'egESkUM25g@example.com', 'crFhqxIEFqnmhGZy5MDe', 'image_497.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('498', 'zLSK4wHZ', '59323', '57654', '7WwKtfyJ0q', '7WwKtfyJ0q@example.com', 'JocPX5sMoXhzmnTwkgoD', 'image_498.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('499', 'pAcpu7vF', '51680', '31613', 'FDrPWnTD5t', 'FDrPWnTD5t@example.com', '0qyitHUFlaaa0UlCblAl', 'image_499.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('500', 'edmjhNKS', '99674', '54350', 'WhtGBKB1rD', 'WhtGBKB1rD@example.com', 'lJCzYW6maqRgQbvIQr5B', 'image_500.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('501', 'FDu5giER', '91023', '47150', 'k4HrVG7Ao9', 'k4HrVG7Ao9@example.com', 'KxCNGf28AbVeZMyqg1NT', 'image_501.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('502', 'FiK3KmaY', '75891', '21823', 'C3GvQCffIO', 'C3GvQCffIO@example.com', 'NRvEd7PHH3G5vVehPp2l', 'image_502.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('503', 'FNAT9Bmg', '50967', '51017', 'SkdL2NXjsS', 'SkdL2NXjsS@example.com', 'KZaLjZgfcEBpXOGtPvqC', 'image_503.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('504', 'NGHR6KYl', '94360', '27586', 'yOIsvOT00J', 'yOIsvOT00J@example.com', 'tjuVnGTbr8hvLMKScEzG', 'image_504.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('505', 'bQkFsTlg', '30790', '43841', '0pQkcxoftX', '0pQkcxoftX@example.com', '1uhxY94GKVBZCikmYQlY', 'image_505.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('506', '4LGdig08', '18957', '28991', 'rTpCrUJogT', 'rTpCrUJogT@example.com', '9vAHdtce8VwHbU9nNHOT', 'image_506.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('507', 'hrkd714U', '69460', '35250', 'DY67Jp7gtc', 'DY67Jp7gtc@example.com', 'L7H3PpHowKxW0Fwe7CEl', 'image_507.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('508', 'INXNwuwF', '55725', '77556', 'pb31n8wQ1l', 'pb31n8wQ1l@example.com', '0iabncPhC64NUOuePPpg', 'image_508.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('509', 'NO76Lj3H', '42539', '53582', 'hUx5exMJNL', 'hUx5exMJNL@example.com', 'tUHHOlRVpYh1G8gI5tZ2', 'image_509.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('510', 'rGtOK09i', '26501', '19601', 'DvJhc7P9RM', 'DvJhc7P9RM@example.com', 'NEXpyRMKsXkIVANZarIy', 'image_510.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('511', 'stFnJ2DN', '29181', '12159', 'JOHzc3p1FR', 'JOHzc3p1FR@example.com', 'MDuGCX8mJg919d8kil5A', 'image_511.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('512', 'seRNxsHO', '14112', '19704', 'syH7CRsXQZ', 'syH7CRsXQZ@example.com', 'LQLLVpuGW7lflEGptjSK', 'image_512.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('513', 'AqSmegm8', '73693', '38348', '6G4SvgJA4p', '6G4SvgJA4p@example.com', 'll3xhu8bBcY34nd7GUkW', 'image_513.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('514', '4q5Wo1Lg', '58259', '33834', 'EiSW09oDLh', 'EiSW09oDLh@example.com', 'cbcRhKevwPJaUr8BSQFt', 'image_514.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('515', 'PncAp5Sz', '97176', '13677', 'sC3XvC4ZZB', 'sC3XvC4ZZB@example.com', 'xochEFrY6y1hCXiY9p5q', 'image_515.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('516', 'wsM70be1', '45304', '18124', 'UatTY1kj27', 'UatTY1kj27@example.com', 'pvRIjRVMQi8ClPSXQTvq', 'image_516.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('517', '9J27l2Oo', '49355', '47337', 'MHfRYJH42W', 'MHfRYJH42W@example.com', 'dbUZcXG4xMEicZGKTZtn', 'image_517.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('518', '3LDDDrVf', '58466', '94679', '6KZIJQH5Jy', '6KZIJQH5Jy@example.com', 'I4MEVIuqyUnMPYGiIFbK', 'image_518.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('519', 'g0io5C5s', '60975', '32511', 'TIdsFEPaFg', 'TIdsFEPaFg@example.com', 'zPa1AbmusUcxW9BX3QAA', 'image_519.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('520', 'Ev8HSUVE', '96598', '51444', 'Cz2yCPI1Nw', 'Cz2yCPI1Nw@example.com', 'yQICDQnY9SStIdYbY9LK', 'image_520.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('521', '6urlPKcm', '55338', '64263', 'KYjqxZKM4m', 'KYjqxZKM4m@example.com', 'lTgIi8snXzCwWV2xxyD5', 'image_521.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('522', 'PyOTMPz3', '69995', '51693', 'F9WV65Nu87', 'F9WV65Nu87@example.com', '5QW4heo8U8KZgxroeTyw', 'image_522.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('523', 'ByWQWHmX', '13734', '13317', 'ipgmiDwuDy', 'ipgmiDwuDy@example.com', 'cNwJYYpvda5qfpAOlWno', 'image_523.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('524', '6JmtFf2Q', '63358', '87169', 'kNzEu32n70', 'kNzEu32n70@example.com', 'bvIIY1ToRYIN9hyPicgA', 'image_524.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('525', 'KEX6abgF', '16699', '73570', 'rkm7qP7Dm2', 'rkm7qP7Dm2@example.com', 'n4LnFFwcGOx7jG3lmlgf', 'image_525.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('526', 'tMDNgu3C', '69148', '51702', 'jkOr9uolXP', 'jkOr9uolXP@example.com', 'okNOkc41uRPdAJh5xHkT', 'image_526.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('527', 'JokZboW3', '75785', '63601', 'ntOWodG2LN', 'ntOWodG2LN@example.com', 't427lES8xCUllDA9W5We', 'image_527.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('528', 'ijgrEBQN', '50652', '10641', 'Frws3xKrl7', 'Frws3xKrl7@example.com', 'VklWCvIaxIspu6OwRgvS', 'image_528.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('529', 'P3cYHPLc', '41606', '88017', 'u5NC2CKhB6', 'u5NC2CKhB6@example.com', 'JqgAFcxgXMNE2VJJqx3U', 'image_529.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('530', 'V4eVLwrH', '68482', '64472', 'KKPsGwYnVI', 'KKPsGwYnVI@example.com', '9K3ieGYE4xbcbcLsUwhr', 'image_530.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('531', 'qO5cwlUG', '74932', '98373', 'p82b1v7mga', 'p82b1v7mga@example.com', 'lYIV45pwmZA8bjqH00PE', 'image_531.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('532', 'PzLdyZRN', '43243', '17949', '4iWkZO78yM', '4iWkZO78yM@example.com', 'hVGWRxAzcaFdF7qagzAo', 'image_532.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('533', 'TYYAhVtB', '54615', '48802', 'nNPYCceCOJ', 'nNPYCceCOJ@example.com', 'jMzZGOxj8gcYPGDk1pXN', 'image_533.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('534', 'ptywPMSz', '75315', '35278', 'dSAnEewxmN', 'dSAnEewxmN@example.com', 'BH5sTYGv9Drbt888HrjQ', 'image_534.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('535', 'U5XuYfl9', '94596', '54611', 'yO2t4eAYDz', 'yO2t4eAYDz@example.com', 'CqioS9uSnOy9JhIK5IVo', 'image_535.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('536', 'VrNggPDi', '72494', '29543', 'Z2LfX48rK0', 'Z2LfX48rK0@example.com', 'x2OvEDTjF5ehEMcDtb6v', 'image_536.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('537', 'lHqziUvb', '77066', '30123', '3fYv0ekgA0', '3fYv0ekgA0@example.com', '0Q36rjlLJvgnY5gTc7sA', 'image_537.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('538', '0WkCaCyl', '97000', '37666', 'u3LUb7UZAq', 'u3LUb7UZAq@example.com', 'DgzI31WQRw1LV99HUIC2', 'image_538.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('539', 'a7DGdw3k', '42626', '34917', 'STmpR6WD5I', 'STmpR6WD5I@example.com', '5q40vRLHG2QjMBZCi8or', 'image_539.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('540', 'ueB9QodP', '83629', '13073', '9R3oj0QY3a', '9R3oj0QY3a@example.com', 'nyJit0BWuNWpejYjWZpI', 'image_540.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('541', '8RAqX5Sq', '52594', '94848', 'DboCukxeHH', 'DboCukxeHH@example.com', 'T2Gk6urpkwRrr03NVVzu', 'image_541.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('542', 'URQU5EtX', '48159', '94366', '0tLu0tQyQR', '0tLu0tQyQR@example.com', '9Ad3e2yJVduwOoJF2zIg', 'image_542.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('543', 'LAmWLwcV', '38584', '51826', 'e7tmzKlc78', 'e7tmzKlc78@example.com', 'gX3KgIiJ7vtPR7RbyvjL', 'image_543.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('544', 'hOYSS9o5', '57406', '76388', '8PzgYki28q', '8PzgYki28q@example.com', 'OSoOLgV5XIQGhEmwc7oJ', 'image_544.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('545', 'IlS6sanH', '66622', '22896', 'eTQC7lTmHY', 'eTQC7lTmHY@example.com', 'q9SpjKp2PDmfAuNmgMTD', 'image_545.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('546', 'JVEmDT8n', '36987', '97361', 'ZF3IOoKobx', 'ZF3IOoKobx@example.com', '1AWqyvSGQHLhBQnDF7XZ', 'image_546.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('547', 'ZMHnjClY', '61790', '25418', 'JrvBoJTCTE', 'JrvBoJTCTE@example.com', '4XtR5LtBGereYXdeCMGi', 'image_547.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('548', '618KREGw', '90503', '61515', 'MOSjFdlOgl', 'MOSjFdlOgl@example.com', '8GpGSaX1cCzgIb8utqg3', 'image_548.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('549', '1i85p8MV', '87911', '85329', 'j1loJ6w1Qz', 'j1loJ6w1Qz@example.com', 'Cal3EjXdB1GakURrPjuB', 'image_549.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('550', 'bBGR8xIu', '13213', '76692', 'WhSZNBl10H', 'WhSZNBl10H@example.com', 'v9IFKkSSI8tNn9B84jB5', 'image_550.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('551', 'ejGunbQx', '45239', '59278', 'nRbAcUJVOl', 'nRbAcUJVOl@example.com', '6vrtRN8K8IMnXcFxEd9V', 'image_551.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('552', 'YZHouOQo', '91156', '80196', 'CLqXesTPrh', 'CLqXesTPrh@example.com', 'hz92cpFwAtbBauv0Sfim', 'image_552.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('553', 'JGCRbAWa', '60338', '19435', 'g3QjeQIsNH', 'g3QjeQIsNH@example.com', 'sdcFQLUswkgLkFjTvktj', 'image_553.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('554', 'vfSmTuKH', '98798', '67257', 'D7BXHMuwao', 'D7BXHMuwao@example.com', 'iKdX0tjWICNRDfDH6QYV', 'image_554.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('555', '3Cm6ILTI', '51682', '35272', 'SGIoG9ICax', 'SGIoG9ICax@example.com', '9IJxuSo6zaloiPJOQ8TY', 'image_555.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('556', 'U6Jz5pCw', '65476', '80807', 'dd56vmz3kY', 'dd56vmz3kY@example.com', 'rO4ilXgh9tlhKB0LTbHq', 'image_556.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('557', 'Mun7VlS5', '31824', '88352', 'PUki7cj1Dk', 'PUki7cj1Dk@example.com', 'oaqxned4SxJZgiKFjybC', 'image_557.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('558', 'CSvyPT4b', '87895', '22042', '8VSnICmhW4', '8VSnICmhW4@example.com', '8el7MWpevagUBBqfJ8wJ', 'image_558.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('559', 'twenA4Ti', '97495', '61921', '2jVxM01igx', '2jVxM01igx@example.com', 'r9JluB73vAcdi97WcKXs', 'image_559.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('560', 'zruXSqxW', '73978', '45212', 'WrLJFBw8eb', 'WrLJFBw8eb@example.com', '45u3TUlZXt9uLtixFkEx', 'image_560.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('561', 'EdcCVwKl', '15343', '96427', 'JFcDKGMYF1', 'JFcDKGMYF1@example.com', 'JqFmnCQc3uTOSkXYmcr3', 'image_561.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('562', 'FQ38fouM', '55465', '11030', 'HhUP1BpiH6', 'HhUP1BpiH6@example.com', 'oqpGLHOQWqiQtxkZdgKK', 'image_562.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('563', '9siLHTld', '98264', '69466', 'VE6ZKV8zIx', 'VE6ZKV8zIx@example.com', 'TLwJbQ5tw1UcdljB0a9q', 'image_563.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('564', 'mzpESzd7', '96953', '79506', '8JHVpAelq4', '8JHVpAelq4@example.com', 'NdZfiBTiR22SuD5nP2E3', 'image_564.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('565', 'qMKCjorZ', '68361', '70838', 'FfLfbHIVZy', 'FfLfbHIVZy@example.com', 'hHc6orIZNt44WAje8DwG', 'image_565.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('566', 'pKSW1b4l', '36049', '31915', '5197vJueTo', '5197vJueTo@example.com', 'd1lJBlDCS20QMvgiLyFU', 'image_566.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('567', 'rdcYBjCt', '26012', '23602', 'dllsssB6ow', 'dllsssB6ow@example.com', 'e1u3R3rC5XdsGZlDfjzI', 'image_567.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('568', 'QUnaNiyD', '81102', '79658', '6Ly3k4kabg', '6Ly3k4kabg@example.com', '4ZX0wsn8l7Q9wPlUIxTA', 'image_568.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('569', 'daVrWaPT', '74140', '91152', 'AsrqqlFOX4', 'AsrqqlFOX4@example.com', 'pxcMvGRZSlogtkNBWz5Z', 'image_569.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('570', 'BJXosepn', '53363', '13157', 'hOVDbfZzdn', 'hOVDbfZzdn@example.com', 'jAZ7ZIeW0cvLhj6ZByWs', 'image_570.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('571', 'JMZSg6yE', '43676', '41560', 'JZrIUmj6lr', 'JZrIUmj6lr@example.com', 'Q51p3ZxdM5KPerhHMreC', 'image_571.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('572', '9FH5x9V1', '72111', '70327', 'aADACyOwHo', 'aADACyOwHo@example.com', 'hL5deMGZ6S6Z9attFk0J', 'image_572.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('573', 'DZKYE5Vh', '32950', '59796', 'OQdGdcbm76', 'OQdGdcbm76@example.com', 'YXnwWTdWBURJH3vbnYNl', 'image_573.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('574', 'Pw1EzdkC', '23326', '57373', '66Nf9rMDHw', '66Nf9rMDHw@example.com', 'mchQSrqacBc9f3mY7NhM', 'image_574.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('575', 'Ija5EKv8', '62123', '57207', 'Uj3EPd63GW', 'Uj3EPd63GW@example.com', 'w53125sxP32w0AKShgvI', 'image_575.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('576', 'ROCCQ1tJ', '45007', '67755', 'KGBc1KPyyk', 'KGBc1KPyyk@example.com', 'WtwdQu2wFdbaASaV446Q', 'image_576.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('577', 'YPIItLtV', '45057', '87500', 'RkNa3m6kc7', 'RkNa3m6kc7@example.com', '6alnhkY5RHQ08HJx2V1f', 'image_577.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('578', 'nhu0K37z', '57897', '29647', 'IVO3oj8KIP', 'IVO3oj8KIP@example.com', '1Oh5uXHJWlEGnCMTQBYO', 'image_578.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('579', 'BE1MPpcC', '45391', '80226', 'ZrgOepBbwH', 'ZrgOepBbwH@example.com', 'stZM0bNdgdgcn7b2PA8w', 'image_579.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('580', 'PQRUifo1', '52434', '83870', 'ixzLlmrqUB', 'ixzLlmrqUB@example.com', 'FiNhkzXEmMwWSDgJfCJQ', 'image_580.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('581', '001s7ksk', '76360', '34328', 'botlgNQeRr', 'botlgNQeRr@example.com', 'NQQN4N0Tj4tmi92Zkg4l', 'image_581.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('582', 'SsaQDFI3', '76430', '93340', 'ewftSTlEGj', 'ewftSTlEGj@example.com', 'OHrwfmv7ouvzPF6upcp1', 'image_582.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('583', '9ZFpLX5J', '76186', '74442', 'ZmF5MnR4Km', 'ZmF5MnR4Km@example.com', '6EQcpXl8quOu1uwQ8V3s', 'image_583.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('584', 'Qp87rgrN', '61027', '51191', 'XC6H53Gw5b', 'XC6H53Gw5b@example.com', 'DO0npy6cs4hdDHOk705b', 'image_584.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('585', 'lssXmprO', '57082', '66223', 'OcMe4zTKNk', 'OcMe4zTKNk@example.com', 'iAWwtDrinppj4V53VVTA', 'image_585.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('586', 'fcpxkxz8', '73413', '78422', 'OZXQN2Khiv', 'OZXQN2Khiv@example.com', '1t3NJKlKyBXKhGKsuiAn', 'image_586.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('587', 'pdnzJwHY', '11976', '34512', 'KFLGHUs9UC', 'KFLGHUs9UC@example.com', '99K06hiRGugRskdAi53b', 'image_587.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('588', 'T8HXwZu6', '56941', '70620', 'vjalO0v1MD', 'vjalO0v1MD@example.com', '19PuVHW4BL0IoQu4qqHn', 'image_588.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('589', 'uDhQhDrr', '13115', '63288', 't34G4gQPuo', 't34G4gQPuo@example.com', 'Igo5w4qtrIIDL7HNOUzx', 'image_589.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('590', 'scEYOKGa', '88203', '23576', 'Sk2CcYc07U', 'Sk2CcYc07U@example.com', '4loy1pYHuaSSsuDoD3XR', 'image_590.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('591', 'fTD7qQ7J', '18153', '47747', 'MmgSoepQez', 'MmgSoepQez@example.com', 'sgYEojqpbqUNuBtnNb3a', 'image_591.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('592', 'QWSKxu7a', '22434', '46122', 'Hl2PBAWcq5', 'Hl2PBAWcq5@example.com', 'kRM4uiG53p7okX2HPJoZ', 'image_592.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('593', 'xNzctx0k', '77896', '58936', 'rsNHurpa04', 'rsNHurpa04@example.com', 'MD0CSOyWWHtzlSm1hLUQ', 'image_593.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('594', 'gG4v2d9P', '44912', '39529', 'DxuEB6t6pI', 'DxuEB6t6pI@example.com', 'iW0OsU5f7Sw7N1HbtPKU', 'image_594.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('595', 'O12eiy1m', '52197', '85491', 'KT9wu2t9ZA', 'KT9wu2t9ZA@example.com', 'n2Wp9aKTEUKAoKRnEppI', 'image_595.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('596', 'g7zXjVEd', '12745', '29666', 'tci3mwI2ed', 'tci3mwI2ed@example.com', 'pJJd4BjpIb6X0dmmLe6U', 'image_596.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('597', 'c2mBQiWA', '57447', '74080', 'zhjIM8DBhV', 'zhjIM8DBhV@example.com', '9TkHiTpMdypjb2oaeu6m', 'image_597.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('598', 'fC1LOoSn', '60536', '54583', 'k9HwEyy1o0', 'k9HwEyy1o0@example.com', 'zVzdjz0tZb4s3m768HaO', 'image_598.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('599', 'jUUMj0vG', '88660', '49295', 'IK7Rr88N72', 'IK7Rr88N72@example.com', 'ROjWyadM4sI3mBRmQihf', 'image_599.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('600', 'iFNSl3lR', '14629', '62224', 'nboMje9pi3', 'nboMje9pi3@example.com', 'NP8kPvuJQZMMh3tHtOQh', 'image_600.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('601', 'ag4EHS0V', '94221', '79421', '0WYC52sozT', '0WYC52sozT@example.com', 'bTPm09FK1OiaRZMsw5wT', 'image_601.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('602', 'e5Ggt6vm', '83592', '39503', 'Vjh07dbMCa', 'Vjh07dbMCa@example.com', 'yYQtJEMLOXB6gAHl86y9', 'image_602.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('603', 'IP1qemr7', '58478', '27430', 'ugTaNdU8wP', 'ugTaNdU8wP@example.com', 'uaFuwf17TiZG3EGMiinq', 'image_603.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('604', 'gdO2l37J', '21970', '14920', 'yc5hyEcjyC', 'yc5hyEcjyC@example.com', 'GEUgio4R5rwZRHrvUXXJ', 'image_604.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('605', '1Ap6fqLl', '10495', '29617', 'PdzV2Zh30Q', 'PdzV2Zh30Q@example.com', '57ps08PRxAqOOIUUsMEO', 'image_605.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('606', 'grFWLVXu', '72482', '89878', '0NFGyCToBp', '0NFGyCToBp@example.com', 'xGUbkafrXTrP3KnCUvQW', 'image_606.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('607', 'AvWDJx9n', '67430', '54006', 'C2m4ZzdfCC', 'C2m4ZzdfCC@example.com', 'CjoQMhsHZYUMmwEsv6l4', 'image_607.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('608', 'WmAoAz8z', '73122', '99736', 'fu4tKvfLFE', 'fu4tKvfLFE@example.com', 'R1F4DHn4zI3s9j21WWk5', 'image_608.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('609', 'ceyWGa6i', '59475', '73987', 'LH6vDWTIBS', 'LH6vDWTIBS@example.com', 'BmVdq46dVFezSMZweYuz', 'image_609.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('610', 'cKUp7Zdl', '21106', '32986', 'TJpINoqjdU', 'TJpINoqjdU@example.com', 'NgzUa1YFAVCdUsgV0kZG', 'image_610.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('611', 'kGsNyt0L', '42696', '71040', 'YgNUY4SctX', 'YgNUY4SctX@example.com', 'U1edTGGFXKmP7GdkrGYO', 'image_611.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('612', '5yej7LfH', '71804', '49423', 'OQ6p3pHpBY', 'OQ6p3pHpBY@example.com', 'GOfRcXzx9qWw8wfCIxzJ', 'image_612.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('613', 'MMc627QZ', '63997', '30816', 'JQ6JeqVd7f', 'JQ6JeqVd7f@example.com', 'bzwvN9XNapI9IU2el3KL', 'image_613.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('614', 'yjS48tFF', '15676', '29747', 'OjDzeOR1BK', 'OjDzeOR1BK@example.com', 'BC8cIHkI467MuZCXUivr', 'image_614.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('615', 'EEhQ3w95', '73955', '85438', '4HsZz0DsXz', '4HsZz0DsXz@example.com', 'DPPl1Y3r0ZEiFSEiLahC', 'image_615.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('616', 'VvT9s7Wj', '61753', '86973', 'JVsAFjCm3l', 'JVsAFjCm3l@example.com', 'xlby3ChHe202cpOkrPTN', 'image_616.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('617', 'LM1dpIMz', '84692', '55156', 'NQcLROolvq', 'NQcLROolvq@example.com', 'OXROuIUQbE7O7iUooRCH', 'image_617.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('618', 'dqfeKbuv', '23065', '60962', 'PgrV68ymrZ', 'PgrV68ymrZ@example.com', 'Gd7u8kTn6tnfPejrIjRC', 'image_618.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('619', 'm9ffqGPn', '33117', '77050', 'C6OIid6fe9', 'C6OIid6fe9@example.com', 'LMz848m2noSKPyJZvWvu', 'image_619.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('620', '8w0powoH', '39964', '31180', 'hwyOKfiqTW', 'hwyOKfiqTW@example.com', 'rY5joc7QuwEN2X8lQqsv', 'image_620.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('621', 'urm6XcQg', '29703', '30693', 'A1AEaWG1U5', 'A1AEaWG1U5@example.com', 'AWoQka7yEqG1vEj1wUVe', 'image_621.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('622', 'XvmbBU5U', '14066', '14907', 'bN2n5ucbkl', 'bN2n5ucbkl@example.com', 'kXgQRtUgDRxJ7UbQ8ffR', 'image_622.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('623', 'VANW8Xdj', '56939', '94053', 'bVwXHFm4I4', 'bVwXHFm4I4@example.com', 'VdUXu0ctbJwlsjMoGRVy', 'image_623.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('624', 'pIJw2GJ8', '98279', '83917', 'ItH9UC9LAe', 'ItH9UC9LAe@example.com', 'YZ9fA0kSXPVqt7DWT1uX', 'image_624.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('625', 'mmD3QEgT', '50088', '28424', 'DQFgmJbOeN', 'DQFgmJbOeN@example.com', 'i4jTggtlnVyaLM4MkeE5', 'image_625.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('626', 'pSsIezkN', '38918', '56094', 'BYi68rvBBE', 'BYi68rvBBE@example.com', 'p8YgZfZA7pVxfs4O2iOG', 'image_626.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('627', 'iztmpl3P', '13721', '84245', 'I2kizJaDxC', 'I2kizJaDxC@example.com', 'neRknshi6cluEpdL5KKJ', 'image_627.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('628', 'D7KNkLIy', '81528', '83541', 'aBIMNhAYRl', 'aBIMNhAYRl@example.com', 'tVEn82Wlq7u93dHHNwrc', 'image_628.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('629', 'DBJKmJzq', '84491', '22687', 'TrEPMgEXOe', 'TrEPMgEXOe@example.com', 'SBttZYb1APkBJjLGHWzn', 'image_629.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('630', 'EgazTzGu', '78251', '93605', 'dV8YksAtu0', 'dV8YksAtu0@example.com', 'zLVC90kmtfVpZei4NxbC', 'image_630.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('631', 'W7JKF3Pq', '15756', '36600', 'ZKo072lmTI', 'ZKo072lmTI@example.com', 'M7Ri9AmA31Jw5m2w51bh', 'image_631.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('632', 'zo8noz42', '89671', '12587', 'pphM3U40dK', 'pphM3U40dK@example.com', 'AwKJ3CvodyRMGBDumcvp', 'image_632.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('633', 'wWL19pYE', '51691', '69545', '1PcvftyPl3', '1PcvftyPl3@example.com', 'gWedsf6opy6HEBnNSApe', 'image_633.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('634', 'otAO6C8N', '63410', '77156', 't3ghxVoP0B', 't3ghxVoP0B@example.com', '2iKo3taTpmisCQg4etl3', 'image_634.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('635', 'XVm49Zs7', '10531', '47141', 'pDdH9wmPT0', 'pDdH9wmPT0@example.com', 'Xq2ZEDlG9YmMMfgu4KNU', 'image_635.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('636', 'dQJrMJ9m', '82700', '78948', 'Eibxw6oxo5', 'Eibxw6oxo5@example.com', 'I4f1ofoKX2QYZYfEOFRw', 'image_636.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('637', 'HvSgTcDM', '21904', '25231', 'PJhwMzhSy9', 'PJhwMzhSy9@example.com', 'EM5vQZLn4XfJSk80zM2h', 'image_637.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('638', 'C3j8zDmi', '76730', '65094', 'UsN4xjDPT3', 'UsN4xjDPT3@example.com', 'hqqcmD4HIo6LZhV6ZCxb', 'image_638.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('639', '5TPzoLTf', '34399', '89835', 'zuJTahb3Oq', 'zuJTahb3Oq@example.com', 'zkkH13DG1kGTUF9hhIiu', 'image_639.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('640', 'UzRjGZyq', '43983', '13395', 'ZRWGyba7Ky', 'ZRWGyba7Ky@example.com', 'CnWs8GuF8Bbdf0uoI4tL', 'image_640.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('641', 'G7NiXaTG', '65817', '56166', '4F9WwdRcoN', '4F9WwdRcoN@example.com', 'pTaonISBd2oOH2s368Pu', 'image_641.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('642', '65mgeVSr', '87815', '55820', 'oX41SS6zqf', 'oX41SS6zqf@example.com', 'rqSZ1fu0zbRL0RICDpbW', 'image_642.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('643', 'OUCEkPhn', '25086', '25612', '9LxTApWUeF', '9LxTApWUeF@example.com', 'xNNfcsFSeKCOrL2naDlG', 'image_643.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('644', 'UV0Iqczu', '91144', '20522', 'DHR0JdNUOH', 'DHR0JdNUOH@example.com', 'ppMRXJMZsGzDa9oV1RA6', 'image_644.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('645', 'OmwgVHXi', '83757', '94286', 'HZsVj8Uf0S', 'HZsVj8Uf0S@example.com', 'VbjQbsaJnkYGS9z9gIlE', 'image_645.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('646', 'ZQCYSvU3', '23675', '37898', 'mYeMwFD49P', 'mYeMwFD49P@example.com', '5bQ6pdKuD0BVkUDbZiKC', 'image_646.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('647', 'mebP7m0U', '16537', '80803', 'pNUgeUp5v9', 'pNUgeUp5v9@example.com', '9uxyEvwvNXToRY6GBU8i', 'image_647.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('648', 'VXo1m5XQ', '56096', '55064', 'DPvlr8LNjj', 'DPvlr8LNjj@example.com', 'eyr0n4bj0hzcUh1ineKm', 'image_648.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('649', 'f3fe9wLA', '82798', '14095', 'TAkPLDGRS1', 'TAkPLDGRS1@example.com', 'H0ZRYojV7bZPSumXCaq5', 'image_649.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('650', 'K9ebyhER', '81280', '75117', 'A0vt3ouPsS', 'A0vt3ouPsS@example.com', 'sxC6MUM8PqKdoHtT3O6G', 'image_650.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('651', 'Hpl4VsM0', '18600', '73070', 'F16NeUuczJ', 'F16NeUuczJ@example.com', 'GAZ6Ee83WoIQwo0SQxGC', 'image_651.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('652', 'lNjQ2AIE', '95423', '16373', 'rYQD6v1Hg0', 'rYQD6v1Hg0@example.com', 'AqU4mowo1k1wEqAj4dBi', 'image_652.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('653', 'lcSlTQkQ', '35203', '33257', 'G3gHISvLZu', 'G3gHISvLZu@example.com', 'toZ8QZZPeP3ks9CTRsTV', 'image_653.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('654', '1vKqlBJh', '68023', '64533', 'UUcsPRJlju', 'UUcsPRJlju@example.com', '7Vq4OW0UthTlk1n4WWCK', 'image_654.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('655', 'wMolLyyv', '77125', '66044', 'j57AnZiCdx', 'j57AnZiCdx@example.com', '3mDeqC8zMnkU7GQ5pibQ', 'image_655.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('656', 'Ln0xMX2C', '95467', '27813', 'kwOdF9qT3B', 'kwOdF9qT3B@example.com', 'a3eDVzWmhM4PSmLqPQws', 'image_656.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('657', 'Y0dj7MkS', '69870', '25237', 'PI8GMl73lY', 'PI8GMl73lY@example.com', 'XWZ7bighMbo0onyypcP1', 'image_657.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('658', 'JDR7Jv3d', '95252', '95447', 'TBikV13DD1', 'TBikV13DD1@example.com', 'keCr1qLILGwo0SQ7rxTQ', 'image_658.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('659', 'OZYEgmWz', '52316', '72278', 'mvvV8Zjh4c', 'mvvV8Zjh4c@example.com', 'AqEwbdYxEv5P4QFw8NNj', 'image_659.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('660', 'kfdRyBFc', '50206', '44722', 'F2a7rt8WTJ', 'F2a7rt8WTJ@example.com', 'S1DA7ZiHRopuBsiBpuCt', 'image_660.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('661', 'hDqw9vcI', '83304', '49263', 'G6iQdjdRHp', 'G6iQdjdRHp@example.com', '39mo2pdYHWxi5ilyzOw0', 'image_661.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('662', 'JHtWb8r7', '69684', '92255', 'w4agTYSvYG', 'w4agTYSvYG@example.com', 'OSGc71JM7XnNctVXTX9G', 'image_662.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('663', 'eZ6LOpk4', '47001', '43407', 'P3Q0fHV3Bx', 'P3Q0fHV3Bx@example.com', 'KcaIBtz2AOJoIeYWmQzC', 'image_663.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('664', 'yDfahbQe', '16267', '21467', 'ULyXlaI3Z6', 'ULyXlaI3Z6@example.com', 'LVnquZBptDhicaZLlQ24', 'image_664.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('665', 'oWwjTEXI', '52378', '73558', 'Q8spvvKBUe', 'Q8spvvKBUe@example.com', 'lVWOxJR9uK4HAI6729OR', 'image_665.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('666', 'T5M0FqBy', '63004', '25855', 'RZAsLI26Pz', 'RZAsLI26Pz@example.com', '41xBkmDikWFFgdQKOJ51', 'image_666.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('667', 'OAXGGBc1', '34521', '78160', 'bshNZ4TIAF', 'bshNZ4TIAF@example.com', 'L7bjxaFBPlPuEORPYDOX', 'image_667.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('668', 'WPHdjKvv', '68198', '41110', '8wAPuhiQuq', '8wAPuhiQuq@example.com', 'L3e5dd18Rt8zQekzpJTS', 'image_668.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('669', 'YfrHycMs', '23592', '55942', 'zOAhyBSgS6', 'zOAhyBSgS6@example.com', '4VBbrn5hEUtm8v3kuUCY', 'image_669.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('670', 'ftP5WPLI', '78994', '63563', '8HpQByula9', '8HpQByula9@example.com', '6BJFDQ0ZaIhsdPgGycyb', 'image_670.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('671', 'Tjl5xdDo', '81145', '58552', 'kw5mUOhF3L', 'kw5mUOhF3L@example.com', 'VEOraPe6zcJIwOjolEU7', 'image_671.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('672', 'UfU9FiiU', '29431', '79268', 'aylj62ENvd', 'aylj62ENvd@example.com', 'Yb31INdr4CCKmDvroZgO', 'image_672.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('673', 'HFpgeyex', '30097', '38458', 'WhWyy4ph8y', 'WhWyy4ph8y@example.com', 'Vatfa29fzDrvjBXb7Kml', 'image_673.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('674', 'ls6YNnDD', '38031', '10364', 'PzISk65j4h', 'PzISk65j4h@example.com', '9D063xY62f2lxbOd3cnE', 'image_674.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('675', 'wEQcBPWx', '28502', '68946', 'wYI4TMTwij', 'wYI4TMTwij@example.com', 'SHzlAOjkPeHxhgRaUVj7', 'image_675.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('676', '08aZZVDQ', '32208', '22961', 'KAYbFuulKK', 'KAYbFuulKK@example.com', 'ibNgJnqo4SEK8lY2ooAh', 'image_676.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('677', 'xrkuZH95', '63305', '55107', 'iM2ljyHygz', 'iM2ljyHygz@example.com', '36JzuEpP40zj9FmL2aTD', 'image_677.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('678', '1j50URYk', '91428', '33861', 'vwoVbx6ziG', 'vwoVbx6ziG@example.com', 'CJ1TbksgsDva0C1gmQB9', 'image_678.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('679', '9jsODGot', '59899', '23939', 'zNGlYvVJtd', 'zNGlYvVJtd@example.com', 'UDxe7LpUvKG6442GGGYg', 'image_679.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('680', 'AK3X8oZ4', '73711', '41973', 'AYqqwKvrRg', 'AYqqwKvrRg@example.com', 'Y8KXFPqjlujdaWgpAbyo', 'image_680.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('681', 'zydx8Ijo', '59613', '19725', 'Yb46EY5m5v', 'Yb46EY5m5v@example.com', 'CgEWM3v98nj6aEzHCAW1', 'image_681.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('682', 'mCKUKQLi', '55529', '70246', 'lvsymzXIqY', 'lvsymzXIqY@example.com', 'AnFL2UW5A3xuAA7LZ0DT', 'image_682.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('683', 'tvuI1qmm', '62194', '92149', 'x0Ar1HTceh', 'x0Ar1HTceh@example.com', 'bdbVVF8i03s5FZ5aO7gm', 'image_683.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('684', '57FhuD6L', '17441', '97002', 'ykpKVXn1BD', 'ykpKVXn1BD@example.com', 'yRWfEDSLomKXlCV4C4Yb', 'image_684.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('685', 'PvkeQbAg', '82949', '37398', 'CwvL7c7mYC', 'CwvL7c7mYC@example.com', 'qIH1WWSHDn4gNLwurQfI', 'image_685.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('686', 'd7DoKUUa', '64617', '35836', 'QPunABidmk', 'QPunABidmk@example.com', '37K1XDyriw82SPCFHz7K', 'image_686.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('687', 'shaqaHd9', '92308', '32202', '5ZoteMA8Fb', '5ZoteMA8Fb@example.com', 'MSxqlZLlHsNCcHnSM8UE', 'image_687.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('688', 'cxXMvQFi', '81052', '63282', 'kQyzaLgZgL', 'kQyzaLgZgL@example.com', 'fF7AAoDS2EE0lJsZi1Kq', 'image_688.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('689', 'MBlDhOyx', '88410', '91988', 'g8SE1Vmwaw', 'g8SE1Vmwaw@example.com', 'AOLV4Aqdbi49UGlZWSL5', 'image_689.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('690', 'i8fMoLUB', '53309', '16298', 'kLCVxSl8h8', 'kLCVxSl8h8@example.com', 'rECyOfUlRyqvymdMh9J0', 'image_690.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('691', 'ZxiBQ7Jw', '17891', '89806', 'YnMR8xAQz7', 'YnMR8xAQz7@example.com', 'X8xnnxsd6Om0mPqVeAyE', 'image_691.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('692', 'qGnQp2KV', '37040', '89718', 'yiyV9TXm5S', 'yiyV9TXm5S@example.com', 'UgWq4eagg8I1fopS4dkd', 'image_692.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('693', 'MS126Z5Y', '33234', '65312', 'zI2ofpcgMN', 'zI2ofpcgMN@example.com', 'G98wu9HbC02e2UWtbeCA', 'image_693.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('694', 'x0u91RDQ', '69668', '10678', '7zBflGsWQs', '7zBflGsWQs@example.com', 'Ur5QGsduMX6wlj0p0KXc', 'image_694.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('695', 'JUPLP8SW', '56565', '61838', 'RJAKloooni', 'RJAKloooni@example.com', '5DVAPYGIZhTihjKDpdZq', 'image_695.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('696', 'Xdc12Gdj', '86767', '17226', 'bAUp0St6uX', 'bAUp0St6uX@example.com', 'K7UiNKyISYjbuZbSnhpp', 'image_696.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('697', '72POmiBe', '37997', '16004', 'Bk19M7cxan', 'Bk19M7cxan@example.com', 'wNIs2ewSkVMmULhM6y37', 'image_697.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('698', 'D3mpoWA8', '63210', '30633', 'Vc8LtozaVo', 'Vc8LtozaVo@example.com', '27rd7DawKAIphupcI7Jn', 'image_698.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('699', 'LycfJc89', '16881', '55147', 'jkQBVO1TEG', 'jkQBVO1TEG@example.com', 'DT9L1ptqr5Y62hIlpfz7', 'image_699.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('700', 'cQxUVjuY', '69803', '25306', 'hhQekcBxlL', 'hhQekcBxlL@example.com', 'PYxL4sliJZnXnHgTU8Yl', 'image_700.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('701', 'A2uGHBl1', '15937', '14331', 'LpdGTsd1ur', 'LpdGTsd1ur@example.com', '1XJwphoBXGnNn350dnvP', 'image_701.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('702', 'riW9oGMX', '48692', '96042', 'pQbXCkuRUI', 'pQbXCkuRUI@example.com', 'OLEpFE9hiKTAXnZyRAiM', 'image_702.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('703', 'ZUVm9CC7', '71384', '64443', 'eAWBnyB77k', 'eAWBnyB77k@example.com', 'ddxoc2K0jxtjoQWTMwyd', 'image_703.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('704', 'fbnaAMCL', '17799', '76325', '0OqOJ1XsGU', '0OqOJ1XsGU@example.com', 'eRtFwXZeGItQHQlRCBCS', 'image_704.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('705', 'Cua6tm8A', '61273', '36698', 'bvLZuzPyYM', 'bvLZuzPyYM@example.com', 'abWqp2xCe0SUb86nKSMe', 'image_705.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('706', 'pInAYU2d', '52518', '69965', 'tO7FXJBsKu', 'tO7FXJBsKu@example.com', 'BPwt3wotIxZsDCbyv8gT', 'image_706.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('707', 'z5c53Q9k', '24768', '43463', '3L7h1W6HLq', '3L7h1W6HLq@example.com', 'N1g1PVndVdhgBOUrF5vC', 'image_707.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('708', 'NiFOtZp3', '50749', '84275', 'MR1adYmcuO', 'MR1adYmcuO@example.com', '4igkLogjHcaw1srf6cpo', 'image_708.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('709', 'fo81yBBO', '53191', '81577', 'Ys5pW9eVq5', 'Ys5pW9eVq5@example.com', '1LKTXKMNrCNFSCOrJwL6', 'image_709.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('710', 'k6nlzxCM', '98406', '45113', 'tU8ZmnHGp0', 'tU8ZmnHGp0@example.com', 'S1YiacEajvB0umKf6rH4', 'image_710.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('711', 'd9oQsr4j', '62267', '81030', 'HnikwTdIur', 'HnikwTdIur@example.com', 'XXyAoHYp9locJzvN29m3', 'image_711.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('712', 'TqJpf2Du', '80556', '80432', 'NYdSQbKUN8', 'NYdSQbKUN8@example.com', 'FPvXcLhWkyjsfxbikiNv', 'image_712.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('713', '8CtZwfFQ', '67965', '42041', 'L5bXOMpS5R', 'L5bXOMpS5R@example.com', 'vVZeRhsENdxSQ2ZTCysc', 'image_713.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('714', 'P3PCMTzj', '44056', '13061', '1xaZPy7Ska', '1xaZPy7Ska@example.com', 'CTvp8ZIIEFhQ1FP0shsW', 'image_714.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('715', 'c1FkBaMA', '27409', '22386', 'HW8u1hv8Ug', 'HW8u1hv8Ug@example.com', '5cOjUVxCC8jysbgqR3Di', 'image_715.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('716', 'X0E0eOBW', '33952', '58550', 'F93VwEMOAq', 'F93VwEMOAq@example.com', 'Ebp7q4cTZuIDE5FYRJBP', 'image_716.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('717', 'kczdCYcv', '24665', '47410', '8S6WrSq2Bm', '8S6WrSq2Bm@example.com', 'hFbXKI391p59lUL9LGzI', 'image_717.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('718', 'xPxPYgGY', '93217', '11911', 'jArEnTnv87', 'jArEnTnv87@example.com', 'HB6YqJpv97ueETAFH0xs', 'image_718.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('719', '8KTMeXhD', '38949', '43574', 'JrDdEr6mO8', 'JrDdEr6mO8@example.com', 'igoFY0siQ14G3SVJ8IJB', 'image_719.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('720', 'QZHVKzVS', '68381', '38847', '8H86Nsap1i', '8H86Nsap1i@example.com', 'sa0gNAdtg2SjurVy1B5h', 'image_720.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('721', 'XGB7F5Dk', '66766', '22862', 'YM0SvLGgzw', 'YM0SvLGgzw@example.com', 'Uhmrf7YuYgK3Ewbh8dti', 'image_721.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('722', 'F71JqhqP', '21616', '72581', 'ZKxc46AZCX', 'ZKxc46AZCX@example.com', 'oTzGV17iSh6e9cPqxN93', 'image_722.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('723', 'R7tSoQ7M', '76954', '12372', 'W2fuszSxT9', 'W2fuszSxT9@example.com', 'dHK1BQXYQrXtCg4TGA3c', 'image_723.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('724', '3DiSXnKz', '61684', '86609', 'mCir1NRTIb', 'mCir1NRTIb@example.com', 'TGFn9UCK4DH2EEDTfUDT', 'image_724.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('725', 'AjULpRgO', '65050', '36379', 'j9TdfGJMZ5', 'j9TdfGJMZ5@example.com', '8KPXgb6LWwekG1r6IP3m', 'image_725.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('726', 'GQGAg9wq', '80396', '40180', '8i6DVv3Q5p', '8i6DVv3Q5p@example.com', 'kpNS9eVBzLdYse0EpP0I', 'image_726.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('727', 'Ap1KIpUE', '75321', '16611', 'snyRQ97tNL', 'snyRQ97tNL@example.com', '6b6W8xYyh70wwJ0vyLFy', 'image_727.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('728', 'OxVw0Vxp', '32364', '65267', 'Z3YkvyKCvt', 'Z3YkvyKCvt@example.com', '8U7xUPJSieMXIzpjFW4K', 'image_728.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('729', 'uPFmmq7r', '26504', '73428', 'bgnyZlN7u0', 'bgnyZlN7u0@example.com', 'qpHwiUQiKUSOyoMyqDbr', 'image_729.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('730', '2OLsPIEx', '66118', '63967', 'X1EoNTEcF3', 'X1EoNTEcF3@example.com', '6CTSXgZiUokC2FD5dci5', 'image_730.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('731', 'v7W6U4wN', '63436', '90294', 'nDPFve6Om2', 'nDPFve6Om2@example.com', 'i5iM1mRSLjBlUl8Z9Btg', 'image_731.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('732', '0CWPf2yp', '39297', '69257', 'TBMTs3YEAA', 'TBMTs3YEAA@example.com', 'L52E3l39lOUzwmbGBOxU', 'image_732.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('733', '3U9c8eU9', '56431', '50604', 'cfeEUMkoUk', 'cfeEUMkoUk@example.com', 'Hg7lNFjdaMeznK8qPqiw', 'image_733.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('734', 'HG7cxwRb', '30193', '56880', 'm2KsVAbjRn', 'm2KsVAbjRn@example.com', 'zH53pbJlWhrzfE1Al2YZ', 'image_734.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('735', '5r8eBnAc', '88678', '52693', 'jFX01uHYGq', 'jFX01uHYGq@example.com', 'aQ0xIcLkxSd7H6QBXk8p', 'image_735.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('736', 'zJEnWDrM', '92350', '75430', 'SIV6A6t3DB', 'SIV6A6t3DB@example.com', 'PcGY9Nfy8T5GvTcnfuce', 'image_736.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('737', 'F0Fj6Yof', '47396', '67163', 'dGvjhiCP4j', 'dGvjhiCP4j@example.com', 'LJYngBSa98LGCiCicpN8', 'image_737.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('738', 'NVk7a1xt', '53202', '27855', 'wz75af3K22', 'wz75af3K22@example.com', 'r7KtlsDEh1CfqB0gfonc', 'image_738.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('739', 'mEb3RrSj', '12133', '57972', 'XlmuM1ZQO3', 'XlmuM1ZQO3@example.com', '0vQl33h6wLONSaJUH8Jh', 'image_739.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('740', 'sOGaWgs5', '67973', '40692', '3w2bwVNnku', '3w2bwVNnku@example.com', 'g7ZQJmXMJnMy05LIyH8m', 'image_740.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('741', 'FmzgC7qx', '18462', '88769', 'LfydWe2Hqi', 'LfydWe2Hqi@example.com', 'zULdETbhHVrQPmFa4U0C', 'image_741.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('742', 'KcRyBaYq', '43372', '32852', 'XWbqQYh5KE', 'XWbqQYh5KE@example.com', 'hQKPzzWl41R2oSN47Pu4', 'image_742.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('743', '3BKNZ7iZ', '76590', '16103', 'rqtGlPZE8V', 'rqtGlPZE8V@example.com', 'HWUJDFYZ52pDiw5SvFBz', 'image_743.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('744', 'ptpaTiKc', '93237', '92503', 'rt7Qc9lSSG', 'rt7Qc9lSSG@example.com', 'QCKsfRTRBicl1I6zHbiW', 'image_744.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('745', '1hpFdGUK', '84146', '22192', 'eDnW8QFNSA', 'eDnW8QFNSA@example.com', 'ezrrUDi2XFpOT5JtJZAg', 'image_745.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('746', 'HoMLeseK', '55229', '11375', '16Tv0jqg47', '16Tv0jqg47@example.com', 'Yc4z2Vu11EGeqJN6SoXU', 'image_746.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('747', 'Sa5OI31P', '95305', '20746', 'ad57QjlDLs', 'ad57QjlDLs@example.com', '5JJTO3GBfr9xMPvFXbi7', 'image_747.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('748', '8AJyNicO', '59485', '52901', 'fQdi7PbMTo', 'fQdi7PbMTo@example.com', 'IQIMUSDttvjG9Mq8gBj3', 'image_748.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('749', 'aBrhCIAj', '42104', '13697', 'AHDkB86GU0', 'AHDkB86GU0@example.com', 'aYIUCcHCaVyln4mDa3x0', 'image_749.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('750', 'dvWA1YZP', '65189', '12412', 'xIFcUqehdf', 'xIFcUqehdf@example.com', 'g1f2Ao5Sg3SIF3X6bWuE', 'image_750.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('751', 'V1StXIPK', '63954', '55302', 'RI8p76GUse', 'RI8p76GUse@example.com', '1b4TVGfgaUSTqjmzYE3d', 'image_751.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('752', 'tLfmtyDQ', '48453', '62826', 'dICYKoSVaq', 'dICYKoSVaq@example.com', 'j5vrUdn6gWKbcSSWuMbV', 'image_752.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('753', 'VpDeNE9P', '49403', '68185', 'mAoy05OK1B', 'mAoy05OK1B@example.com', 'uktWIFD11T2tGVvYdlw5', 'image_753.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('754', 'GgFus2vx', '93990', '66764', 'K2Z2BiMOk6', 'K2Z2BiMOk6@example.com', 'WgRzr4pkCUB9rW8BUjuU', 'image_754.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('755', 'g2Doa8Zo', '96710', '33742', 'q1DIUznpbV', 'q1DIUznpbV@example.com', 'NSMrY5bwGdNtX7dm1FoU', 'image_755.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('756', 'j0w4QAVo', '68369', '79613', 'ADLmS9k0Vf', 'ADLmS9k0Vf@example.com', 'ghyNUDkWpNQSikMZf0S7', 'image_756.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('757', 'dcD8M1WJ', '14631', '30925', 'SGes5dLY3e', 'SGes5dLY3e@example.com', 'XhBLUGOxlNRsRGyf0zfI', 'image_757.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('758', 'N3PJpmWZ', '44088', '28043', 'ORCiU0wqX8', 'ORCiU0wqX8@example.com', 'a3rHzCZ1Qot0sIep2MzK', 'image_758.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('759', 'gKyW4qGG', '28734', '84618', 'zQEzhIRRvS', 'zQEzhIRRvS@example.com', 'g3liEUAHKzWGLCf3xiFf', 'image_759.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('760', 'boh96D0Y', '31287', '99347', 'RV2GcyWKUP', 'RV2GcyWKUP@example.com', 'ReeE2CFJDLGj5bRXTKkQ', 'image_760.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('761', '8cNWnkrE', '97781', '34973', 'ErBCBG7gM4', 'ErBCBG7gM4@example.com', 'XVzlOGfWmH0ICMwPOQev', 'image_761.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('762', 'HQaxvkaO', '13234', '48775', 'gAhELGRjNQ', 'gAhELGRjNQ@example.com', 'BGGQjtWbNrzE74mMxWqw', 'image_762.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('763', 'HsZqcti1', '47957', '76603', 'LU0ijl8i1Z', 'LU0ijl8i1Z@example.com', '29xMyAN509ZBtLiqbVi5', 'image_763.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('764', 'UnPZHdVy', '75251', '78530', 'j0TugZMsfd', 'j0TugZMsfd@example.com', 'gTqk2MipE2W9gMN5PUWS', 'image_764.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('765', 'IUlogkFC', '53012', '32541', 'DqpHOu6BhN', 'DqpHOu6BhN@example.com', 'JXNYGvGB5972c2rGtXnk', 'image_765.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('766', 'Ds05G4TV', '24475', '59544', 'EmTvUM4VzF', 'EmTvUM4VzF@example.com', '1Lpc9nyqmdhdsuOyc0Gr', 'image_766.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('767', 'f1g5vY9D', '38237', '22531', 'ihhGV7gLei', 'ihhGV7gLei@example.com', 'u2xsa9UAnczcs5uw748X', 'image_767.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('768', '7bfzDw9c', '34284', '55335', 'LvIYK9iNb5', 'LvIYK9iNb5@example.com', 'lbFdhNTiiZUfF8geJore', 'image_768.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('769', 'CstskAgD', '36597', '85670', 'OCDDF5IFKx', 'OCDDF5IFKx@example.com', 'GPewbO9lQXCAxyHiky5R', 'image_769.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('770', 'vsrJUxU4', '40982', '81765', 'a5uMRAW0fX', 'a5uMRAW0fX@example.com', 'sDoWPWfSiJK09jt3ECmM', 'image_770.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('771', 'BKKM6vvX', '39753', '87074', 'kcxLgqIvqH', 'kcxLgqIvqH@example.com', 'ZUANqYL2UuzyCZm7MA70', 'image_771.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('772', 'yNCBxkj3', '47146', '70970', 'srlz1hRaCw', 'srlz1hRaCw@example.com', 'MaAVUgijxuQQEWAE3OAv', 'image_772.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('773', 'NiJJkcT4', '62694', '85314', 'Dv67dWkRRY', 'Dv67dWkRRY@example.com', '3JHKaOWgkMgcfWajhBXJ', 'image_773.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('774', 'p4wamM96', '53237', '59093', 'YqADdxwtKK', 'YqADdxwtKK@example.com', '93dDzmEkeAjDBLSMSdhr', 'image_774.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('775', 'C7K0ZByZ', '31968', '64222', 'V9d5UoQMeT', 'V9d5UoQMeT@example.com', '3dwD0vZ5RYIja1QHzbmx', 'image_775.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('776', 'c8Hms8VC', '55124', '52561', 'yV0nWwkJBI', 'yV0nWwkJBI@example.com', 'D0RPFzB1B0flmQA1wg9T', 'image_776.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('777', 'afPulx62', '77494', '39506', 'lzPDOY0HaL', 'lzPDOY0HaL@example.com', 'CkBrD06mgwDfPF3R9EPm', 'image_777.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('778', 'NATjdnzS', '25624', '31968', 'PxqboRGHKU', 'PxqboRGHKU@example.com', 'ySrBJkQG6RZnhw5Q4KRs', 'image_778.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('779', 'KJUEmBzD', '48935', '30547', 'V2rXU2wJjo', 'V2rXU2wJjo@example.com', 'H4H6EBs4N1haLDRbJTtD', 'image_779.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('780', '6H0Pm088', '20360', '40235', 'JCCWWNFILQ', 'JCCWWNFILQ@example.com', 'NHPsiTSYRNSXc5Ibd2eM', 'image_780.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('781', 't3deHTBl', '61468', '55913', 'hdBzX6v2gM', 'hdBzX6v2gM@example.com', 'jT39YFWPuF1LMl8vXTeQ', 'image_781.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('782', '83qkYrhg', '34922', '67773', 'f08r0UrUaN', 'f08r0UrUaN@example.com', 'EbCBrVzoIetCRYbTWN4H', 'image_782.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('783', '47UHdL7w', '57900', '32279', 'BEfs1GdczR', 'BEfs1GdczR@example.com', '9Js9Z5tV26XqdCiXbPAp', 'image_783.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('784', 'R7a9LUGl', '93640', '24335', 'oDfHMNBhxe', 'oDfHMNBhxe@example.com', 'vYq7rwZuPLNYClxZUALq', 'image_784.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('785', 'neMIshse', '12648', '15603', 'jeAZZLSJ8R', 'jeAZZLSJ8R@example.com', '28MQR9gkFQutocbSvYdB', 'image_785.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('786', 'ZJtwdwT9', '60239', '36879', 'ef4zqDEERM', 'ef4zqDEERM@example.com', 'KteSZdBpiGBR8c1xS5gr', 'image_786.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('787', 'OLUV9y4s', '35534', '28864', 'dgrxRE16bR', 'dgrxRE16bR@example.com', 'yQX3iXtDhQxXUhMAcGaB', 'image_787.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('788', 'NghLs4CI', '20693', '96529', '6BsuPCIHgx', '6BsuPCIHgx@example.com', 'DxuQyw1vf8OyexLb1652', 'image_788.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('789', 'GV9U33KT', '83909', '42093', 'XiCPuuIUHm', 'XiCPuuIUHm@example.com', 'PdyoGSvXkGdlDwjeoEl4', 'image_789.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('790', 'rEu5c8iN', '44458', '83758', 'S7IIpJc15j', 'S7IIpJc15j@example.com', 'oNXGmd8s7HI6DFmvbgos', 'image_790.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('791', 'zT7jHEnO', '97536', '20170', 'cpVHhQSwbF', 'cpVHhQSwbF@example.com', 'PFXX737kSSdTIpjX6PFO', 'image_791.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('792', '1oc8MlTt', '85063', '42686', 'TfZ1q7EblK', 'TfZ1q7EblK@example.com', 'cGwg1acGG7vXAYKuNVc3', 'image_792.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('793', 'sQXtj5tE', '46322', '10333', 'ZbSre82xeG', 'ZbSre82xeG@example.com', 'D8vw0Y4aX0QZlhfoPK10', 'image_793.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('794', 'mLVhXpno', '61196', '65740', 'GKZot6yjri', 'GKZot6yjri@example.com', 'Nlh9CJfMmnS1UXxsUVVE', 'image_794.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('795', 'kXNR3Vkm', '17817', '54241', 'jrI6fOZJnj', 'jrI6fOZJnj@example.com', '3cMa9lc1ztEUB6ZxRaQi', 'image_795.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('796', 'tP3gVGKB', '20361', '95310', 'tsLLJJJik4', 'tsLLJJJik4@example.com', 'dkvoREZbpzT8JgpNIjhN', 'image_796.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('797', 'Ive3NK92', '90322', '48986', 'RNwuve6ygV', 'RNwuve6ygV@example.com', 'PWgNP7dumC4uHLRAfTiR', 'image_797.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('798', 'vx8J8uIq', '77507', '40767', 'o9jwPDcMGE', 'o9jwPDcMGE@example.com', 'm92WYQiBSNGMITikcegQ', 'image_798.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('799', 'd3ECpAye', '76945', '52812', '9Kp3cH3rgT', '9Kp3cH3rgT@example.com', 'aWAcbf8vQIABcKVs1ues', 'image_799.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('800', 'g3FKTuSw', '15734', '21677', 'uyW9rBnvUG', 'uyW9rBnvUG@example.com', 'JLuuSNNmJAUyAh8VXTuF', 'image_800.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('801', 'ewbEXwad', '86451', '47025', '9cJ4PZ4Kh4', '9cJ4PZ4Kh4@example.com', 'wxRAd3g8II8kHvCGdg2v', 'image_801.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('802', '2eaNLBgX', '99440', '46854', 'YYYIyY9eMD', 'YYYIyY9eMD@example.com', 'fvt91rb9N8z1ylWLSYuk', 'image_802.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('803', 'vIcPDKN8', '25452', '52878', '82IXbdHzoo', '82IXbdHzoo@example.com', 'UpYaONMCpOiwCjfhQLmb', 'image_803.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('804', 'sRHEsiVb', '69578', '10552', '2Xudv2Lzi2', '2Xudv2Lzi2@example.com', 'vAicuSmAVAR4w223Gkqh', 'image_804.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('805', 'jEbRIWJ3', '58537', '80324', 'llMjG7Ru44', 'llMjG7Ru44@example.com', 'Zc0Q6NXDibw6LrC9HK2A', 'image_805.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('806', 'tZxCrwgT', '49226', '17388', 'PJlvuTUrOo', 'PJlvuTUrOo@example.com', 'MiJlics7MSzvq44wMoJ7', 'image_806.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('807', 'v4yPcVUS', '66060', '24246', 'QH0Xfyy3xl', 'QH0Xfyy3xl@example.com', 'X7KdjoI05s03uIiGlNgq', 'image_807.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('808', 'hMNIQNqM', '48172', '88432', 'bfDfVpDWRl', 'bfDfVpDWRl@example.com', 'rhv5MwCAacqzuZ5hpgKO', 'image_808.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('809', '1iHfYivk', '54038', '21175', '4ZKPI3vVcR', '4ZKPI3vVcR@example.com', 'N70eAUtKEvzJoxah8DCr', 'image_809.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('810', 'G0elrmZO', '52796', '16720', 'lw5CjTAYpD', 'lw5CjTAYpD@example.com', '7CzGlZC04s7msjpvzZPx', 'image_810.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('811', 'juqTgc8E', '17140', '14787', 'IprsMAyUX5', 'IprsMAyUX5@example.com', 'P3wjE14J8EmGVAU6ngL3', 'image_811.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('812', 'prsRYUkY', '12195', '29797', 'j8mMWjLLbS', 'j8mMWjLLbS@example.com', 'vUkxalzsx5MWAihQqov8', 'image_812.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('813', 'MAeLFivi', '25119', '57007', 't2F9yfMDCK', 't2F9yfMDCK@example.com', 'lAWrSOLdVBEM2y5H3Nk3', 'image_813.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('814', 'bUDKEJe5', '42070', '16987', 'pDyPjfczn1', 'pDyPjfczn1@example.com', 'xo16QLuPjU3SjttWB11S', 'image_814.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('815', 'Dg7z5w30', '99190', '92817', '3npwUt6qGG', '3npwUt6qGG@example.com', 'OV24rUHYDLz9KTeX7o5l', 'image_815.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('816', 'h6QdgkdB', '72775', '99432', '5QbE2A1PV3', '5QbE2A1PV3@example.com', 'g70LvwAMs7B3mx2XX14l', 'image_816.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('817', 'p2rzVjWO', '26563', '81759', '7JTPu5AvyV', '7JTPu5AvyV@example.com', 'LGobA58NDgAu0Lsz06ft', 'image_817.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('818', 'cBvL6MWk', '62001', '49749', '2SWCgNKfjk', '2SWCgNKfjk@example.com', '4kUfl9fzBUT301BKOdWd', 'image_818.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('819', 'QV0DSmEX', '45080', '59870', 'HlF5Wty8bF', 'HlF5Wty8bF@example.com', 'LHbmRST0a6CAJK8tFXfc', 'image_819.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('820', '1njwQPqf', '37520', '42118', 'QeqzDJitpw', 'QeqzDJitpw@example.com', 'TSNMOLlTpDurBok8n9gF', 'image_820.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('821', 'uUZBW5LD', '60554', '85835', 'GWHvCFaZ2K', 'GWHvCFaZ2K@example.com', 'UDVQ9NxIxT6faDbSgO39', 'image_821.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('822', 'Hf2bLvOq', '33995', '81682', 'NNhyvsl5l9', 'NNhyvsl5l9@example.com', 'HZIHuBuBnJUzCMqRehoT', 'image_822.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('823', 'zeFmXOgo', '15336', '97665', 'fDl8Vq7fm7', 'fDl8Vq7fm7@example.com', 'BbLpYHT6b1e3lNPWAlMU', 'image_823.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('824', 'Kqj5noKo', '99836', '83982', 'dxGqY6ap1s', 'dxGqY6ap1s@example.com', 'd4ncU2zLKiGc9fqYCCEX', 'image_824.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('825', 'Fhg7EbaW', '73937', '29710', '82cG6qciJb', '82cG6qciJb@example.com', 'rWTMGrakOzdax6kSdYDv', 'image_825.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('826', 'XxBvjW32', '28433', '88210', 'JCCMIy4nbl', 'JCCMIy4nbl@example.com', 'ZwOhss5l7KhKWvkzGY7y', 'image_826.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('827', '0GuTDKFF', '88400', '99223', 'IuNIo5D6RL', 'IuNIo5D6RL@example.com', 'PBhZN6BeuC9ZhLxQQUzB', 'image_827.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('828', 'QJc9gP20', '54161', '32830', 'xW2SjknV5G', 'xW2SjknV5G@example.com', 'dLW4BUEY2onmNGfaU6H6', 'image_828.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('829', 'PO6KYsuf', '53163', '51155', '5adgoRDqIl', '5adgoRDqIl@example.com', '9SCua1vZTSEdzMNagOH1', 'image_829.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('830', 'Dr1A8r7R', '75513', '58601', 'n9cyjbIwE9', 'n9cyjbIwE9@example.com', 'jStM9pD5p97lk1dO5KWa', 'image_830.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('831', 'F0TvXv74', '83734', '31838', '7zDbhJ9T43', '7zDbhJ9T43@example.com', 'KgbYwqMRgAliULylRHWO', 'image_831.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('832', 'wgFxgTu2', '23669', '36940', 'sQUVnN0HDf', 'sQUVnN0HDf@example.com', '8VFUU5m2RJp7ElB90Kir', 'image_832.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('833', 'B0wO3Wq7', '96471', '66899', 'FLpnMguvRY', 'FLpnMguvRY@example.com', 'SEmk9eRPbQs2yEQaXbTY', 'image_833.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('834', 'IZv2IVqB', '14751', '70479', 'ZdABweE82U', 'ZdABweE82U@example.com', 'S0I5lGEE8FiWqK3b1M0Y', 'image_834.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('835', '4uMHlzwc', '59692', '74153', 'nmBnGQ32Be', 'nmBnGQ32Be@example.com', 'byjsXMS0fTbx1UzzrkMF', 'image_835.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('836', 'CThQKrcL', '49942', '22655', 'dx1y9quoat', 'dx1y9quoat@example.com', 'PTAmMYoWV0JdgmZbFc6w', 'image_836.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('837', 'gS7uAiBW', '95640', '69638', 'GYqovsaG62', 'GYqovsaG62@example.com', 'CFZZlkkFALBEzd2b5NBt', 'image_837.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('838', 'aP236kUj', '36920', '90055', '3TdUzFtWFq', '3TdUzFtWFq@example.com', 'LQvoj2AjiBc1MP0esace', 'image_838.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('839', '6zM9MiAg', '76840', '91686', 'Uyfncxgqzm', 'Uyfncxgqzm@example.com', 'n6KQKXekFViaaGdf82nl', 'image_839.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('840', 'eX5CPHjf', '35289', '35343', 'dOBsa6i2Gj', 'dOBsa6i2Gj@example.com', 'Icpi00CQOmC1wtZzEi3C', 'image_840.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('841', 'otCoRUjA', '24299', '38261', '2DjtcwWKMf', '2DjtcwWKMf@example.com', 'UnZ9y0LGd8qfMytx9Khl', 'image_841.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('842', 'MD21HHim', '19363', '42563', 'utUPkFFaDz', 'utUPkFFaDz@example.com', '0uRELQoPxCZcUKDGEffK', 'image_842.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('843', '7Il9omMQ', '14171', '21528', 'fKxJ17mUqV', 'fKxJ17mUqV@example.com', 'ETHPWH8q2ULL8UOGkub5', 'image_843.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('844', 'PoZ2SIC4', '66796', '47780', '60Vk2p92PS', '60Vk2p92PS@example.com', 'pl0HtRkVVobCFKTFjsA2', 'image_844.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('845', 'aLJGFRU2', '17443', '60874', '7mChaxsqsg', '7mChaxsqsg@example.com', 'axSvXElXKhBmhLfYLuwr', 'image_845.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('846', 'mzpKDH61', '44533', '79190', 'v97hqx8DHV', 'v97hqx8DHV@example.com', 'LT8ys4ZyNdIr5dVIryIG', 'image_846.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('847', 'Nkh2xk5f', '46121', '84351', 'd6uB62QMfS', 'd6uB62QMfS@example.com', '8xi6vuVhKmCE7mUqxLEl', 'image_847.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('848', 'g1gxgfcO', '13899', '20352', '08ZJBvZ5vf', '08ZJBvZ5vf@example.com', 'HE077hv1bHxxDaCU1MCb', 'image_848.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('849', 'lfv2FaJS', '30508', '58438', 'yXJFQHweUy', 'yXJFQHweUy@example.com', 'kSI6hA8lWaFW2PoVEQrW', 'image_849.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('850', 'FrW9NUVU', '80703', '54163', 'Qv0nF2OCHu', 'Qv0nF2OCHu@example.com', '52rFPMg1k0xSgwIcdQxK', 'image_850.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('851', 'FECZq1ek', '41272', '69403', 'canWDrmDRF', 'canWDrmDRF@example.com', '9aGSUr1oHazO8IOJxugx', 'image_851.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('852', 'tCTENM0l', '18787', '16455', '5NsgEPwDLu', '5NsgEPwDLu@example.com', 'qH6QZ8OXxv54m6SeYWgD', 'image_852.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('853', 'tO4tcKrc', '26822', '62156', 'IRTEppuIHy', 'IRTEppuIHy@example.com', 'MNqejqv0DsU6xxDCc4Zt', 'image_853.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('854', 'a4uHQkK3', '67966', '69120', 'fCtLe2sQf0', 'fCtLe2sQf0@example.com', 'l9xVKRAuhNbPirTSYUch', 'image_854.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('855', '5zIouAKr', '27007', '88850', 'BXzSjtkxVb', 'BXzSjtkxVb@example.com', 'OVBj9twAnuTllMkxRLPn', 'image_855.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('856', 'qgKB5u16', '22897', '19906', 'iL37oyn21Z', 'iL37oyn21Z@example.com', 'hS25H578XnOnqNz9AIWJ', 'image_856.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('857', 'KkeYWWuA', '48738', '24764', 'fWtx8B3YMG', 'fWtx8B3YMG@example.com', '6n6IlryciEQTCZcMo1dz', 'image_857.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('858', 'ZsqjYRnd', '14649', '77030', 'CXXTMgzSx4', 'CXXTMgzSx4@example.com', 'DfzHbFhiuXqLxmKkTWHE', 'image_858.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('859', 'CakdIZBP', '12683', '32609', 'Sg1ofyC68G', 'Sg1ofyC68G@example.com', 'j2M3FVpyb7rk9FTs5f5G', 'image_859.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('860', '9lRSPqwm', '91958', '48383', '92ZcNzkONu', '92ZcNzkONu@example.com', 'aTjUvizwW81ymZHstW9X', 'image_860.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('861', 'Nwczm3vj', '26082', '38247', 'GdfJaAPz1U', 'GdfJaAPz1U@example.com', 'VJsTPpoBzdILK0y0q4Fe', 'image_861.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('862', '4bkOTWMG', '46424', '20092', 'lnMvzBVW6m', 'lnMvzBVW6m@example.com', '6CdpxElkkBxdJHsz7Nn3', 'image_862.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('863', 'SzpieFv5', '50380', '21790', '4ctTPIbuVY', '4ctTPIbuVY@example.com', '5zaP3tmxReV29EXY7XD3', 'image_863.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('864', 'cPhlSKjS', '19685', '69552', 'Wkl2P3e8Jp', 'Wkl2P3e8Jp@example.com', 'nGQPgBBe8Q6va7qvOzBc', 'image_864.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('865', 'xb0GceCJ', '22895', '81596', 'XvDAduGQGT', 'XvDAduGQGT@example.com', 'YDC4hDAr2ocjmYVhHsoX', 'image_865.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('866', 'V4Rqe0bs', '83332', '16325', 'gdxQ9pND0b', 'gdxQ9pND0b@example.com', 'icA7a98w1eMShWIJXbVE', 'image_866.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('867', 'UcaUldKT', '96939', '31814', 'n9OCq8Hhlc', 'n9OCq8Hhlc@example.com', 'Mfgjws0dtpt2mdDRUOQB', 'image_867.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('868', 'NXXFayrU', '77879', '64045', 'M9SQWuXuPv', 'M9SQWuXuPv@example.com', 'EK6Y0BboiZWmWY5LOWrs', 'image_868.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('869', '6ieULsTT', '79681', '34371', 'S9dNchq251', 'S9dNchq251@example.com', 'E8bBtbArrLGf1niKLC8I', 'image_869.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('870', 'uQWOPHdZ', '20447', '27468', 'yAQBYAJucy', 'yAQBYAJucy@example.com', 'l9EkEG0fZOlAbA7PPPCS', 'image_870.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('871', 'HeI5XISq', '80757', '54074', 'x8wFvEv2EF', 'x8wFvEv2EF@example.com', 'Dmvyjc3JI8gdPd97vwOC', 'image_871.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('872', 'taHzHpmG', '40992', '72694', 'XAE4ooHe5N', 'XAE4ooHe5N@example.com', 'zZXO4DsBu1OGSC7zcXD3', 'image_872.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('873', 'uNAXfFoX', '49556', '39483', 'g2xThmVvqh', 'g2xThmVvqh@example.com', 'M1qlU6CSJcXRwXJPawn4', 'image_873.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('874', 'PjiFmnNL', '41941', '71892', 'NETFDVU7ug', 'NETFDVU7ug@example.com', '7tEOAUvaY8rPni7kWfdv', 'image_874.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('875', '15sKrQ9H', '93266', '81117', 'qScZSA6Bop', 'qScZSA6Bop@example.com', 'vE7rSHoswPQ7iOse9m9t', 'image_875.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('876', 'hGJc6y3y', '16077', '59532', 'kSBunem9SP', 'kSBunem9SP@example.com', 'Z2DCARhBLQ3CTlWTVcYd', 'image_876.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('877', 'RKyH2FyM', '11731', '28461', 'vX82QVXRBN', 'vX82QVXRBN@example.com', 'VTRLNKKa1oJypnCUHLvc', 'image_877.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('878', 'whgEuBHg', '18548', '60847', 'QuhFepwh9N', 'QuhFepwh9N@example.com', 'mxihtH1b6VBXdchyDPQb', 'image_878.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('879', 'HElYe8uG', '73825', '82829', 'C6Goxk6NVQ', 'C6Goxk6NVQ@example.com', 'lj2eFtLvOP4sX3HDGRVj', 'image_879.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('880', 'WBybPPDW', '55399', '79945', 'FRPH8RXeVO', 'FRPH8RXeVO@example.com', 'kHrRn2aBx4E8TTMOBk9r', 'image_880.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('881', 'DVkvcCpg', '56410', '77157', 'PKA4VCiiLg', 'PKA4VCiiLg@example.com', 'yGpUSbT7k0HwKfMZaOlA', 'image_881.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('882', 'utpCdsCc', '72149', '31840', '21XY3MwUIn', '21XY3MwUIn@example.com', 'wnOeUvwuZ6aOG3ZH3MnJ', 'image_882.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('883', 'gs8zb1OO', '79915', '65037', 'IoT1NzNCM7', 'IoT1NzNCM7@example.com', '6fjVdaCs7YRm2C9mPSs5', 'image_883.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('884', 'GKsUNwhR', '29054', '34890', 'Att4mqIZ6a', 'Att4mqIZ6a@example.com', 'esoewzRr0aK1X1mR9A0m', 'image_884.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('885', 'AnQxGF8h', '58990', '70217', '7Y696c7z0g', '7Y696c7z0g@example.com', 'ji3fWF1ufGgNdgPoJ0J7', 'image_885.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('886', 'b0M7AqSI', '82954', '59089', 'v0msVvjYmy', 'v0msVvjYmy@example.com', 'baSVbSssFgjRwyb8vmuU', 'image_886.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('887', 'qBmvgUD6', '20224', '11960', 'LVBgS2wiNO', 'LVBgS2wiNO@example.com', '2NvxG5xlm3ZWBY5PSDyU', 'image_887.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('888', 'kSXREDCW', '77659', '31189', 'Vj2jyhyxZ4', 'Vj2jyhyxZ4@example.com', 'BnZpkfFNAQ8paz8JjSMw', 'image_888.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('889', 'Hs3p68jO', '94948', '82704', 'KSPYMZRmIG', 'KSPYMZRmIG@example.com', '6ATqVQCYHt4cWhXW3X4l', 'image_889.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('890', 'L9abN2fi', '42462', '86547', 'aXh98oMiSU', 'aXh98oMiSU@example.com', 'x790CQm7NBNnOT3oEYfE', 'image_890.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('891', 'N18DK1l1', '54539', '32232', 'K5WOa8920Q', 'K5WOa8920Q@example.com', 'mwG6kN6NoBZwrRc1qulZ', 'image_891.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('892', 'egxzH8dK', '85233', '20215', 'X6tHfIIPXM', 'X6tHfIIPXM@example.com', 'gdeRvb8T0EQVK1KZ0Hfl', 'image_892.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('893', 'kfBKvLNG', '86301', '28960', 'YpOb6zzZW5', 'YpOb6zzZW5@example.com', 'hzyo48ico79AEPplFHGi', 'image_893.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('894', 'KwA7PxgV', '29599', '39975', 'TcR5xxLifo', 'TcR5xxLifo@example.com', 'TeH2NP4g92w33TUKlcs8', 'image_894.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('895', '6UvJ00gb', '10310', '55947', 'hCOhxKtG51', 'hCOhxKtG51@example.com', 'frAUfwt3XPYSQDNZzQGe', 'image_895.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('896', 'AzmTULNK', '55856', '91981', 'A4kTCYsBzf', 'A4kTCYsBzf@example.com', 'VDJhHWpl05htLYsTCaza', 'image_896.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('897', 'SHc5zcUb', '84117', '33982', '31NUZHPBet', '31NUZHPBet@example.com', '6uvNielg93wH5zp8mBwZ', 'image_897.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('898', 'K3wQ9kOW', '13777', '90858', '7LFOa2h67h', '7LFOa2h67h@example.com', 'QBCUOXC9RhVLf2RNNMw3', 'image_898.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('899', 'kPRwVTLT', '24273', '53576', 'JVCyUEmVMA', 'JVCyUEmVMA@example.com', 'sQ0RLCv85cOsm8zdrny1', 'image_899.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('900', 'WTBIolZN', '90490', '32077', 'Qdtxo9lSHh', 'Qdtxo9lSHh@example.com', 'N0PtIV0XPCeYtUzeLtxO', 'image_900.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('901', 'q4xqVAO0', '22763', '36304', 'YdkQcMr9NK', 'YdkQcMr9NK@example.com', 'ybiEf14Umr904PUIOi6m', 'image_901.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('902', 'CVJr80YJ', '91365', '67862', '2YDR7ztmqS', '2YDR7ztmqS@example.com', 'y1dRa9SFJP7Xa9n90jri', 'image_902.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('903', '8hNxv7gi', '76861', '51338', 'MPZ3bc6Lsl', 'MPZ3bc6Lsl@example.com', 'N195PrTp8XLHlqSQh05u', 'image_903.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('904', 'it7tYL99', '77016', '12702', 'SZFeChtO0y', 'SZFeChtO0y@example.com', 'zXgDlwBYwgDmbpTmiAUR', 'image_904.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('905', 'FHnMetOB', '27329', '17720', 'UMVc9RYR8B', 'UMVc9RYR8B@example.com', 'D9vB6pgHmK6zznBOvmql', 'image_905.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('906', '38N0hSoc', '61278', '28680', 'SE7RaUzFVc', 'SE7RaUzFVc@example.com', 'y47EkgwnopIfObhtJyQ4', 'image_906.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('907', 'b02HINpz', '73648', '21716', 'u5dKkp1tbi', 'u5dKkp1tbi@example.com', 'bhByt7Q8nnN3Q8hwEIcj', 'image_907.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('908', '59OvF5FC', '52665', '36643', 'GbL8GqgZkH', 'GbL8GqgZkH@example.com', 'EE8LQtRYz3zErr97u3Gu', 'image_908.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('909', 'xAL6p5Px', '11388', '49656', 'Vm5QMnRoOI', 'Vm5QMnRoOI@example.com', 'aK4UKtdL7Ymmx9WxRRjc', 'image_909.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('910', 'KCnP3UCa', '39603', '83841', 'eozh54iIHi', 'eozh54iIHi@example.com', '14ocfEFM3Z45gtjkvhul', 'image_910.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('911', 'GZgqZLuS', '69744', '97019', 'fLUErPkIhD', 'fLUErPkIhD@example.com', 'Ls92bDb8TD8z9D8PpFSh', 'image_911.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('912', 'ybs7KHN2', '31952', '91084', 'xojT0c2N9D', 'xojT0c2N9D@example.com', 'VxDuzGBQ5eW4JQQ6UFmf', 'image_912.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('913', 'QApve0k6', '78357', '93070', 'eLTTnyLuwp', 'eLTTnyLuwp@example.com', 'm5iUvnY0p7azVESs14NW', 'image_913.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('914', 'bxFmn0SH', '40343', '32513', '9n1uIQplJy', '9n1uIQplJy@example.com', 'KWguWF7MoGMbs5OAlDkt', 'image_914.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('915', 'BtxKoQAS', '25356', '69088', '8OhXXkdVbF', '8OhXXkdVbF@example.com', 'EUHIFGrstFZAKR9gIo84', 'image_915.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('916', 'yjPZxT2A', '35690', '61661', 'bBGp7mWdyu', 'bBGp7mWdyu@example.com', 'WvW0Rha34gZ1VDpiyXjU', 'image_916.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('917', 'bulk8djR', '42405', '11468', 'KFlbJBEmqm', 'KFlbJBEmqm@example.com', 'QkRJUPqqFVcUF5xX5Vpw', 'image_917.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('918', 'C9pr3ItV', '95796', '52089', 'uMhh2ZWtI0', 'uMhh2ZWtI0@example.com', 's1I9yZLobZxqlE3RKm7Z', 'image_918.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('919', '0Q5Yugen', '35894', '32433', 'O9ociYtRDO', 'O9ociYtRDO@example.com', 'q7sGFSEl48g7Cu4LTSuh', 'image_919.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('920', 'SFnyzzY2', '27547', '65403', '7ESonJwhH5', '7ESonJwhH5@example.com', 'HlWubSj4tAAnnpgoGuTy', 'image_920.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('921', 'n0rkWPzs', '35363', '84477', 'PPeMU63ilp', 'PPeMU63ilp@example.com', 'VyHswt9D9MUSyU3LbaEB', 'image_921.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('922', 'jgQCXkye', '45951', '97221', 'uet53vQoGl', 'uet53vQoGl@example.com', 'FyL2k0jnHv5wL0Zym1Nh', 'image_922.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('923', 'yXeG94Bw', '97120', '48017', '9IK1PNvaqs', '9IK1PNvaqs@example.com', 'VRuJqUJ9PKohYVzOyAN4', 'image_923.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('924', 'r0NTPJVB', '67667', '43924', 'ViviCUikJX', 'ViviCUikJX@example.com', 'HQZci2uthj35THhr8X52', 'image_924.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('925', 'KV5aLBYU', '88148', '41696', 'XfYUpsA4Fl', 'XfYUpsA4Fl@example.com', '9pe735etAVe5N3EvxPnU', 'image_925.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('926', 'NUmlP5bs', '19461', '18278', 'FwluT7RURU', 'FwluT7RURU@example.com', 'pjfWjYOgqvDhyDEzfVqB', 'image_926.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('927', 'mmU4JjkS', '48343', '71669', 'ZO8IRd8ohY', 'ZO8IRd8ohY@example.com', 'h9ob8VimXhOloSdXIMTM', 'image_927.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('928', 'K2aoH8WX', '16780', '56967', 'R1wzBsZwki', 'R1wzBsZwki@example.com', 'Nv8bIuhw4abElVmdoUYB', 'image_928.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('929', 'or1Knome', '41879', '70043', 'lpniVv3q99', 'lpniVv3q99@example.com', 'GQORbJtDyipoiYGnWaVd', 'image_929.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('930', 'unmHA49u', '11952', '11689', 'E0t6uxUURi', 'E0t6uxUURi@example.com', 'OoBMqTkFPrhmHd7eE6Bj', 'image_930.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('931', 'I8pb4d95', '34617', '41977', '5hnhUZIJKI', '5hnhUZIJKI@example.com', 'vK2CpvswIfQBBhEMQK8P', 'image_931.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('932', 'FjLdgPCH', '22939', '66985', 'syRIS5OlMQ', 'syRIS5OlMQ@example.com', 'SsccW5bqP04wPP0MWtLh', 'image_932.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('933', 'Nd6rK33R', '33710', '53537', 'vVVmDOBAjD', 'vVVmDOBAjD@example.com', 'zM8wI5yIH9AyR8EULQqR', 'image_933.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('934', 'O5wU8Zq1', '42264', '54731', '3etmwFtygU', '3etmwFtygU@example.com', 'sS643ADcHCoZ0QwtVyjv', 'image_934.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('935', 'ry7cwD3j', '23944', '55298', 'lT3E1YsptV', 'lT3E1YsptV@example.com', 'FmOHBKbgyvOxCLXqU8oO', 'image_935.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('936', '9ugHi5qA', '16233', '73513', 'isgTsszKGl', 'isgTsszKGl@example.com', 'gYPwPh6TwtI9Oaa7WfoQ', 'image_936.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('937', 'V9fw9ZD6', '86796', '96454', 'S5ADQ2Pwdt', 'S5ADQ2Pwdt@example.com', 'xYmuImHl0Mzoi2bzYEpk', 'image_937.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('938', 'F73dZsev', '69419', '42383', 'H3Bibz7W55', 'H3Bibz7W55@example.com', 'DuMH8jngJWJzOxupR4wz', 'image_938.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('939', 'xnjo42uX', '18727', '55934', 'pIVUWGl01i', 'pIVUWGl01i@example.com', 'JtGLcPjf87OpzyHudgiy', 'image_939.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('940', 'ErNpDUpn', '16339', '54913', 'gEuwH9cJUD', 'gEuwH9cJUD@example.com', 'kaHTDsQ0N1gPLqzSLFnZ', 'image_940.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('941', 'E7cScil1', '79422', '62372', 'Z0uR4DLNcr', 'Z0uR4DLNcr@example.com', 'gJSRfOSjPrxRcUAgnsBL', 'image_941.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('942', 'ZErLk3YX', '46394', '20548', 'lpyNXUjaE2', 'lpyNXUjaE2@example.com', 'aujDm5JrvVQYZYlav9sB', 'image_942.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('943', 'E78S0wji', '21324', '68383', 'SvF7yPjoHB', 'SvF7yPjoHB@example.com', 'ofSAkSGHYcVXPk8i4KCY', 'image_943.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('944', 'SiDYxXbv', '71684', '50831', 'nJb2NBOI3h', 'nJb2NBOI3h@example.com', 'CBX2VXTgWv8PefWtimLb', 'image_944.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('945', 'O1MHFMXe', '93964', '46610', 'quMUGToFTH', 'quMUGToFTH@example.com', 'zDvrr798Cxxm8WKaPbYr', 'image_945.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('946', 'MZbVMd72', '21706', '93722', 'kBcMqsox0q', 'kBcMqsox0q@example.com', 'ucBQYK8NgDDbh6GGFVur', 'image_946.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('947', 'E2sI80S9', '97090', '60432', '63nLAyJEoH', '63nLAyJEoH@example.com', 'chDRvo2wMcb2BNqhtGms', 'image_947.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('948', 'lvw7jcXr', '84047', '65386', '285TxYpqoG', '285TxYpqoG@example.com', 'XXCfqgq6c7J564xQxCIQ', 'image_948.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('949', 'TQKAGePg', '66268', '16984', '3tGpxu3XjU', '3tGpxu3XjU@example.com', 'NGlBXaAt3MggOrnnER53', 'image_949.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('950', 'VWSkjY3l', '86853', '52591', 'BoKxdQ0Whq', 'BoKxdQ0Whq@example.com', 'wisDqQR5xnn4UwddYJfi', 'image_950.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('951', '5FVLFxh9', '40280', '95572', 'Q9We4SSnno', 'Q9We4SSnno@example.com', 'K8i01TgPrs6eKIJybEpA', 'image_951.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('952', 'ArwChK80', '36435', '62259', 'RqK9roK5EV', 'RqK9roK5EV@example.com', 'iiO4mbvB8MgLHRsNHIc2', 'image_952.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('953', 'I1qFggoS', '66296', '28459', 'NvT6VwzGVr', 'NvT6VwzGVr@example.com', 'yZlbom7Q3BKvKgP2ATcB', 'image_953.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('954', '3fjFAXxG', '97525', '70103', 'gxkthCjwjH', 'gxkthCjwjH@example.com', 'ghFm43XUfdaCPAtPlh0U', 'image_954.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('955', '8jboV9Uv', '92976', '24018', '46p6W6TiQu', '46p6W6TiQu@example.com', 'jHGg61veeF0rJKkp1NFc', 'image_955.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('956', 'OmCXLhvV', '36094', '39324', 'HYHNwEcVFw', 'HYHNwEcVFw@example.com', '0z2ngbK2G6tEKZ9t2vgD', 'image_956.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('957', '3kvfhNXZ', '76180', '50507', 'qpydirqKmM', 'qpydirqKmM@example.com', '1sNBqrsmYYUiQdVDbaS3', 'image_957.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('958', '1wwkkprH', '72160', '52131', 'sbMMjUeZyT', 'sbMMjUeZyT@example.com', '9EbkxfmqyN7Qs5UckHjc', 'image_958.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('959', 'JEGhxALY', '81712', '49631', 'mc5JgFeJAm', 'mc5JgFeJAm@example.com', 'piVxbDWtxYXfvBSoBb59', 'image_959.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('960', '0TdskVCp', '32673', '65417', 'OCPbe1Gw5b', 'OCPbe1Gw5b@example.com', 'uXF4VD52vcXkx5bBf5Mc', 'image_960.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('961', 'z59T1usQ', '50159', '84205', 'i9NOFdULGL', 'i9NOFdULGL@example.com', '0i7U4JTiy2eEaA47wlAk', 'image_961.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('962', 'LzK1Vk8v', '84836', '91535', '2IO6QrPuwu', '2IO6QrPuwu@example.com', 'in5qF6R06bwrxYl03Zyr', 'image_962.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('963', 'fqoN1Eo9', '99082', '89431', 'x4sZy9XwOe', 'x4sZy9XwOe@example.com', '0X0JM3LnTJBlJp3RgFQk', 'image_963.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('964', 'xlI2Be9T', '89573', '82718', 'RBlHWxh3K7', 'RBlHWxh3K7@example.com', 'tQLeRCF4kQkAbYiFDgnW', 'image_964.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('965', 'OsR0jE0r', '81791', '48101', 'RPuYjqicTw', 'RPuYjqicTw@example.com', 'mfAiT1yNTyplonA6yyzj', 'image_965.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('966', 'YouBzCdI', '51339', '11456', 'L4USbksKFC', 'L4USbksKFC@example.com', 'GOS2jfOdPNlyHdxYmnO4', 'image_966.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('967', 'xoJsc70G', '18612', '72023', 'FR0roOASnZ', 'FR0roOASnZ@example.com', 'tDr4k2o5LFRdqRdb6RBw', 'image_967.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('968', 'UFp3WSFs', '78084', '10290', 'TCpR5si47m', 'TCpR5si47m@example.com', 'Lm8hG2E7yESGSxZYUJ0Y', 'image_968.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('969', 'j0tw06Cx', '59469', '82240', 'P7CDhxeLO9', 'P7CDhxeLO9@example.com', '0YEvjDE34ylQX2kDnvVY', 'image_969.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('970', 'PA6XUkVz', '51045', '72966', 'OQ2TIgClYa', 'OQ2TIgClYa@example.com', 'pjfCHTuQbfxVTbREPjUB', 'image_970.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('971', 'ILZW6WnI', '24175', '67110', 'wl5H8UIwKF', 'wl5H8UIwKF@example.com', 'hUXUw5CprdtiOQizajT2', 'image_971.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('972', 'AOoJJyy6', '27613', '26496', 'TAB6PhRn4B', 'TAB6PhRn4B@example.com', 'LcbVyUMNKG58lbQsqnsZ', 'image_972.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('973', 'WdZxyzp2', '75711', '95908', 'PL9LAi94Cf', 'PL9LAi94Cf@example.com', 'q4Gztv0fAEicgtscCsrE', 'image_973.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('974', 'dXPZvYLR', '24461', '89893', 'Hhdjadw6pl', 'Hhdjadw6pl@example.com', '896N3I8QymBuDWxiHCvC', 'image_974.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('975', 'sktIpjnr', '82919', '60607', 'DKh6S4YVMc', 'DKh6S4YVMc@example.com', 'NdRlalAc9wm52SeyfJhM', 'image_975.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('976', 'pfSNnMpe', '32161', '20409', 'VFZ32Ce9Nb', 'VFZ32Ce9Nb@example.com', 'l5uKe3JipZlZxYplPGkv', 'image_976.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('977', 'AIV6olyF', '64331', '50445', 'tHpm8Ru3Vf', 'tHpm8Ru3Vf@example.com', 'NO9T1mmSch2HbxKwvcrX', 'image_977.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('978', 'qFOHOpHz', '98974', '62363', 'U9viOmOuMn', 'U9viOmOuMn@example.com', 'Y3qz1KRsIIwBQ8fVlpDJ', 'image_978.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('979', 'ewOEgGuH', '73901', '31499', 'aTHnPcomqc', 'aTHnPcomqc@example.com', 'TEbcnohVZbJnBO2cMn80', 'image_979.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('980', 'UtUlDnYU', '83085', '90368', 'JjIwOG0BB9', 'JjIwOG0BB9@example.com', 'b3SvESct8M96eC4d7dxI', 'image_980.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('981', 'RE6rPbr6', '58706', '80397', 'IBBPaPbxP7', 'IBBPaPbxP7@example.com', 'zrCfwjtNaPTMAo3Zg7cG', 'image_981.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('982', '8R9axhpY', '63132', '98104', 'W3IeeO4LWx', 'W3IeeO4LWx@example.com', 'Ekv0OeYf5H8BIuEQDbp0', 'image_982.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('983', 'rSqVouod', '36323', '77977', 'a49VCtTpR2', 'a49VCtTpR2@example.com', 'bzcvgcjYgrcTnOWZuaAT', 'image_983.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('984', '6PoGWurT', '90584', '89187', 'vBrYa0uqvu', 'vBrYa0uqvu@example.com', 'LdUbeZ7UmJoxZYLQWuko', 'image_984.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('985', 'EiOy3oNd', '95183', '16726', 'Q1iXIs6m3L', 'Q1iXIs6m3L@example.com', '4oLTDRlMlpSCSZ1p6omG', 'image_985.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('986', 'ZAdC8d0O', '35100', '13806', 'y8dVu9vChO', 'y8dVu9vChO@example.com', '3fhpS5yEVWEfE9fNKqGH', 'image_986.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('987', 'uBT6t6yT', '16422', '35323', '10Ys9yHeKQ', '10Ys9yHeKQ@example.com', 'F1OYwHgEZB5DvRDraXLW', 'image_987.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('988', 'DlSPajKU', '72548', '61224', 'IyU4wkxyRH', 'IyU4wkxyRH@example.com', 'HCcBnSSiD8iYDSfF03iu', 'image_988.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('989', '51GvtBcY', '11025', '14113', 'lRTN1CukWv', 'lRTN1CukWv@example.com', 'oVZrX5ZMvHGDOLjSyzuH', 'image_989.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('990', 'yeO2vAVY', '32457', '14049', 'jBN6mCGaWN', 'jBN6mCGaWN@example.com', 'XBQQyal6pt3JFdb2nOBu', 'image_990.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('991', 'yjD28mZh', '51666', '26101', 'kmdxrqUm8J', 'kmdxrqUm8J@example.com', 'XldINQYrRhNHsAd3Ch1K', 'image_991.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('992', 'zepDjp1O', '10473', '88751', 'z8NIoGDfl0', 'z8NIoGDfl0@example.com', 'EUZeg2dIZClX6jFtXesb', 'image_992.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('993', 'pOM2ZFSJ', '68244', '29144', 'o3kQhkn1AF', 'o3kQhkn1AF@example.com', 'kcATAg694ZLJQu0q4jJ0', 'image_993.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('994', 'N3nNRkx9', '57262', '67546', 'fLHyzEoerv', 'fLHyzEoerv@example.com', '6ixmAwdZDBBV7JepS5tw', 'image_994.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('995', '9fuTHxSN', '92364', '46604', 'DCb788hIvz', 'DCb788hIvz@example.com', 'KzvfJc1G76DQVtJsHptC', 'image_995.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('996', 'FAv2ozuP', '86060', '61197', '3fyqd37zYI', '3fyqd37zYI@example.com', '3dwoVFmR8mOIM6tKf7XY', 'image_996.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('997', 'J77B50Fb', '47830', '95237', 'R4TQYOqQwA', 'R4TQYOqQwA@example.com', 'hso4FnGpKMQax53CPfxC', 'image_997.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('998', 'pvJwexwN', '82120', '87847', 'ZkPU0dRcz3', 'ZkPU0dRcz3@example.com', 'QgJTxxBlVoQEmTZhWVwE', 'image_998.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('999', 'ovR0yqCT', '56543', '75751', 'GoE4Q0k82D', 'GoE4Q0k82D@example.com', '8K3pxN9e9tuWFJxUeMXX', 'image_999.jpg', 'student');
-INSERT INTO registration (uid, password, regno, phnno, name, email, address, image, role) VALUES ('1000', '2Yquc25L', '91567', '99708', 'yCF10fw1eU', 'yCF10fw1eU@example.com', 'swjCetFMRb6j7ZsS0YVc', 'image_1000.jpg', 'student');
+
+
+
+-- faculty enrollment data insertion
+
+INSERT into facultyenrollment
+values
+    (1, 1, 'CS1'), 
+    (1, 2, 'CS2'), 
+    (2, 3, 'DSA1'), 
+    (2, 4, 'DSA2'), 
+    (3, 5, 'DBMS1'), 
+    (3, 6, 'DBMS2'), 
+    (4, 7, 'CN1'), 
+    (4, 8, 'CN2'), 
+    (5, 9, 'OS1'), 
+    (5, 10, 'OS2'), 
+    (6, 11, 'WT1'), 
+    (6, 12, 'WT2'), 
+    (7, 13, 'AI1'), 
+    (7, 14, 'AI2'), 
+    (8, 15, 'SE1'), 
+    (8, 16, 'SE2'), 
+    (9, 17, 'CyS1'), 
+    (9, 18, 'CyS2'), 
+    (10, 19, 'CG1'), 
+    (10, 20, 'CG2');
+
+
+-- student enrollment data
+
+insert into studentenrollment(course_id,student_id,batch) values
+(5,1300,'OS1'),
+(5,1302,'OS1'),
+(5,1304,'OS1'),
+(5,1306,'OS1'),
+(5,1308,'OS1'),
+(5,1310,'OS1'),
+(5,1312,'OS1'),
+(5,1314,'OS1'),
+(5,1316,'OS1'),
+(5,1318,'OS1'),
+(5,1320,'OS1'),
+(5,1322,'OS1'),
+(5,1324,'OS1'),
+(5,1326,'OS1'),
+(5,1328,'OS1'),
+(5,1330,'OS1'),
+(5,1332,'OS1'),
+(5,1334,'OS1'),
+(5,1336,'OS1'),
+(5,1338,'OS1'),
+(5,1340,'OS1'),
+(5,1342,'OS1'),
+(5,1344,'OS1'),
+(5,1346,'OS1'),
+(5,1348,'OS1'),
+(5,1350,'OS1'),
+(5,1352,'OS1'),
+(5,1354,'OS1'),
+(5,1356,'OS1'),
+(5,1358,'OS1'),
+(5,1360,'OS1'),
+(5,1362,'OS1'),
+(5,1364,'OS1'),
+(5,1366,'OS1'),
+(5,1368,'OS1'),
+(5,1370,'OS1'),
+(5,1372,'OS1'),
+(5,1374,'OS1'),
+(5,1376,'OS1'),
+(5,1378,'OS1'),
+(5,1380,'OS1'),
+(5,1382,'OS1'),
+(5,1384,'OS1'),
+(5,1386,'OS1'),
+(5,1388,'OS1'),
+(5,1390,'OS1'),
+(5,1392,'OS1'),
+(5,1394,'OS1'),
+(5,1396,'OS1'),
+(5,1398,'OS1'),
+(5,1400,'OS2'),
+(5,1402,'OS2'),
+(5,1404,'OS2'),
+(5,1406,'OS2'),
+(5,1408,'OS2'),
+(5,1410,'OS2'),
+(5,1412,'OS2'),
+(5,1414,'OS2'),
+(5,1416,'OS2'),
+(5,1418,'OS2'),
+(5,1420,'OS2'),
+(5,1422,'OS2'),
+(5,1424,'OS2'),
+(5,1426,'OS2'),
+(5,1428,'OS2'),
+(5,1430,'OS2'),
+(5,1432,'OS2'),
+(5,1434,'OS2'),
+(5,1436,'OS2'),
+(5,1438,'OS2'),
+(5,1440,'OS2'),
+(5,1442,'OS2'),
+(5,1444,'OS2'),
+(5,1446,'OS2'),
+(5,1448,'OS2'),
+(5,1450,'OS2'),
+(5,1452,'OS2'),
+(5,1454,'OS2'),
+(5,1456,'OS2'),
+(5,1458,'OS2'),
+(5,1460,'OS2'),
+(5,1462,'OS2'),
+(5,1464,'OS2'),
+(5,1466,'OS2'),
+(5,1468,'OS2'),
+(5,1470,'OS2'),
+(5,1472,'OS2'),
+(5,1474,'OS2'),
+(5,1476,'OS2'),
+(5,1478,'OS2'),
+(5,1480,'OS2'),
+(5,1482,'OS2'),
+(5,1484,'OS2'),
+(5,1486,'OS2'),
+(5,1488,'OS2'),
+(5,1490,'OS2'),
+(5,1492,'OS2'),
+(5,1494,'OS2'),
+(5,1496,'OS2'),
+(5,1498,'OS2'),
+(6,1500,'WT1'),
+(6,1501,'WT1'),
+(6,1503,'WT1'),
+(6,1505,'WT1'),
+(6,1507,'WT1'),
+(6,1509,'WT1'),
+(6,1511,'WT1'),
+(6,1513,'WT1'),
+(6,1515,'WT1'),
+(6,1517,'WT1'),
+(6,1519,'WT1'),
+(6,1521,'WT1'),
+(6,1523,'WT1'),
+(6,1525,'WT1'),
+(6,1527,'WT1'),
+(6,1529,'WT1'),
+(6,1531,'WT1'),
+(6,1533,'WT1'),
+(6,1535,'WT1'),
+(6,1537,'WT1'),
+(6,1539,'WT1'),
+(6,1541,'WT1'),
+(6,1543,'WT1'),
+(6,1545,'WT1'),
+(6,1547,'WT1'),
+(6,1549,'WT1'),
+(6,1551,'WT1'),
+(6,1553,'WT1'),
+(6,1555,'WT1'),
+(6,1557,'WT1'),
+(6,1559,'WT1'),
+(6,1561,'WT1'),
+(6,1563,'WT1'),
+(6,1565,'WT1'),
+(6,1567,'WT1'),
+(6,1569,'WT1'),
+(6,1571,'WT1'),
+(6,1573,'WT1'),
+(6,1575,'WT1'),
+(6,1577,'WT1'),
+(6,1579,'WT1'),
+(6,1581,'WT1'),
+(6,1583,'WT1'),
+(6,1585,'WT1'),
+(6,1587,'WT1'),
+(6,1589,'WT1'),
+(6,1591,'WT1'),
+(6,1593,'WT1'),
+(6,1595,'WT1'),
+(6,1597,'WT1'),
+(6,1599,'WT2'),
+(6,1601,'WT2'),
+(6,1603,'WT2'),
+(6,1605,'WT2'),
+(6,1607,'WT2'),
+(6,1609,'WT2'),
+(6,1611,'WT2'),
+(6,1613,'WT2'),
+(6,1615,'WT2'),
+(6,1617,'WT2'),
+(6,1619,'WT2'),
+(6,1621,'WT2'),
+(6,1623,'WT2'),
+(6,1625,'WT2'),
+(6,1627,'WT2'),
+(6,1629,'WT2'),
+(6,1631,'WT2'),
+(6,1633,'WT2'),
+(6,1635,'WT2'),
+(6,1637,'WT2'),
+(6,1639,'WT2'),
+(6,1641,'WT2'),
+(6,1643,'WT2'),
+(6,1645,'WT2'),
+(6,1647,'WT2'),
+(6,1649,'WT2'),
+(6,1651,'WT2'),
+(6,1653,'WT2'),
+(6,1655,'WT2'),
+(6,1657,'WT2'),
+(6,1659,'WT2'),
+(6,1661,'WT2'),
+(6,1663,'WT2'),
+(6,1665,'WT2'),
+(6,1667,'WT2'),
+(6,1669,'WT2'),
+(6,1671,'WT2'),
+(6,1673,'WT2'),
+(6,1675,'WT2'),
+(6,1677,'WT2'),
+(6,1679,'WT2'),
+(6,1681,'WT2'),
+(6,1683,'WT2'),
+(6,1685,'WT2'),
+(6,1687,'WT2'),
+(6,1689,'WT2'),
+(6,1691,'WT2'),
+(6,1693,'WT2'),
+(6,1695,'WT2'),
+(6,1697,'WT2'),
+(7,1699,'AI1'),
+(7,1701,'AI1'),
+(7,1703,'AI1'),
+(7,1705,'AI1'),
+(7,1707,'AI1'),
+(7,1709,'AI1'),
+(7,1711,'AI1'),
+(7,1713,'AI1'),
+(7,1715,'AI1'),
+(7,1717,'AI1'),
+(7,1719,'AI1'),
+(7,1721,'AI1'),
+(7,1723,'AI1'),
+(7,1725,'AI1'),
+(7,1727,'AI1'),
+(7,1729,'AI1'),
+(7,1731,'AI1'),
+(7,1733,'AI1'),
+(7,1735,'AI1'),
+(7,1737,'AI1'),
+(7,1739,'AI1'),
+(7,1741,'AI1'),
+(7,1743,'AI1'),
+(7,1745,'AI1'),
+(7,1747,'AI1'),
+(7,1749,'AI1'),
+(7,1751,'AI1'),
+(7,1753,'AI1'),
+(7,1755,'AI1'),
+(7,1757,'AI1'),
+(7,1759,'AI1'),
+(7,1761,'AI1'),
+(7,1763,'AI1'),
+(7,1765,'AI1'),
+(7,1767,'AI1'),
+(7,1769,'AI1'),
+(7,1771,'AI1'),
+(7,1773,'AI1'),
+(7,1775,'AI1'),
+(7,1777,'AI1'),
+(7,1779,'AI1'),
+(7,1781,'AI1'),
+(7,1783,'AI1'),
+(7,1785,'AI1'),
+(7,1787,'AI1'),
+(7,1789,'AI1'),
+(7,1791,'AI1'),
+(7,1793,'AI1'),
+(7,1795,'AI1'),
+(7,1797,'AI1'),
+(7,1799,'AI2'),
+(7,1801,'AI2'),
+(7,1803,'AI2'),
+(7,1805,'AI2'),
+(7,1807,'AI2'),
+(7,1809,'AI2'),
+(7,1811,'AI2'),
+(7,1813,'AI2'),
+(7,1815,'AI2'),
+(7,1817,'AI2'),
+(7,1819,'AI2'),
+(7,1821,'AI2'),
+(7,1823,'AI2'),
+(7,1825,'AI2'),
+(7,1827,'AI2'),
+(7,1829,'AI2'),
+(7,1831,'AI2'),
+(7,1833,'AI2'),
+(7,1835,'AI2'),
+(7,1837,'AI2'),
+(7,1839,'AI2'),
+(7,1841,'AI2'),
+(7,1843,'AI2'),
+(7,1845,'AI2'),
+(7,1847,'AI2'),
+(7,1849,'AI2'),
+(7,1851,'AI2'),
+(7,1853,'AI2'),
+(7,1855,'AI2'),
+(7,1857,'AI2'),
+(7,1859,'AI2'),
+(7,1861,'AI2'),
+(7,1863,'AI2'),
+(7,1865,'AI2'),
+(7,1867,'AI2'),
+(7,1869,'AI2'),
+(7,1871,'AI2'),
+(7,1873,'AI2'),
+(7,1875,'AI2'),
+(7,1877,'AI2'),
+(7,1879,'AI2'),
+(7,1881,'AI2'),
+(7,1883,'AI2'),
+(7,1885,'AI2'),
+(7,1887,'AI2'),
+(7,1889,'AI2'),
+(7,1891,'AI2'),
+(7,1893,'AI2'),
+(7,1895,'AI2'),
+(7,1897,'AI2'),
+(8,1502,'SE2'),
+(8,1504,'SE2'),
+(8,1506,'SE2'),
+(8,1508,'SE2'),
+(8,1510,'SE2'),
+(8,1512,'SE2'),
+(8,1514,'SE2'),
+(8,1516,'SE2'),
+(8,1518,'SE2'),
+(8,1520,'SE2'),
+(8,1522,'SE2'),
+(8,1524,'SE2'),
+(8,1526,'SE2'),
+(8,1528,'SE2'),
+(8,1530,'SE2'),
+(8,1532,'SE2'),
+(8,1534,'SE2'),
+(8,1536,'SE2'),
+(8,1538,'SE2'),
+(8,1540,'SE2'),
+(8,1542,'SE2'),
+(8,1544,'SE2'),
+(8,1546,'SE2'),
+(8,1548,'SE2'),
+(8,1550,'SE2'),
+(8,1552,'SE2'),
+(8,1554,'SE2'),
+(8,1556,'SE2'),
+(8,1558,'SE2'),
+(8,1560,'SE2'),
+(8,1562,'SE2'),
+(8,1564,'SE2'),
+(8,1566,'SE2'),
+(8,1568,'SE2'),
+(8,1570,'SE2'),
+(8,1572,'SE2'),
+(8,1574,'SE2'),
+(8,1576,'SE2'),
+(8,1578,'SE2'),
+(8,1580,'SE2'),
+(8,1582,'SE2'),
+(8,1584,'SE2'),
+(8,1586,'SE2'),
+(8,1588,'SE2'),
+(8,1590,'SE2'),
+(8,1592,'SE2'),
+(8,1594,'SE2'),
+(8,1596,'SE2'),
+(8,1598,'SE2'),
+(8,1899,'SE1'),
+(8,1901,'SE1'),
+(8,1903,'SE1'),
+(8,1905,'SE1'),
+(8,1907,'SE1'),
+(8,1909,'SE1'),
+(8,1911,'SE1'),
+(8,1913,'SE1'),
+(8,1915,'SE1'),
+(8,1917,'SE1'),
+(8,1919,'SE1'),
+(8,1921,'SE1'),
+(8,1923,'SE1'),
+(8,1925,'SE1'),
+(8,1927,'SE1'),
+(8,1929,'SE1'),
+(8,1931,'SE1'),
+(8,1933,'SE1'),
+(8,1935,'SE1'),
+(8,1937,'SE1'),
+(8,1939,'SE1'),
+(8,1941,'SE1'),
+(8,1943,'SE1'),
+(8,1945,'SE1'),
+(8,1947,'SE1'),
+(8,1949,'SE1'),
+(8,1951,'SE1'),
+(8,1953,'SE1'),
+(8,1955,'SE1'),
+(8,1957,'SE1'),
+(8,1959,'SE1'),
+(8,1961,'SE1'),
+(8,1963,'SE1'),
+(8,1965,'SE1'),
+(8,1967,'SE1'),
+(8,1969,'SE1'),
+(8,1971,'SE1'),
+(8,1973,'SE1'),
+(8,1975,'SE1'),
+(8,1977,'SE1'),
+(8,1979,'SE1'),
+(8,1981,'SE1'),
+(8,1983,'SE1'),
+(8,1985,'SE1'),
+(8,1987,'SE1'),
+(8,1989,'SE1'),
+(8,1991,'SE1'),
+(8,1993,'SE1'),
+(8,1995,'SE1'),
+(8,1997,'SE1'),
+(8,1999,'SE2'),
+(1,1001,'CS1'),
+(1,1003,'CS1'),
+(1,1005,'CS1'),
+(1,1007,'CS1'),
+(1,1009,'CS1'),
+(1,1011,'CS1'),
+(1,1013,'CS1'),
+(1,1015,'CS1'),
+(1,1017,'CS1'),
+(1,1019,'CS1'),
+(1,1021,'CS1'),
+(1,1023,'CS1'),
+(1,1025,'CS1'),
+(1,1027,'CS1'),
+(1,1029,'CS1'),
+(1,1031,'CS1'),
+(1,1033,'CS1'),
+(1,1035,'CS1'),
+(1,1037,'CS1'),
+(1,1039,'CS1'),
+(1,1041,'CS1'),
+(1,1043,'CS1'),
+(1,1045,'CS1'),
+(1,1047,'CS1'),
+(1,1049,'CS1'),
+(1,1051,'CS1'),
+(1,1053,'CS1'),
+(1,1055,'CS1'),
+(1,1057,'CS1'),
+(1,1059,'CS1'),
+(1,1061,'CS1'),
+(1,1063,'CS1'),
+(1,1065,'CS1'),
+(1,1067,'CS1'),
+(1,1069,'CS1'),
+(1,1071,'CS1'),
+(1,1073,'CS1'),
+(1,1075,'CS1'),
+(1,1077,'CS1'),
+(1,1079,'CS1'),
+(1,1081,'CS1'),
+(1,1083,'CS1'),
+(1,1085,'CS1'),
+(1,1087,'CS1'),
+(1,1089,'CS1'),
+(1,1091,'CS1'),
+(1,1093,'CS1'),
+(1,1095,'CS1'),
+(1,1097,'CS1'),
+(1,1099,'CS1'),
+(1,1101,'CS2'),
+(1,1103,'CS2'),
+(1,1105,'CS2'),
+(1,1107,'CS2'),
+(1,1109,'CS2'),
+(1,1111,'CS2'),
+(1,1113,'CS2'),
+(1,1115,'CS2'),
+(1,1117,'CS2'),
+(1,1119,'CS2'),
+(1,1121,'CS2'),
+(1,1123,'CS2'),
+(1,1125,'CS2'),
+(1,1127,'CS2'),
+(1,1129,'CS2'),
+(1,1131,'CS2'),
+(1,1133,'CS2'),
+(1,1135,'CS2'),
+(1,1137,'CS2'),
+(1,1139,'CS2'),
+(1,1141,'CS2'),
+(1,1143,'CS2'),
+(1,1145,'CS2'),
+(1,1147,'CS2'),
+(1,1149,'CS2'),
+(1,1151,'CS2'),
+(1,1153,'CS2'),
+(1,1155,'CS2'),
+(1,1157,'CS2'),
+(1,1159,'CS2'),
+(1,1161,'CS2'),
+(1,1163,'CS2'),
+(1,1165,'CS2'),
+(1,1167,'CS2'),
+(1,1169,'CS2'),
+(1,1171,'CS2'),
+(1,1173,'CS2'),
+(1,1175,'CS2'),
+(1,1177,'CS2'),
+(1,1179,'CS2'),
+(1,1181,'CS2'),
+(1,1183,'CS2'),
+(1,1185,'CS2'),
+(1,1187,'CS2'),
+(1,1189,'CS2'),
+(1,1191,'CS2'),
+(1,1193,'CS2'),
+(1,1195,'CS2'),
+(1,1197,'CS2'),
+(1,1199,'CS2'),
+(10,1800,'CG1'),
+(10,1802,'CG1'),
+(10,1804,'CG1'),
+(10,1806,'CG1'),
+(10,1808,'CG1'),
+(10,1810,'CG1'),
+(10,1812,'CG1'),
+(10,1814,'CG1'),
+(10,1816,'CG1'),
+(10,1818,'CG1'),
+(10,1820,'CG1'),
+(10,1822,'CG1'),
+(10,1824,'CG1'),
+(10,1826,'CG1'),
+(10,1828,'CG1'),
+(10,1830,'CG1'),
+(10,1832,'CG1'),
+(10,1834,'CG1'),
+(10,1836,'CG1'),
+(10,1838,'CG1'),
+(10,1840,'CG1'),
+(10,1842,'CG1'),
+(10,1844,'CG1'),
+(10,1846,'CG1'),
+(10,1848,'CG1'),
+(10,1850,'CG1'),
+(10,1852,'CG1'),
+(10,1854,'CG1'),
+(10,1856,'CG1'),
+(10,1858,'CG1'),
+(10,1860,'CG1'),
+(10,1862,'CG1'),
+(10,1864,'CG1'),
+(10,1866,'CG1'),
+(10,1868,'CG1'),
+(10,1870,'CG1'),
+(10,1872,'CG1'),
+(10,1874,'CG1'),
+(10,1876,'CG1'),
+(10,1878,'CG1'),
+(10,1880,'CG1'),
+(10,1882,'CG1'),
+(10,1884,'CG1'),
+(10,1886,'CG1'),
+(10,1888,'CG1'),
+(10,1890,'CG1'),
+(10,1892,'CG1'),
+(10,1894,'CG1'),
+(10,1896,'CG1'),
+(10,1898,'CG1'),
+(10,1900,'CG2'),
+(10,1902,'CG2'),
+(10,1904,'CG2'),
+(10,1906,'CG2'),
+(10,1908,'CG2'),
+(10,1910,'CG2'),
+(10,1912,'CG2'),
+(10,1914,'CG2'),
+(10,1916,'CG2'),
+(10,1918,'CG2'),
+(10,1920,'CG2'),
+(10,1922,'CG2'),
+(10,1924,'CG2'),
+(10,1926,'CG2'),
+(10,1928,'CG2'),
+(10,1930,'CG2'),
+(10,1932,'CG2'),
+(10,1934,'CG2'),
+(10,1936,'CG2'),
+(10,1938,'CG2'),
+(10,1940,'CG2'),
+(10,1942,'CG2'),
+(10,1944,'CG2'),
+(10,1946,'CG2'),
+(10,1948,'CG2'),
+(10,1950,'CG2'),
+(10,1952,'CG2'),
+(10,1954,'CG2'),
+(10,1956,'CG2'),
+(10,1958,'CG2'),
+(10,1960,'CG2'),
+(10,1962,'CG2'),
+(10,1964,'CG2'),
+(10,1966,'CG2'),
+(10,1968,'CG2'),
+(10,1970,'CG2'),
+(10,1972,'CG2'),
+(10,1974,'CG2'),
+(10,1976,'CG2'),
+(10,1978,'CG2'),
+(10,1980,'CG2'),
+(10,1982,'CG2'),
+(10,1984,'CG2'),
+(10,1986,'CG2'),
+(10,1988,'CG2'),
+(10,1990,'CG2'),
+(10,1992,'CG2'),
+(10,1994,'CG2'),
+(10,1996,'CG2'),
+(10,1998,'CG2'),
+(2,1201,'DAS1'),
+(2,1203,'DAS1'),
+(2,1205,'DAS1'),
+(2,1207,'DAS1'),
+(2,1209,'DAS1'),
+(2,1211,'DAS1'),
+(2,1213,'DAS1'),
+(2,1215,'DAS1'),
+(2,1217,'DAS1'),
+(2,1219,'DAS1'),
+(2,1221,'DAS1'),
+(2,1223,'DAS1'),
+(2,1225,'DAS1'),
+(2,1227,'DAS1'),
+(2,1229,'DAS1'),
+(2,1231,'DAS1'),
+(2,1233,'DAS1'),
+(2,1235,'DAS1'),
+(2,1237,'DAS1'),
+(2,1239,'DAS1'),
+(2,1241,'DAS1'),
+(2,1243,'DAS1'),
+(2,1245,'DAS1'),
+(2,1247,'DAS1'),
+(2,1249,'DAS1'),
+(2,1251,'DAS1'),
+(2,1253,'DAS1'),
+(2,1255,'DAS1'),
+(2,1257,'DAS1'),
+(2,1259,'DAS1'),
+(2,1261,'DAS1'),
+(2,1263,'DAS1'),
+(2,1265,'DAS1'),
+(2,1267,'DAS1'),
+(2,1269,'DAS1'),
+(2,1271,'DAS1'),
+(2,1273,'DAS1'),
+(2,1275,'DAS1'),
+(2,1277,'DAS1'),
+(2,1279,'DAS1'),
+(2,1281,'DAS1'),
+(2,1283,'DAS1'),
+(2,1285,'DAS1'),
+(2,1287,'DAS1'),
+(2,1289,'DAS1'),
+(2,1291,'DAS1'),
+(2,1293,'DAS1'),
+(2,1295,'DAS1'),
+(2,1297,'DAS1'),
+(2,1299,'DAS1'),
+(2,1301,'DAS2'),
+(2,1303,'DAS2'),
+(2,1305,'DAS2'),
+(2,1307,'DAS2'),
+(2,1309,'DAS2'),
+(2,1311,'DAS2'),
+(2,1313,'DAS2'),
+(2,1315,'DAS2'),
+(2,1317,'DAS2'),
+(2,1319,'DAS2'),
+(2,1321,'DAS2'),
+(2,1323,'DAS2'),
+(2,1325,'DAS2'),
+(2,1327,'DAS2'),
+(2,1329,'DAS2'),
+(2,1331,'DAS2'),
+(2,1333,'DAS2'),
+(2,1335,'DAS2'),
+(2,1337,'DAS2'),
+(2,1339,'DAS2'),
+(2,1341,'DAS2'),
+(2,1343,'DAS2'),
+(2,1345,'DAS2'),
+(2,1347,'DAS2'),
+(2,1349,'DAS2'),
+(2,1351,'DAS2'),
+(2,1353,'DAS2'),
+(2,1355,'DAS2'),
+(2,1357,'DAS2'),
+(2,1359,'DAS2'),
+(2,1361,'DAS2'),
+(2,1363,'DAS2'),
+(2,1365,'DAS2'),
+(2,1367,'DAS2'),
+(2,1369,'DAS2'),
+(2,1371,'DAS2'),
+(2,1373,'DAS2'),
+(2,1375,'DAS2'),
+(2,1377,'DAS2'),
+(2,1379,'DAS2'),
+(2,1381,'DAS2'),
+(2,1383,'DAS2'),
+(2,1385,'DAS2'),
+(2,1387,'DAS2'),
+(2,1389,'DAS2'),
+(2,1391,'DAS2'),
+(2,1393,'DAS2'),
+(2,1395,'DAS2'),
+(2,1397,'DAS2'),
+(2,1399,'DAS2'),
+(3,1000,'DBMS2'),
+(3,1002,'DBMS2'),
+(3,1004,'DBMS2'),
+(3,1006,'DBMS2'),
+(3,1008,'DBMS2'),
+(3,1010,'DBMS2'),
+(3,1012,'DBMS2'),
+(3,1014,'DBMS2'),
+(3,1016,'DBMS2'),
+(3,1018,'DBMS2'),
+(3,1020,'DBMS2'),
+(3,1022,'DBMS2'),
+(3,1024,'DBMS2'),
+(3,1026,'DBMS2'),
+(3,1028,'DBMS2'),
+(3,1030,'DBMS2'),
+(3,1032,'DBMS2'),
+(3,1034,'DBMS2'),
+(3,1036,'DBMS2'),
+(3,1038,'DBMS2'),
+(3,1040,'DBMS2'),
+(3,1042,'DBMS2'),
+(3,1044,'DBMS2'),
+(3,1046,'DBMS2'),
+(3,1048,'DBMS2'),
+(3,1050,'DBMS2'),
+(3,1052,'DBMS2'),
+(3,1054,'DBMS2'),
+(3,1056,'DBMS2'),
+(3,1058,'DBMS2'),
+(3,1060,'DBMS2'),
+(3,1062,'DBMS2'),
+(3,1064,'DBMS2'),
+(3,1066,'DBMS2'),
+(3,1068,'DBMS2'),
+(3,1070,'DBMS2'),
+(3,1072,'DBMS2'),
+(3,1074,'DBMS2'),
+(3,1076,'DBMS2'),
+(3,1078,'DBMS2'),
+(3,1080,'DBMS2'),
+(3,1082,'DBMS2'),
+(3,1084,'DBMS2'),
+(3,1086,'DBMS2'),
+(3,1088,'DBMS2'),
+(3,1090,'DBMS2'),
+(3,1092,'DBMS2'),
+(3,1094,'DBMS2'),
+(3,1096,'DBMS2'),
+(3,1098,'DBMS2'),
+(3,1401,'DBMS1'),
+(3,1403,'DBMS1'),
+(3,1405,'DBMS1'),
+(3,1407,'DBMS1'),
+(3,1409,'DBMS1'),
+(3,1411,'DBMS1'),
+(3,1413,'DBMS1'),
+(3,1415,'DBMS1'),
+(3,1417,'DBMS1'),
+(3,1419,'DBMS1'),
+(3,1421,'DBMS1'),
+(3,1423,'DBMS1'),
+(3,1425,'DBMS1'),
+(3,1427,'DBMS1'),
+(3,1429,'DBMS1'),
+(3,1431,'DBMS1'),
+(3,1433,'DBMS1'),
+(3,1435,'DBMS1'),
+(3,1437,'DBMS1'),
+(3,1439,'DBMS1'),
+(3,1441,'DBMS1'),
+(3,1443,'DBMS1'),
+(3,1445,'DBMS1'),
+(3,1447,'DBMS1'),
+(3,1449,'DBMS1'),
+(3,1451,'DBMS1'),
+(3,1453,'DBMS1'),
+(3,1455,'DBMS1'),
+(3,1457,'DBMS1'),
+(3,1459,'DBMS1'),
+(3,1461,'DBMS1'),
+(3,1463,'DBMS1'),
+(3,1465,'DBMS1'),
+(3,1467,'DBMS1'),
+(3,1469,'DBMS1'),
+(3,1471,'DBMS1'),
+(3,1473,'DBMS1'),
+(3,1475,'DBMS1'),
+(3,1477,'DBMS1'),
+(3,1479,'DBMS1'),
+(3,1481,'DBMS1'),
+(3,1483,'DBMS1'),
+(3,1485,'DBMS1'),
+(3,1487,'DBMS1'),
+(3,1489,'DBMS1'),
+(3,1491,'DBMS1'),
+(3,1493,'DBMS1'),
+(3,1495,'DBMS1'),
+(3,1497,'DBMS1'),
+(3,1499,'DBMS1'),
+(4,1100,'CN1'),
+(4,1102,'CN1'),
+(4,1104,'CN1'),
+(4,1106,'CN1'),
+(4,1108,'CN1'),
+(4,1110,'CN1'),
+(4,1112,'CN1'),
+(4,1114,'CN1'),
+(4,1116,'CN1'),
+(4,1118,'CN1'),
+(4,1120,'CN1'),
+(4,1122,'CN1'),
+(4,1124,'CN1'),
+(4,1126,'CN1'),
+(4,1128,'CN1'),
+(4,1130,'CN1'),
+(4,1132,'CN1'),
+(4,1134,'CN1'),
+(4,1136,'CN1'),
+(4,1138,'CN1'),
+(4,1140,'CN1'),
+(4,1142,'CN1'),
+(4,1144,'CN1'),
+(4,1146,'CN1'),
+(4,1148,'CN1'),
+(4,1150,'CN1'),
+(4,1152,'CN1'),
+(4,1154,'CN1'),
+(4,1156,'CN1'),
+(4,1158,'CN1'),
+(4,1160,'CN1'),
+(4,1162,'CN1'),
+(4,1164,'CN1'),
+(4,1166,'CN1'),
+(4,1168,'CN1'),
+(4,1170,'CN1'),
+(4,1172,'CN1'),
+(4,1174,'CN1'),
+(4,1176,'CN1'),
+(4,1178,'CN1'),
+(4,1180,'CN1'),
+(4,1182,'CN1'),
+(4,1184,'CN1'),
+(4,1186,'CN1'),
+(4,1188,'CN1'),
+(4,1190,'CN1'),
+(4,1192,'CN1'),
+(4,1194,'CN1'),
+(4,1196,'CN1'),
+(4,1198,'CN1'),
+(4,1200,'CN2'),
+(4,1202,'CN2'),
+(4,1204,'CN2'),
+(4,1206,'CN2'),
+(4,1208,'CN2'),
+(4,1210,'CN2'),
+(4,1212,'CN2'),
+(4,1214,'CN2'),
+(4,1216,'CN2'),
+(4,1218,'CN2'),
+(4,1220,'CN2'),
+(4,1222,'CN2'),
+(4,1224,'CN2'),
+(4,1226,'CN2'),
+(4,1228,'CN2'),
+(4,1230,'CN2'),
+(4,1232,'CN2'),
+(4,1234,'CN2'),
+(4,1236,'CN2'),
+(4,1238,'CN2'),
+(4,1240,'CN2'),
+(4,1242,'CN2'),
+(4,1244,'CN2'),
+(4,1246,'CN2'),
+(4,1248,'CN2'),
+(4,1250,'CN2'),
+(4,1252,'CN2'),
+(4,1254,'CN2'),
+(4,1256,'CN2'),
+(4,1258,'CN2'),
+(4,1260,'CN2'),
+(4,1262,'CN2'),
+(4,1264,'CN2'),
+(4,1266,'CN2'),
+(4,1268,'CN2'),
+(4,1270,'CN2'),
+(4,1272,'CN2'),
+(4,1274,'CN2'),
+(4,1276,'CN2'),
+(4,1278,'CN2'),
+(4,1280,'CN2'),
+(4,1282,'CN2'),
+(4,1284,'CN2'),
+(4,1286,'CN2'),
+(4,1288,'CN2'),
+(4,1290,'CN2'),
+(4,1292,'CN2'),
+(4,1294,'CN2'),
+(4,1296,'CN2'),
+(4,1298,'CN2'),
+(9,1600,'CyS1'),
+(9,1602,'CyS1'),
+(9,1604,'CyS1'),
+(9,1606,'CyS1'),
+(9,1608,'CyS1'),
+(9,1610,'CyS1'),
+(9,1612,'CyS1'),
+(9,1614,'CyS1'),
+(9,1616,'CyS1'),
+(9,1618,'CyS1'),
+(9,1620,'CyS1'),
+(9,1622,'CyS1'),
+(9,1624,'CyS1'),
+(9,1626,'CyS1'),
+(9,1628,'CyS1'),
+(9,1630,'CyS1'),
+(9,1632,'CyS1'),
+(9,1634,'CyS1'),
+(9,1636,'CyS1'),
+(9,1638,'CyS1'),
+(9,1640,'CyS1'),
+(9,1642,'CyS1'),
+(9,1644,'CyS1'),
+(9,1646,'CyS1'),
+(9,1648,'CyS1'),
+(9,1650,'CyS1'),
+(9,1652,'CyS1'),
+(9,1654,'CyS1'),
+(9,1656,'CyS1'),
+(9,1658,'CyS1'),
+(9,1660,'CyS1'),
+(9,1662,'CyS1'),
+(9,1664,'CyS1'),
+(9,1666,'CyS1'),
+(9,1668,'CyS1'),
+(9,1670,'CyS1'),
+(9,1672,'CyS1'),
+(9,1674,'CyS1'),
+(9,1676,'CyS1'),
+(9,1678,'CyS1'),
+(9,1680,'CyS1'),
+(9,1682,'CyS1'),
+(9,1684,'CyS1'),
+(9,1686,'CyS1'),
+(9,1688,'CyS1'),
+(9,1690,'CyS1'),
+(9,1692,'CyS1'),
+(9,1694,'CyS1'),
+(9,1696,'CyS1'),
+(9,1698,'CyS1'),
+(9,1700,'CyS2'),
+(9,1702,'CyS2'),
+(9,1704,'CyS2'),
+(9,1706,'CyS2'),
+(9,1708,'CyS2'),
+(9,1710,'CyS2'),
+(9,1712,'CyS2'),
+(9,1714,'CyS2'),
+(9,1716,'CyS2'),
+(9,1718,'CyS2'),
+(9,1720,'CyS2'),
+(9,1722,'CyS2'),
+(9,1724,'CyS2'),
+(9,1726,'CyS2'),
+(9,1728,'CyS2'),
+(9,1730,'CyS2'),
+(9,1732,'CyS2'),
+(9,1734,'CyS2'),
+(9,1736,'CyS2'),
+(9,1738,'CyS2'),
+(9,1740,'CyS2'),
+(9,1742,'CyS2'),
+(9,1744,'CyS2'),
+(9,1746,'CyS2'),
+(9,1748,'CyS2'),
+(9,1750,'CyS2'),
+(9,1752,'CyS2'),
+(9,1754,'CyS2'),
+(9,1756,'CyS2'),
+(9,1758,'CyS2'),
+(9,1760,'CyS2'),
+(9,1762,'CyS2'),
+(9,1764,'CyS2'),
+(9,1766,'CyS2'),
+(9,1768,'CyS2'),
+(9,1770,'CyS2'),
+(9,1772,'CyS2'),
+(9,1774,'CyS2'),
+(9,1776,'CyS2'),
+(9,1778,'CyS2'),
+(9,1780,'CyS2'),
+(9,1782,'CyS2'),
+(9,1784,'CyS2'),
+(9,1786,'CyS2'),
+(9,1788,'CyS2'),
+(9,1790,'CyS2'),
+(9,1792,'CyS2'),
+(9,1794,'CyS2'),
+(9,1796,'CyS2'),
+(9,1798,'CyS2');
+

@@ -1,11 +1,11 @@
 course_id,start_date,end_date,course_name
-1,9/14/2023,9/30/2023,Introduction to Computer Science
-2,9/15/2023,9/28/2023,Data Structures and Algorithms
-3,9/16/2023,9/29/2023,Database Management Systems
-4,9/17/2023,9/25/2023,Computer Networks
-5,9/18/2023,9/26/2023,Operating Systems
-6,9/19/2023,9/27/2023,Web Development Fundamentals
-7,9/20/2023,9/24/2023,Artificial Intelligence and Machine Learning
-8,9/21/2023,9/23/2023,Software Engineering Principles
-9,9/22/2023,9/22/2023,Cybersecurity Fundamentals
-10,9/23/2023,9/30/2023,Computer Graphics and Visualization
+1,2023-12-14,2023-12-30,Introduction to Computer Science
+2,2023-12-15,2023-12-28,Data Structures and Algorithms
+3,2023-12-16,2023-12-29,Database Management Systems
+4,2023-12-17,2023-12-25,Computer Networks
+5,2023-12-18,2023-12-26,Operating Systems
+6,2023-12-19,2023-12-27,Web Development Fundamentals
+7,2023-12-20,2023-12-24,Artificial Intelligence and Machine Learning
+8,2023-12-21,2023-12-23,Software Engineering Principles
+9,2023-12-22,2023-12-22,Cybersecurity Fundamentals
+10,2023-12-23,2023-12-30,Computer Graphics and Visualization
