@@ -72,6 +72,14 @@ create table studentenrollment(
 	foreign key(course_id) references course(course_id)
 );
 
+-- -- create a batch tables
+-- create table Batches(
+-- 	sn bigint auto_increment primary key,
+-- 	 course_id bigint,
+-- 	 batch varchar(20),
+-- 	 foreign key(course_id) references course(course_id) on DELETE CASCADE
+-- 	 );
+-- drop table Batches;
 
 
 /* NEW ATTENDANCE TABLE */
