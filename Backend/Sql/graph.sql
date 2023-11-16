@@ -1,5 +1,5 @@
 
---top 3 course
+-- top 3 course
 SELECT c.course_name, COUNT(se.student_id) AS student_count
 FROM course c
 JOIN studentenrollment se ON c.course_id = se.course_id
@@ -9,7 +9,7 @@ LIMIT 3;
 
 
 
---top 3 batch
+-- top 3 batch
 SELECT batch, COUNT(student_id) AS student_count
 FROM studentenrollment
 GROUP BY batch

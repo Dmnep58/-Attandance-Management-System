@@ -1,7 +1,7 @@
 -- view all details in course table
 SELECT * FROM course;
 
---truncate the table
+-- truncate the table
 TRUNCATE table course;
 
 -- data insertion in the table
@@ -29,7 +29,7 @@ select batch from course;
 
 
 
-----teacher id with course
+-- teacher id with course
 
 select course_name from course 
 inner join facultyenrollment on facultyenrollment.course_id = course.course_id

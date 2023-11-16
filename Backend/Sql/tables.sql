@@ -18,7 +18,7 @@ admin_password varchar(20) not null,
 
 /* registration table */
 create table  registration(
-    uid  bigint  ,
+    uid  bigint primary key,
     password varchar(20),
 	regno BIGINT unique not null,
 	phnno BIGINT  unique not null,
@@ -27,7 +27,6 @@ create table  registration(
 	address varchar(50) not null,
 	image varchar(50),
 	role varchar(20),
-	primary key(uid)
 );
 
 	/* course table */
@@ -69,10 +68,18 @@ create table studentenrollment(
 	course_id bigint,
 	student_id bigint,
 	batch varchar(50),
-	foreign key(student_id) references registration(uid) on DELETE CASCADE,
-	foreign key(course_id) references course(course_id) on DELETE CASCADE
+	foreign key(student_id) references registration(uid),
+	foreign key(course_id) references course(course_id)
 );
 
+-- -- create a batch tables
+-- create table Batches(
+-- 	sn bigint auto_increment primary key,
+-- 	 course_id bigint,
+-- 	 batch varchar(20),
+-- 	 foreign key(course_id) references course(course_id) on DELETE CASCADE
+-- 	 );
+-- drop table Batches;
 
 
 /* NEW ATTENDANCE TABLE */
@@ -105,4 +112,6 @@ truncate table attendance;
 truncate table class;
 truncate table studentenrollment;
 truncate table facultyenrollment;
+
+
 
