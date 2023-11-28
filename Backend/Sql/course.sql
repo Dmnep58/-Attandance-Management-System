@@ -83,3 +83,11 @@ SELECT
     (SELECT COUNT(*) FROM InactiveCourses) AS inactive_course_count,
     (SELECT COUNT(*) FROM UpcomingCourses) AS upcoming_course_count;
 
+
+
+-- fetch no of students in each course
+SELECT course.course_name, COUNT(studentenrollment.student_id) FROM course JOIN studentenrollment  ON course.course_id = studentenrollment.course_id group by course.course_id;
+
+
+-- fetch attendes
+SELECT DISTINCT a.* FROM attendance a INNER JOIN studentenrollment se ON a.student_id = se.student_id INNER JOIN facultyenrollment fe ON se.batch = fe.batch WHERE a.teacher_id = 1 AND fe.batch = 'CS1';
